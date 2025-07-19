@@ -7,9 +7,14 @@
 	import { writable } from 'svelte/store';
 
 	// Svelte 5 runes: $state is a language feature, not imported. Use directly.
-	let quizData = $state([]);
-	let current = $state(0);
-	let selectedAnswers = $state([]);
+	type Quiz = {
+		question_id: string;
+		answers: string[];
+		[key: string]: unknown;
+	};
+	let quizData = $state<Quiz[]>([]);
+	let current = $state<number>(0);
+	let selectedAnswers = $state<number[]>([]);
 	let questionLocked = $state(false);
 
 	// Svelte 5 $derived usage: assign directly, no let/const, no semicolon
@@ -157,14 +162,38 @@
 		}
 	}
 
+	let isInitialLoad = true;
 	$effect(() => {
 		window.addEventListener('keydown', handleKeyNavigation);
 		// Initial load: restore last state
-		if (appState.all.module) {
+		if (isInitialLoad && appState.all.module) {
 			moduleId = appState.all.module;
 			loadQuizForModule(moduleId, appState.all.questionIndex);
+			isInitialLoad = false;
 		}
 		return () => window.removeEventListener('keydown', handleKeyNavigation);
+	});
+
+	// Auto-save favorites to localStorage when they change
+	$effect(() => {
+		if (typeof window !== 'undefined') {
+			localStorage.setItem('favoriteQuestions', JSON.stringify(Array.from(favorites)));
+		}
+	});
+
+	// Auto-save appState to localStorage when it changes
+	$effect(() => {
+		if (typeof window !== 'undefined') {
+			localStorage.setItem('appState', JSON.stringify(appState));
+		}
+	});
+
+	// Auto-save current module and question index to appState
+	$effect(() => {
+		if (typeof window !== 'undefined' && moduleId !== undefined) {
+			appState.all.module = moduleId;
+			appState.all.questionIndex = current;
+		}
 	});
 </script>
 
@@ -186,12 +215,12 @@
 		{current}
 		{favorites}
 		{sidebarOpen}
-		setCurrent={(idx) => {
+		setCurrent={(idx: number) => {
 			current = idx;
 			selectedAnswers = [];
 			questionLocked = false;
 		}}
-		setSidebarOpen={(open) => (sidebarOpen = open)}
+		setSidebarOpen={(open: boolean) => (sidebarOpen = open)}
 	/>
 	<!-- Main Content Wrapper -->
 	<div id="main-content-wrapper" class="flex-1 flex flex-col h-screen min-w-0 overflow-hidden">
@@ -199,14 +228,21 @@
 		<TopBar
 			{modules}
 			{moduleId}
-			setModuleId={(id) => (moduleId = id)}
-			{loadQuizForModule}
+			setModuleId={async (id) => {
+				if (moduleId === id) return;
+				moduleId = id;
+				// Prevent double fetch/render: clear quizData and reset current before loading new module
+				quizData = [];
+				current = 0;
+				selectedAnswers = [];
+				questionLocked = false;
+				await loadQuizForModule(id, 0);
+			}}
 			showFavorites={() => {
 				if (typeof window !== 'undefined') {
 					appState.all.module = moduleId;
 					appState.all.questionIndex = current;
 					appState.currentView = 'favorites';
-					localStorage.setItem('appState', JSON.stringify(appState));
 					quizData = quizData.filter((q) => favorites.has(q.question_id));
 					current = 0;
 				}
@@ -233,9 +269,6 @@
 						favorites.delete(currentQuestion.question_id);
 					} else {
 						favorites.add(currentQuestion.question_id);
-					}
-					if (typeof window !== 'undefined') {
-						localStorage.setItem('favoriteQuestions', JSON.stringify(Array.from(favorites)));
 					}
 				}}
 				{answers}
