@@ -85,7 +85,7 @@
 	];
 
 	// Sidebar open state
-	let sidebarOpen = $state(false);
+	let sidebarOpen = $state(typeof window !== 'undefined' && window.innerWidth >= 768);
 
 	// Favorites modal
 	let showFavModal = $state(false);
@@ -227,112 +227,74 @@
 	// Responsive sidebar: close on mobile, open on desktop
 	$effect(() => {
 		if (typeof window === 'undefined') return;
-		let prevWidth = window.innerWidth;
+		const mediaQuery = window.matchMedia('(min-width: 768px)');
 		const handleResize = () => {
-			const w = window.innerWidth;
-			// Always close sidebar if switching to mobile
-			if (w < 768 && sidebarOpen) {
-				sidebarOpen = false;
-			}
-			// Always open sidebar if switching to desktop
-			if (w >= 768 && prevWidth < 768) {
-				sidebarOpen = true;
-			}
-			prevWidth = w;
+			sidebarOpen = mediaQuery.matches;
 		};
-		window.addEventListener('resize', handleResize);
-		return () => window.removeEventListener('resize', handleResize);
+		handleResize();
+		mediaQuery.addEventListener('change', handleResize);
+		return () => mediaQuery.removeEventListener('change', handleResize);
 	});
 </script>
 
 <!-- Main Layout -->
 <div class="flex flex-row min-h-screen min-w-screen w-screen bg-[#1D1B2C] text-[#CECDE0] font-sans">
 	<!-- Sidebar -->
-	<!-- Hamburger now inside sidebar container -->
-	<!-- Sidebar: responsive overlay on mobile, static on desktop -->
-	<!-- Always render sidebar on desktop (md and up), conditionally on mobile -->
-	{#if typeof window !== 'undefined'}
-		{#if window.innerWidth >= 768}
-			<div
-				class="
-					md:static md:block
-					fixed top-0 left-0 z-[1001]
-					h-screen
-					transition-transform duration-200
-					bg-[#29273F]
-					translate-x-0
-					md:translate-x-0
-					md:min-w-[200px] md:w-[250px]
-				"
-				style="will-change: transform;"
-			>
-				<Sidebar
-					{quizData}
-					{current}
-					{favorites}
-					{sidebarOpen}
-					setCurrent={(idx: number) => {
-						current = idx;
-						selectedAnswers = [];
-						questionLocked = false;
-					}}
-					setSidebarOpen={(open: boolean) => (sidebarOpen = open)}
-					addFavorite={() => {}}
-					removeFavorite={() => {}}
-				/>
-			</div>
-		{:else if sidebarOpen}
-			<!-- Backdrop for mobile, closes sidebar on click -->
-			<button
-				type="button"
-				class="fixed inset-0 z-[1000] bg-black/50 backdrop-opacity-60 md:hidden"
-				tabIndex="0"
-				aria-label="Close sidebar"
-				onclick={() => (sidebarOpen = false)}
-				onkeydown={(e) => {
-					if (e.key === 'Enter' || e.key === ' ') {
-						sidebarOpen = false;
-					}
-				}}
-			></button>
-			<div
-				class="
-					md:static md:block
-					fixed top-0 left-0 z-[1001]
-					h-screen
-					transition-transform duration-200
-					bg-[#29273F]
-					translate-x-0
-					md:translate-x-0
-					md:min-w-[200px] md:w-[250px]
-				"
-				style="will-change: transform;"
-			>
-				<Sidebar
-					{quizData}
-					{current}
-					{favorites}
-					{sidebarOpen}
-					setCurrent={(idx: number) => {
-						current = idx;
-						selectedAnswers = [];
-						questionLocked = false;
-					}}
-					setSidebarOpen={(open: boolean) => (sidebarOpen = open)}
-					addFavorite={() => {}}
-					removeFavorite={() => {}}
-				/>
-			</div>
-		{/if}
+	<div
+		class="fixed top-0 left-0 h-full z-40 bg-[#29273F] transition-transform duration-200 ease-in-out
+			   md:static md:translate-x-0 md:min-w-[200px] md:w-[250px]"
+		class:translate-x-[-100%]={!sidebarOpen &&
+			typeof window !== 'undefined' &&
+			window.innerWidth < 768}
+		class:translate-x-0={sidebarOpen || (typeof window !== 'undefined' && window.innerWidth >= 768)}
+	>
+		<Sidebar
+			{quizData}
+			{current}
+			{favorites}
+			{sidebarOpen}
+			setCurrent={(idx: number) => {
+				current = idx;
+				selectedAnswers = [];
+				questionLocked = false;
+				if (typeof window !== 'undefined' && window.innerWidth < 768) {
+					sidebarOpen = false;
+				}
+			}}
+			setSidebarOpen={(open: boolean) => (sidebarOpen = open)}
+			addFavorite={() => {}}
+			removeFavorite={() => {}}
+		/>
+	</div>
+
+	<!-- Backdrop for mobile -->
+	{#if sidebarOpen && typeof window !== 'undefined' && window.innerWidth < 768}
+		<button
+			type="button"
+			class="fixed inset-0 bg-black/50 z-30"
+			onclick={() => (sidebarOpen = false)}
+			aria-label="Close sidebar"
+		></button>
 	{/if}
+
+	<!-- Hamburger button for mobile sidebar toggle -->
+	{#if !sidebarOpen && typeof window !== 'undefined' && window.innerWidth < 768}
+		<button
+			class="hamburger-btn fixed top-4 left-4 z-20 bg-[#C294FF] rounded-lg p-2"
+			aria-label="Open sidebar"
+			onclick={() => (sidebarOpen = true)}
+		>
+			<span class="block w-6 h-[3px] bg-[#222] my-1"></span>
+			<span class="block w-6 h-[3px] bg-[#222] my-1"></span>
+			<span class="block w-6 h-[3px] bg-[#222] my-1"></span>
+		</button>
+	{/if}
+
 	<!-- Main Content Wrapper -->
 	<div id="main-content-wrapper" class="flex-1 flex flex-col h-screen min-w-0 overflow-hidden">
 		<!-- Top Bar -->
-		<!-- Responsive wrapper for TopBar to avoid hamburger overlap on mobile -->
-		<!-- Responsive wrapper for TopBar to avoid hamburger overlap on mobile -->
-		<div class="w-full">
+		<div class="w-full relative z-10">
 			{#if typeof window !== 'undefined'}
-				<!-- TopBar shifted right on mobile, no prop spreading -->
 				<TopBar
 					{modules}
 					{moduleId}

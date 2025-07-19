@@ -64,18 +64,8 @@
 
 <!-- Top Bar -->
 <div
-	class="top-bar flex flex-row items-center justify-center py-4 flex-shrink-0 flex-wrap bg-[#29273F] z-20"
+	class="top-bar flex flex-row items-center justify-center py-4 flex-shrink-0 flex-wrap bg-[#29273F]"
 >
-	<!-- Hamburger button for mobile sidebar toggle -->
-	<button
-		class="hamburger-btn relative md:static top-0 left-0 bg-[#C294FF] rounded-lg p-2 block md:hidden mr-4"
-		aria-label="Open sidebar"
-		onclick={() => setSidebarOpen(!sidebarOpen)}
-	>
-		<span class="block w-6 h-[3px] bg-[#222] my-1"></span>
-		<span class="block w-6 h-[3px] bg-[#222] my-1"></span>
-		<span class="block w-6 h-[3px] bg-[#222] my-1"></span>
-	</button>
 	<!-- Module Selector -->
 	<select
 		bind:value={moduleId}

@@ -36,8 +36,7 @@
 
 <!-- Sidebar Navigation -->
 <div
-	class="sidebar flex flex-col gap-2 h-screen max-h-screen overflow-y-auto overflow-x-hidden bg-[#29273F] min-w-[200px] w-[250px] z-20 fixed left-0 top-0"
-	class:!hidden={!sidebarOpen && typeof window !== 'undefined' && window.innerWidth < 900}
+	class="sidebar flex flex-col gap-2 h-screen max-h-screen overflow-y-auto overflow-x-hidden bg-[#29273F] min-w-[200px] w-[250px]"
 >
 	{#each quizData as q, idx}
 		<button
