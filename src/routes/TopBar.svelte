@@ -1,10 +1,62 @@
 <script lang="ts">
-	// TopBar component for module selection and favorites
-	export let modules: { value: string; label: string }[] = [];
-	export let moduleId: string;
-	export let setModuleId: (id: string) => void;
-	// current, favorites, quizData, setQuizData, setCurrent, appState, setAppState are for external reference only, not used internally
-	export let showFavorites: () => void;
+	interface Props {
+		// TopBar component for module selection and favorites
+		modules?: { value: string; label: string }[];
+		moduleId: string;
+		setModuleId: (id: string) => void;
+		// current, favorites, quizData, setQuizData, setCurrent, appState, setAppState are for external reference only, not used internally
+		showFavorites: () => void;
+		onBackToAll: () => void;
+		onClearFavorites: () => void;
+	}
+
+	let {
+		modules = [],
+		moduleId = $bindable(),
+		setModuleId,
+		showFavorites,
+		onBackToAll,
+		onClearFavorites
+	}: Props = $props();
+
+	let favoritesMode = $state(false);
+	let selectEl: HTMLSelectElement;
+
+	function handleSelectMousedown(e: MouseEvent) {
+		if (document.activeElement === selectEl) {
+			e.preventDefault();
+			selectEl.blur();
+		}
+	}
+
+	function handleFavoritesClick() {
+		showFavorites();
+		favoritesMode = true;
+	}
+	function handleBackClick() {
+		favoritesMode = false;
+		onBackToAll && onBackToAll();
+	}
+	function handleClearFavorites() {
+		onClearFavorites && onClearFavorites();
+		favoritesMode = false;
+	}
+
+	// Override a/d keys on select to always trigger navigation
+	function handleSelectKeydown(e: KeyboardEvent) {
+		if (e.key === 'a' || e.key === 'A') {
+			e.preventDefault();
+			const event = new KeyboardEvent('keydown', { key: 'a', bubbles: true });
+			document.activeElement && (document.activeElement as HTMLElement).blur();
+			window.dispatchEvent(event);
+		}
+		if (e.key === 'd' || e.key === 'D') {
+			e.preventDefault();
+			const event = new KeyboardEvent('keydown', { key: 'd', bubbles: true });
+			document.activeElement && (document.activeElement as HTMLElement).blur();
+			window.dispatchEvent(event);
+		}
+	}
 </script>
 
 <!-- Top Bar -->
@@ -14,31 +66,44 @@
 	<!-- Module Selector -->
 	<select
 		bind:value={moduleId}
-		on:change={() => setModuleId(moduleId)}
-		class="rounded-md px-3 py-2 bg-[#29273F] text-[#CECDE0] border border-[#33314E] mr-2"
+		bind:this={selectEl}
+		onmousedown={handleSelectMousedown}
+		oninput={(e) => {
+			setModuleId((e.target as HTMLSelectElement).value);
+			setTimeout(() => selectEl.blur(), 0);
+		}}
+		class="rounded-md px-3 py-2 bg-[#29273F] text-[#CECDE0] border border-[#33314E] mr-2 focus:outline-none focus:ring-0"
 	>
 		{#each modules as mod}
 			<option value={mod.value}>{mod.label}</option>
 		{/each}
-	</select>
+		on:keydown={handleSelectKeydown}
+		></select
+	>
 	<!-- Favorites Button -->
-	<button
-		id="favorites-btn"
-		class="ml-3 rounded-md px-3 py-2 bg-[#C294FF] text-[#1D1B2C] font-semibold"
-		on:click={showFavorites}
-	>
-		Favorites
-	</button>
-	<!-- Other top bar controls (hidden for now) -->
-	<button id="show-all-btn" class="ml-3 rounded-md px-3 py-2 bg-[#8582B0] text-[#CECDE0] hidden"
-		>Show All</button
-	>
-	<span id="favorites-label" class="ml-3 text-lg hidden"></span>
-	<button id="back-to-all-btn" class="ml-3 rounded-md px-3 py-2 bg-[#8582B0] text-[#CECDE0] hidden"
-		>Back to All Modules</button
-	>
-	<button
-		id="clear-favorites-btn"
-		class="ml-3 rounded-md px-3 py-2 bg-[#8582B0] text-[#CECDE0] hidden">Clear Favorites</button
-	>
+	{#if !favoritesMode && typeof showFavorites === 'function' && showFavorites.toString() !== '() => {}'}
+		<button
+			id="favorites-btn"
+			class="ml-3 rounded-md px-3 py-2 bg-[#C294FF] text-[#1D1B2C] font-semibold"
+			onclick={handleFavoritesClick}
+		>
+			Favorites
+		</button>
+	{/if}
+	{#if favoritesMode || typeof showFavorites !== 'function' || showFavorites.toString() === '() => {}'}
+		<button
+			id="back-to-all-btn"
+			class="ml-3 rounded-md px-3 py-2 bg-[#8582B0] text-[#CECDE0]"
+			onclick={handleBackClick}
+		>
+			Go Back
+		</button>
+		<button
+			id="clear-favorites-btn"
+			class="ml-3 rounded-md px-3 py-2 bg-[#8582B0] text-[#CECDE0]"
+			onclick={handleClearFavorites}
+		>
+			Clear All Favorites
+		</button>
+	{/if}
 </div>

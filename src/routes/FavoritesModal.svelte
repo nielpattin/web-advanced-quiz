@@ -1,8 +1,13 @@
 <script lang="ts">
-  // FavoritesModal component for displaying and importing favorite question IDs
-  export let showFavModal: boolean;
-  export let favIdList: string;
-  export let closeModal: () => void;
+  
+  interface Props {
+    // FavoritesModal component for displaying and importing favorite question IDs
+    showFavModal: boolean;
+    favIdList: string;
+    closeModal: () => void;
+  }
+
+  let { showFavModal, favIdList = $bindable(), closeModal }: Props = $props();
 </script>
 
 {#if showFavModal}
@@ -13,7 +18,7 @@
       <div class="fav-id-modal-btn-row flex gap-2 mb-2">
         <button class="flex-1 text-base py-2 rounded-lg bg-[#f0f0ff] text-[#574fd6] font-medium hover:bg-[#e3e3fa]">Copy</button>
         <button class="flex-1 text-base py-2 rounded-lg bg-[#f0f0ff] text-[#574fd6] font-medium hover:bg-[#e3e3fa]">Paste & Import</button>
-        <button class="flex-1 text-base py-2 rounded-lg bg-[#f0f0ff] text-[#574fd6] font-medium hover:bg-[#e3e3fa]" on:click={closeModal}>Close</button>
+        <button class="flex-1 text-base py-2 rounded-lg bg-[#f0f0ff] text-[#574fd6] font-medium hover:bg-[#e3e3fa]" onclick={closeModal}>Close</button>
       </div>
       <small class="text-[#888] text-sm">Copy/paste to share favorites between devices.</small>
     </div>

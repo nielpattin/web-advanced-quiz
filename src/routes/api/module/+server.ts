@@ -16,7 +16,7 @@ export async function GET({ url }) {
 		const db = new Database(dbPath, { readonly: true });
 		let rows: Record<string, unknown>[] = [];
 
-		if (id && /^[1-9]$/.test(id)) {
+		if (id && /^(\d+(?:-\d+)*)$/.test(id)) {
 			const moduleKey = `module_${id}`;
 			rows = db.prepare('SELECT * FROM quizzes WHERE quiz_number = ?').all(moduleKey) as Record<
 				string,
@@ -31,16 +31,28 @@ export async function GET({ url }) {
 		}
 		db.close();
 
-		const quizzes = rows.map((row: Record<string, unknown>) => ({
-			...row,
-			answers: (() => {
-				try {
-					return typeof row.answers === 'string' ? JSON.parse(row.answers) : undefined;
-				} catch {
-					return [];
+		const quizzes = rows.map((row: Record<string, unknown>) => {
+			let module_id: string | undefined = undefined;
+			if (typeof row.quiz_number === 'string') {
+				if (row.quiz_number.startsWith('module_')) {
+					const mod = row.quiz_number.replace('module_', '');
+					if (!mod.includes('-')) module_id = mod;
+				} else if (!row.quiz_number.includes('-')) {
+					module_id = row.quiz_number;
 				}
-			})()
-		}));
+			}
+			return {
+				...row,
+				answers: (() => {
+					try {
+						return typeof row.answers === 'string' ? JSON.parse(row.answers) : undefined;
+					} catch {
+						return [];
+					}
+				})(),
+				module_id
+			};
+		});
 		return json({ quizzes });
 	} catch (err) {
 		let message = 'Unknown error';
