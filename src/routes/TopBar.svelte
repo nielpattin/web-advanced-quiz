@@ -4,7 +4,6 @@
 		modules?: { value: string; label: string }[];
 		moduleId: string;
 		setModuleId: (id: string) => void;
-		// current, favorites, quizData, setQuizData, setCurrent, appState, setAppState are for external reference only, not used internally
 		showFavorites: () => void;
 		onBackToAll: () => void;
 		onClearFavorites: () => void;

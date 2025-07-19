@@ -5,7 +5,6 @@
 		current: number;
 		quizData: any[];
 		selectedAnswers: number[];
-		// setSelectedAnswers is for external reference only, not used internally
 		questionLocked: boolean;
 		checkAnswers: () => void;
 		handleAnswerClick: (idx: number, questionType: string) => void;

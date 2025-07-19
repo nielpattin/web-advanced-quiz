@@ -14,7 +14,6 @@
 	let selectedAnswers = $state<number[]>([]);
 	let questionLocked = $state(false);
 
-	// TopBar handlers to avoid leaking function source in DOM
 	async function showFavorites() {
 		const { goto } = await import('$app/navigation');
 		goto('/favorites');
@@ -41,7 +40,6 @@
 		moduleQuizCache.clear(); // Clear cache to ensure fresh data
 		moduleId = id;
 		appState.all.questionIndex = 0;
-		// Do not clear quizData before loading to prevent flicker
 		current = 0;
 		selectedAnswers = [];
 		questionLocked = false;
@@ -140,7 +138,6 @@
 	function goToNextModule() {
 		if (!moduleId) return;
 		let idx = modules.findIndex((m) => m.value === moduleId);
-		// Find all real modules (exclude '' and 'all')
 		const realModules = modules.filter((m) => m.value !== '' && m.value !== 'all');
 		let currentRealIdx = realModules.findIndex((m) => m.value === moduleId);
 		let nextRealIdx = (currentRealIdx + 1) % realModules.length;
@@ -197,7 +194,6 @@
 	let isInitialLoad = true;
 	$effect(() => {
 		window.addEventListener('keydown', handleKeyNavigation);
-		// Initial load: restore last state
 		if (isInitialLoad) {
 			const initialModule = appState.all.module || modules[0].value; // Default to "Select Module" if no module saved
 			moduleId = initialModule;
