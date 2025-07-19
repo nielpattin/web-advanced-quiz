@@ -8,7 +8,14 @@ export async function GET({ url }) {
 
 	const getQuizData = (moduleId: string) => {
 		try {
-			const filePath = join(process.cwd(), 'vi_json', `quiz-${moduleId}.json`);
+			const filePath = join(
+				process.cwd(),
+				'src',
+				'lib',
+				'server',
+				'vi_json',
+				`quiz-${moduleId}.json`
+			);
 			const data = readFileSync(filePath, 'utf-8');
 			return JSON.parse(data);
 		} catch {
