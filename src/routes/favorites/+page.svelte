@@ -119,7 +119,7 @@
 <div class="flex flex-row min-h-screen min-w-screen w-screen bg-[#1D1B2C] text-[#CECDE0] font-sans">
 	<Sidebar
 		quizData={quizData()}
-		{current}
+		current={current()}
 		{favorites}
 		{setCurrent}
 		sidebarOpen={true}
