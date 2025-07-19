@@ -128,36 +128,36 @@
 		questionLocked = true;
 	}
 
-	function goToNextModule() {
-		if (!moduleId) return;
-		let idx = modules.findIndex((m) => m.value === moduleId);
-		const realModules = modules.filter((m) => m.value !== '' && m.value !== 'all');
-		let currentRealIdx = realModules.findIndex((m) => m.value === moduleId);
-		let nextRealIdx = (currentRealIdx + 1) % realModules.length;
-		const nextModuleId = realModules[nextRealIdx].value;
-		if (nextModuleId && nextModuleId !== '') {
-			moduleId = nextModuleId;
-			loadQuizForModule(moduleId, 0);
-		} else if (realModules.length > 0) {
-			moduleId = realModules[0].value;
-			loadQuizForModule(moduleId, 0);
-		}
-	}
+	// function goToNextModule() {
+	// 	if (!moduleId) return;
+	// 	let idx = modules.findIndex((m) => m.value === moduleId);
+	// 	const realModules = modules.filter((m) => m.value !== '' && m.value !== 'all');
+	// 	let currentRealIdx = realModules.findIndex((m) => m.value === moduleId);
+	// 	let nextRealIdx = (currentRealIdx + 1) % realModules.length;
+	// 	const nextModuleId = realModules[nextRealIdx].value;
+	// 	if (nextModuleId && nextModuleId !== '') {
+	// 		moduleId = nextModuleId;
+	// 		loadQuizForModule(moduleId, 0);
+	// 	} else if (realModules.length > 0) {
+	// 		moduleId = realModules[0].value;
+	// 		loadQuizForModule(moduleId, 0);
+	// 	}
+	// }
 
-	function goToPreviousModule() {
-		if (!moduleId) return;
-		const realModules = modules.filter((m) => m.value !== '' && m.value !== 'all');
-		let currentRealIdx = realModules.findIndex((m) => m.value === moduleId);
-		let prevRealIdx = (currentRealIdx - 1 + realModules.length) % realModules.length;
-		const prevModuleId = realModules[prevRealIdx].value;
-		if (prevModuleId && prevModuleId !== '') {
-			moduleId = prevModuleId;
-			loadQuizForModule(moduleId, 0);
-		} else if (realModules.length > 0) {
-			moduleId = realModules[realModules.length - 1].value;
-			loadQuizForModule(moduleId, 0);
-		}
-	}
+	// function goToPreviousModule() {
+	// 	if (!moduleId) return;
+	// 	const realModules = modules.filter((m) => m.value !== '' && m.value !== 'all');
+	// 	let currentRealIdx = realModules.findIndex((m) => m.value === moduleId);
+	// 	let prevRealIdx = (currentRealIdx - 1 + realModules.length) % realModules.length;
+	// 	const prevModuleId = realModules[prevRealIdx].value;
+	// 	if (prevModuleId && prevModuleId !== '') {
+	// 		moduleId = prevModuleId;
+	// 		loadQuizForModule(moduleId, 0);
+	// 	} else if (realModules.length > 0) {
+	// 		moduleId = realModules[realModules.length - 1].value;
+	// 		loadQuizForModule(moduleId, 0);
+	// 	}
+	// }
 
 	function handleKeyNavigation(e: KeyboardEvent) {
 		if (
@@ -170,17 +170,15 @@
 				current++;
 				selectedAnswers = [];
 				questionLocked = false;
-			} else {
-				goToNextModule();
 			}
+			// Do nothing when at the end of questions
 		} else if (e.key === 'ArrowLeft' || e.key === 'a' || e.key === 'A') {
 			if (current > 0) {
 				current--;
 				selectedAnswers = [];
 				questionLocked = false;
-			} else {
-				goToPreviousModule();
 			}
+			// Do nothing when at the start of questions
 		}
 	}
 
