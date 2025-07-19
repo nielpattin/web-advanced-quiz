@@ -11,19 +11,8 @@
 		[key: string]: unknown;
 	};
 
-	let modules = $state([
-		{ value: '', label: 'Select Module' },
-		{ value: '1', label: 'Module 1' },
-		{ value: '2', label: 'Module 2' },
-		{ value: '3', label: 'Module 3' },
-		{ value: '4', label: 'Module 4' },
-		{ value: '5', label: 'Module 5' },
-		{ value: '6', label: 'Module 6' },
-		{ value: '7', label: '7 - Module 1' },
-		{ value: '8', label: '8 - Module 2,3,4,5,6' },
-		{ value: '9', label: '9 - MUST LEARN' },
-		{ value: 'all', label: 'All Modules' }
-	]);
+	import { modules as modulesRaw } from '../../lib/modules';
+	let modules = $state(modulesRaw);
 
 	let appState = $state({
 		favoritesModuleId: 'all',
@@ -119,6 +108,18 @@
 </script>
 
 <div class="flex flex-row min-h-screen min-w-screen w-screen bg-[#1D1B2C] text-[#CECDE0] font-sans">
+	<!-- Hamburger button for mobile sidebar toggle -->
+	{#if !sidebarOpen && typeof window !== 'undefined' && window.innerWidth < 768}
+		<button
+			class="hamburger-btn fixed top-4 left-4 z-20 bg-[#C294FF] rounded-lg p-2 mr-16"
+			aria-label="Open sidebar"
+			onclick={() => (sidebarOpen = true)}
+		>
+			<span class="block w-6 h-[3px] bg-[#222] my-1"></span>
+			<span class="block w-6 h-[3px] bg-[#222] my-1"></span>
+			<span class="block w-6 h-[3px] bg-[#222] my-1"></span>
+		</button>
+	{/if}
 	{#if typeof window !== 'undefined' && (window.innerWidth >= 768 || sidebarOpen)}
 		{#if sidebarOpen && window.innerWidth < 768}
 			<button

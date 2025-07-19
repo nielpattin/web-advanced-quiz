@@ -4,9 +4,17 @@
 		showFavModal: boolean;
 		favIdList: string;
 		closeModal: () => void;
+		importFavorites: (ids: string) => void;
 	}
 
-	let { showFavModal, favIdList = $bindable(), closeModal }: Props = $props();
+	let { showFavModal, favIdList = $bindable(), closeModal, importFavorites }: Props = $props();
+	let copied = $state(false);
+
+	function handleCopy() {
+		navigator.clipboard.writeText(favIdList);
+		copied = true;
+		setTimeout(() => (copied = false), 1200);
+	}
 </script>
 
 {#if showFavModal}
@@ -25,15 +33,21 @@
 			></textarea>
 			<div class="fav-id-modal-btn-row flex gap-2 mb-2">
 				<button
-					class="flex-1 text-base py-2 rounded-lg bg-[#f0f0ff] text-[#574fd6] font-medium hover:bg-[#e3e3fa]"
-					>Copy</button
+					class="flex-1 text-base py-2 rounded-lg bg-[#f0f0ff] text-[#574fd6] font-medium hover:bg-[#e3e3fa] cursor-pointer"
+					onclick={handleCopy}
+				>
+					{copied ? 'Copied!' : 'Copy'}
+				</button>
+				<button
+					class="flex-1 text-base py-2 rounded-lg bg-[#f0f0ff] text-[#574fd6] font-medium hover:bg-[#e3e3fa] cursor-pointer"
+					onclick={async () => {
+						const text = await navigator.clipboard.readText();
+						importFavorites(text);
+						closeModal();
+					}}>Paste & Import</button
 				>
 				<button
-					class="flex-1 text-base py-2 rounded-lg bg-[#f0f0ff] text-[#574fd6] font-medium hover:bg-[#e3e3fa]"
-					>Paste & Import</button
-				>
-				<button
-					class="flex-1 text-base py-2 rounded-lg bg-[#f0f0ff] text-[#574fd6] font-medium hover:bg-[#e3e3fa]"
+					class="flex-1 text-base py-2 rounded-lg bg-[#f0f0ff] text-[#574fd6] font-medium hover:bg-[#e3e3fa] cursor-pointer"
 					onclick={closeModal}>Close</button
 				>
 			</div>

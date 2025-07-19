@@ -1,0 +1,357 @@
+[
+  {
+    "question_id": "q-1",
+    "question_text": "All of the following are types of XSS (Cross-Site Scripting) EXCEPT:",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "1-0",
+        "answer_text": "Distributed XSS",
+        "is_correct": true
+      },
+      {
+        "answer_id": "1-1",
+        "answer_text": "Reflected XSS",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-2",
+        "answer_text": "Stored XSS",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-3",
+        "answer_text": "DOM XSS",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-2",
+    "question_text": "Which of the following is a mitigation technique to prevent XSS (Cross-Site Scripting)?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "2-0",
+        "answer_text": "Allowing users to upload arbitrary files to the server.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-1",
+        "answer_text": "Using Output Encoding.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "2-2",
+        "answer_text": "Enabling remote code execution on the server.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-3",
+        "answer_text": "Using weak passwords for user accounts.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-3",
+    "question_text": "What is Cross-Site Request Forgery (CSRF)?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "3-0",
+        "answer_text": "A type of attack that allows an attacker to intercept network traffic between a victim and a server.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-1",
+        "answer_text": "A type of attack that tricks a victim into performing an unwanted action on a website.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "3-2",
+        "answer_text": "A type of attack that allows an attacker to execute malicious scripts in a victim’s browser.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-3",
+        "answer_text": "A type of attack that allows an attacker to steal a victim’s login credentials.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-4",
+    "question_text": "All of the following are valid types of cookies EXCEPT:",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "4-0",
+        "answer_text": "Second-party cookies",
+        "is_correct": true
+      },
+      {
+        "answer_id": "4-1",
+        "answer_text": "First-party cookies",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-2",
+        "answer_text": "Session Cookies",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-3",
+        "answer_text": "Persistent Cookies",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-5",
+    "question_text": "Which of the following differentiates login CSRF and stored CSRF?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "5-0",
+        "answer_text": "Login CSRF is known as “session riding” while stored CSRF is known as the “one-click attack.”",
+        "is_correct": false
+      },
+      {
+        "answer_id": "5-1",
+        "answer_text": "Stored CSRF is known as “session riding” while login CSRF is known as the “one-click attack.”",
+        "is_correct": false
+      },
+      {
+        "answer_id": "5-2",
+        "answer_text": "Stored CSRF occurs when the user submits information to the attacker’s account while login CSRF occurs when the user submits information to the vulnerable application.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "5-3",
+        "answer_text": "Login CSRF occurs when the user submits information to the attacker’s account while stored CSRF occurs when the user submits information to the vulnerable application.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-6",
+    "question_text": "Which of the following is NOT required for a CSRF attack to occur?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "6-0",
+        "answer_text": "A GET request",
+        "is_correct": true
+      },
+      {
+        "answer_id": "6-1",
+        "answer_text": "A relevant action",
+        "is_correct": false
+      },
+      {
+        "answer_id": "6-2",
+        "answer_text": "Cookie-based session handling",
+        "is_correct": false
+      },
+      {
+        "answer_id": "6-3",
+        "answer_text": "No unpredictable request parameters",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-7",
+    "question_text": "Uses a one-way attack mechanism:",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "7-0",
+        "answer_text": "CSRF",
+        "is_correct": true
+      },
+      {
+        "answer_id": "7-1",
+        "answer_text": "XSS",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-8",
+    "question_text": "Uses a two-way attack mechanism:",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "8-0",
+        "answer_text": "CSRF",
+        "is_correct": false
+      },
+      {
+        "answer_id": "8-1",
+        "answer_text": "XSS",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-9",
+    "question_text": "Has a more limited scope, or requires the user to perform certain actions:",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "9-0",
+        "answer_text": "CSRF",
+        "is_correct": true
+      },
+      {
+        "answer_id": "9-1",
+        "answer_text": "XSS",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-10",
+    "question_text": "Requires the user to be in an active authenticated web session:",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "10-0",
+        "answer_text": "CSRF",
+        "is_correct": true
+      },
+      {
+        "answer_id": "10-1",
+        "answer_text": "XSS",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-11",
+    "question_text": "Malicious code is stored within the vulnerable website directly:",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "11-0",
+        "answer_text": "CSRF",
+        "is_correct": false
+      },
+      {
+        "answer_id": "11-1",
+        "answer_text": "XSS",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-12",
+    "question_text": "Which of the following is NOT a recommended form of CSRF prevention?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "12-0",
+        "answer_text": "CSRF tokens",
+        "is_correct": false
+      },
+      {
+        "answer_id": "12-1",
+        "answer_text": "Password management system",
+        "is_correct": true
+      },
+      {
+        "answer_id": "12-2",
+        "answer_text": "HTTP standard headers",
+        "is_correct": false
+      },
+      {
+        "answer_id": "12-3",
+        "answer_text": "CAPTCHA-based authorization",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-13",
+    "question_text": "Which of the following is TRUE regarding tokens?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "13-0",
+        "answer_text": "CSRF tokens should be predictable.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "13-1",
+        "answer_text": "Inserting a CSRF token in the custom HTTP request header via JavaScript is less secure than adding it in the hidden field form parameter.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "13-2",
+        "answer_text": "For the Synchronised Token Pattern, CSRF tokens should be transmitted using cookies.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "13-3",
+        "answer_text": "Without a token, an attacker cannot create a valid request to the backend server.",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-14",
+    "question_text": "Select ALL of the ways in which the double submit cookie technique can be implemented.",
+    "question_type": "multiple_answer_question",
+    "answers": [
+      {
+        "answer_id": "14-0",
+        "answer_text": "Use HMAC (Hash-based Message Authentication Code)",
+        "is_correct": true
+      },
+      {
+        "answer_id": "14-1",
+        "answer_text": "Use the AJAX authentication method",
+        "is_correct": false
+      },
+      {
+        "answer_id": "14-2",
+        "answer_text": "Include a token inside an encrypted cookie",
+        "is_correct": true
+      },
+      {
+        "answer_id": "14-3",
+        "answer_text": "Implement login CSRF on the website",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-15",
+    "question_text": "Which of the following is NOT a SameSite attribute value?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "15-0",
+        "answer_text": "Strict",
+        "is_correct": false
+      },
+      {
+        "answer_id": "15-1",
+        "answer_text": "None",
+        "is_correct": false
+      },
+      {
+        "answer_id": "15-2",
+        "answer_text": "Secure",
+        "is_correct": true
+      },
+      {
+        "answer_id": "15-3",
+        "answer_text": "Lax",
+        "is_correct": false
+      }
+    ]
+  }
+]

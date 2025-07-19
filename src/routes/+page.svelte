@@ -75,21 +75,14 @@
 	})();
 
 	let moduleId = $state('');
-	let modules = [
-		{ value: '', label: 'Select Module' },
-		{ value: '1', label: 'Module 1' },
-		{ value: '2', label: 'Module 2' },
-		{ value: '3', label: 'Module 3' },
-		{ value: '4', label: 'Module 4' },
-		{ value: 'all', label: 'All Modules' }
-	];
+	import { modules } from '../lib/modules';
 
 	// Sidebar open state
 	let sidebarOpen = $state(typeof window !== 'undefined' && window.innerWidth >= 768);
 
 	// Favorites modal
 	let showFavModal = $state(false);
-	let favIdList = '';
+	let favIdList = $derived(Array.from(favorites).join(', '));
 
 	// Quiz loading logic
 	async function loadQuizForModule(moduleId: string, startAt = 0) {
@@ -347,8 +340,20 @@
 	<button
 		id="fav-id-fab"
 		class="fav-id-fab fixed bottom-6 right-6 z-[1000] bg-[#6c63ff] text-white rounded-full w-14 h-14 shadow-lg text-2xl flex items-center justify-center hover:bg-[#574fd6]"
+		onclick={() => (showFavModal = true)}
 	>
 		★
 	</button>
-	<FavoritesModal {showFavModal} {favIdList} closeModal={() => (showFavModal = false)} />
+	<FavoritesModal
+		{showFavModal}
+		{favIdList}
+		closeModal={() => (showFavModal = false)}
+		importFavorites={(ids: string) => {
+			const newIds = ids
+				.split(',')
+				.map((id) => id.trim())
+				.filter(Boolean);
+			favorites = new Set([...Array.from(favorites), ...newIds]);
+		}}
+	/>
 </div>
