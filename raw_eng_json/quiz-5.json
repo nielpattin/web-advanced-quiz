@@ -353,5 +353,113 @@
         "is_correct": false
       }
     ]
+  },
+  {
+    "question_id": "q-16",
+    "question_text": "What is the FIRST step in verifying origin with standard headers?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "16-0",
+        "answer_text": "Determine the origin the request is coming from (source origin)",
+        "is_correct": true
+      },
+      {
+        "answer_id": "16-1",
+        "answer_text": "Determine the origin the request is going to (target origin)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "16-2",
+        "answer_text": "Verify that both target origin and source origin requests match",
+        "is_correct": false
+      },
+      {
+        "answer_id": "16-3",
+        "answer_text": "Accept or reject the request",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-17",
+    "question_text": "What is the SECOND step in verifying origin with standard headers?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "17-0",
+        "answer_text": "Determine the origin the request is coming from (source origin)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "17-1",
+        "answer_text": "Determine the origin the request is going to (target origin)",
+        "is_correct": true
+      },
+      {
+        "answer_id": "17-2",
+        "answer_text": "Verify that both target origin and source origin requests match",
+        "is_correct": false
+      },
+      {
+        "answer_id": "17-3",
+        "answer_text": "Accept or reject the request",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-18",
+    "question_text": "What is the THIRD step in verifying origin with standard headers?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "18-0",
+        "answer_text": "Determine the origin the request is coming from (source origin)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "18-1",
+        "answer_text": "Determine the origin the request is going to (target origin)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "18-2",
+        "answer_text": "Verify that both target origin and source origin requests match",
+        "is_correct": true
+      },
+      {
+        "answer_id": "18-3",
+        "answer_text": "Accept or reject the request",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-19",
+    "question_text": "What is the FOURTH (last) step in verifying origin with standard headers?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "19-0",
+        "answer_text": "Determine the origin the request is coming from (source origin)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "19-1",
+        "answer_text": "Determine the origin the request is going to (target origin)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "19-2",
+        "answer_text": "Verify that both target origin and source origin requests match",
+        "is_correct": false
+      },
+      {
+        "answer_id": "19-3",
+        "answer_text": "Accept or reject the request",
+        "is_correct": true
+      }
+    ]
   }
 ]
