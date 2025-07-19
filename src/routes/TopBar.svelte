@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { page } from '$app/state';
+
 	interface Props {
 		// TopBar component for module selection and favorites
 		modules?: { value: string; label: string }[];
@@ -22,8 +24,12 @@
 		setSidebarOpen
 	}: Props = $props();
 
-	let favoritesMode = $state(false);
 	let selectEl: HTMLSelectElement;
+
+	let favoritesMode = $state(false);
+	$effect(() => {
+		favoritesMode = page.url.pathname.startsWith('/favorites');
+	});
 
 	function handleSelectMousedown(e: MouseEvent) {
 		if (document.activeElement === selectEl) {
@@ -34,15 +40,12 @@
 
 	function handleFavoritesClick() {
 		showFavorites();
-		favoritesMode = true;
 	}
 	function handleBackClick() {
-		favoritesMode = false;
 		onBackToAll && onBackToAll();
 	}
 	function handleClearFavorites() {
 		onClearFavorites && onClearFavorites();
-		favoritesMode = false;
 	}
 
 	// Override a/d keys on select to always trigger navigation
