@@ -1,6 +1,4 @@
 <script lang="ts">
-	
-	
 	interface Props {
 		// QuizCard component for displaying the current question and answers
 		currentQuestion: any;
@@ -32,23 +30,22 @@
 
 <!-- Quiz Card -->
 <div
-	class="quiz-card bg-[#29273F] text-[#CECDE0] rounded-2xl shadow-lg w-[90%] max-w-[90vw] p-12 pt-16 relative flex flex-col gap-8 mt-8"
+	class="quiz-card bg-[#29273F] text-[#CECDE0] rounded-2xl shadow-lg w-[90%] max-w-[90vw] px-4 pt-16 relative flex flex-col gap-2 mt-8"
 >
-	<!-- Question Index -->
-	<span class="block mb-2 text-[#8582B0] text-base">
-		{#if quizData.length}
-			Question {current + 1} / {quizData.length}
-		{/if}
-	</span>
-	<!-- Favorite Button (top right) -->
-	<div id="favorite-btn" class="absolute top-5 right-5 cursor-pointer">
+	<!-- Question number and Favorite Button row -->
+	<div class="flex items-center justify-between mb-2">
+		<span class="text-[#8582B0] text-base">
+			{#if quizData.length}
+				Question {current + 1} / {quizData.length}
+			{/if}
+		</span>
+		<!-- This is the favorite button -->
 		<button
 			aria-label="Toggle favorite"
 			class="w-10 h-10 bg-transparent border-none p-0 flex items-center justify-center"
 			onclick={toggleFavorite}
 		>
 			{#if favorites.has(currentQuestion?.question_id)}
-				<!-- Filled yellow star -->
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="32"
@@ -65,7 +62,6 @@
 					></polygon>
 				</svg>
 			{:else}
-				<!-- Outline star -->
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="32"
@@ -98,14 +94,12 @@
 			{#each answers as ans, idx}
 				<button
 					type="button"
-					class="answer px-5 py-3 rounded-lg border-2 border-[#33314E] bg-[#302E4A] text-lg text-[#CECDE0] cursor-pointer transition-colors
-            {selectedAnswers.includes(idx) ? 'border-[#C294FF]' : ''}
-            {questionLocked && currentQuestion.answers[idx]?.is_correct
+					class="answer px-5 py-3 rounded-lg border-2 border-[#33314E] bg-[#302E4A] text-lg text-[#CECDE0] cursor-pointer transition-colors text-left
+					       {selectedAnswers.includes(idx) ? 'border-[#C294FF]' : ''}
+					       {questionLocked && currentQuestion.answers[idx]?.is_correct
 						? 'border-green-400 text-green-300'
 						: ''}
-            {questionLocked &&
-					selectedAnswers.includes(idx) &&
-					!currentQuestion.answers[idx]?.is_correct
+					       {questionLocked && selectedAnswers.includes(idx) && !currentQuestion.answers[idx]?.is_correct
 						? 'border-[#FF4747] text-[#FF4747]'
 						: ''}"
 					onclick={() => handleAnswerClick(idx, currentQuestion.question_type)}

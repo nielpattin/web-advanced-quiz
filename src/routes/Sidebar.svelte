@@ -1,5 +1,4 @@
 <script lang="ts">
-	// Sidebar component for question navigation
 	type SidebarProps = {
 		quizData: { question_id: string }[];
 		current: number;
@@ -37,7 +36,7 @@
 
 <!-- Sidebar Navigation -->
 <div
-	class="sidebar flex flex-col gap-2 h-screen max-h-screen overflow-y-auto overflow-x-hidden bg-[#29273F] min-w-[200px] w-[250px] z-10"
+	class="sidebar flex flex-col gap-2 h-screen max-h-screen overflow-y-auto overflow-x-hidden bg-[#29273F] min-w-[200px] w-[250px] z-20 fixed left-0 top-0"
 	class:!hidden={!sidebarOpen && typeof window !== 'undefined' && window.innerWidth < 900}
 >
 	{#each quizData as q, idx}
@@ -49,7 +48,9 @@
 				: 'hover:bg-[#8582B0]'}"
 			onclick={() => {
 				setCurrent(idx);
-				setSidebarOpen(false);
+				if (typeof window !== 'undefined' && window.innerWidth < 900) {
+					setSidebarOpen(false);
+				}
 				setTimeout(() => {
 					const btns = document.querySelectorAll('.sidebar-btn');
 					const btn = btns[idx] as HTMLElement | undefined;

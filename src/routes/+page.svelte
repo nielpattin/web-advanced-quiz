@@ -14,6 +14,40 @@
 	let selectedAnswers = $state<number[]>([]);
 	let questionLocked = $state(false);
 
+	// TopBar handlers to avoid leaking function source in DOM
+	async function showFavorites() {
+		const { goto } = await import('$app/navigation');
+		goto('/favorites');
+	}
+	function onBackToAll() {
+		if (typeof window !== 'undefined') {
+			appState.currentView = 'all';
+			moduleId = appState.all.module;
+			loadQuizForModule(moduleId, appState.all.questionIndex);
+		}
+	}
+	function onClearFavorites() {
+		favorites = new Set();
+		if (typeof window !== 'undefined') {
+			localStorage.setItem('favoriteQuestions', '[]');
+		}
+		if (appState.currentView === 'favorites') {
+			appState.currentView = 'all';
+			moduleId = appState.all.module;
+			loadQuizForModule(moduleId, appState.all.questionIndex);
+		}
+	}
+	async function setModuleId(id: string) {
+		moduleQuizCache.clear(); // Clear cache to ensure fresh data
+		moduleId = id;
+		appState.all.questionIndex = 0;
+		// Do not clear quizData before loading to prevent flicker
+		current = 0;
+		selectedAnswers = [];
+		questionLocked = false;
+		await loadQuizForModule(id, 0);
+	}
+
 	let currentQuestion = $derived(quizData[current]);
 	let answers = $derived(currentQuestion ? (currentQuestion.answers ?? []) : []);
 
@@ -49,11 +83,6 @@
 		{ value: '2', label: 'Module 2' },
 		{ value: '3', label: 'Module 3' },
 		{ value: '4', label: 'Module 4' },
-		{ value: '5', label: 'Module 5' },
-		{ value: '6', label: 'Module 6' },
-		{ value: '7', label: '7 - Module 1' },
-		{ value: '8', label: '8 - Module 2,3,4,5,6' },
-		{ value: '9', label: '9 - MUST LEARN' },
 		{ value: 'all', label: 'All Modules' }
 	];
 
@@ -198,96 +227,128 @@
 			appState.all.questionIndex = current;
 		}
 	});
+
+	// Responsive sidebar: close on mobile, open on desktop
+	$effect(() => {
+		if (typeof window === 'undefined') return;
+		let prevWidth = window.innerWidth;
+		const handleResize = () => {
+			const w = window.innerWidth;
+			// Always close sidebar if switching to mobile
+			if (w < 768 && sidebarOpen) {
+				sidebarOpen = false;
+			}
+			// Always open sidebar if switching to desktop
+			if (w >= 768 && prevWidth < 768) {
+				sidebarOpen = true;
+			}
+			prevWidth = w;
+		};
+		window.addEventListener('resize', handleResize);
+		return () => window.removeEventListener('resize', handleResize);
+	});
 </script>
 
 <!-- Main Layout -->
 <div class="flex flex-row min-h-screen min-w-screen w-screen bg-[#1D1B2C] text-[#CECDE0] font-sans">
 	<!-- Sidebar -->
-	<!-- This is the hamburger button for mobile/tablet only -->
-	<button
-		class="hamburger-btn fixed top-4 left-4 z-[1001] bg-[#C294FF] rounded-lg p-2 block md:hidden"
-		aria-label="Open sidebar"
-		onclick={() => (sidebarOpen = !sidebarOpen)}
-	>
-		<span class="block w-6 h-[3px] bg-[#222] my-1"></span>
-		<span class="block w-6 h-[3px] bg-[#222] my-1"></span>
-		<span class="block w-6 h-[3px] bg-[#222] my-1"></span>
-	</button>
-	<Sidebar
-		{quizData}
-		{current}
-		{favorites}
-		{sidebarOpen}
-		setCurrent={(idx: number) => {
-			current = idx;
-			selectedAnswers = [];
-			questionLocked = false;
-		}}
-		setSidebarOpen={(open: boolean) => (sidebarOpen = open)}
-		addFavorite={() => {}}
-		removeFavorite={() => {}}
-	/>
+	<!-- Hamburger now inside sidebar container -->
+	<!-- Sidebar: responsive overlay on mobile, static on desktop -->
+	<!-- Always render sidebar on desktop (md and up), conditionally on mobile -->
+	{#if typeof window !== 'undefined'}
+		{#if window.innerWidth >= 768}
+			<div
+				class="
+					md:static md:block
+					fixed top-0 left-0 z-[1001]
+					h-screen
+					transition-transform duration-200
+					bg-[#29273F]
+					translate-x-0
+					md:translate-x-0
+					md:min-w-[200px] md:w-[250px]
+				"
+				style="will-change: transform;"
+			>
+				<Sidebar
+					{quizData}
+					{current}
+					{favorites}
+					{sidebarOpen}
+					setCurrent={(idx: number) => {
+						current = idx;
+						selectedAnswers = [];
+						questionLocked = false;
+					}}
+					setSidebarOpen={(open: boolean) => (sidebarOpen = open)}
+					addFavorite={() => {}}
+					removeFavorite={() => {}}
+				/>
+			</div>
+		{:else if sidebarOpen}
+			<!-- Backdrop for mobile, closes sidebar on click -->
+			<button
+				type="button"
+				class="fixed inset-0 z-[1000] bg-black/50 backdrop-opacity-60 md:hidden"
+				tabIndex="0"
+				aria-label="Close sidebar"
+				onclick={() => (sidebarOpen = false)}
+				onkeydown={(e) => {
+					if (e.key === 'Enter' || e.key === ' ') {
+						sidebarOpen = false;
+					}
+				}}
+			></button>
+			<div
+				class="
+					md:static md:block
+					fixed top-0 left-0 z-[1001]
+					h-screen
+					transition-transform duration-200
+					bg-[#29273F]
+					translate-x-0
+					md:translate-x-0
+					md:min-w-[200px] md:w-[250px]
+				"
+				style="will-change: transform;"
+			>
+				<Sidebar
+					{quizData}
+					{current}
+					{favorites}
+					{sidebarOpen}
+					setCurrent={(idx: number) => {
+						current = idx;
+						selectedAnswers = [];
+						questionLocked = false;
+					}}
+					setSidebarOpen={(open: boolean) => (sidebarOpen = open)}
+					addFavorite={() => {}}
+					removeFavorite={() => {}}
+				/>
+			</div>
+		{/if}
+	{/if}
 	<!-- Main Content Wrapper -->
 	<div id="main-content-wrapper" class="flex-1 flex flex-col h-screen min-w-0 overflow-hidden">
 		<!-- Top Bar -->
-		<TopBar
-			{modules}
-			{moduleId}
-			setModuleId={async (id: string) => {
-				moduleQuizCache.clear(); // Clear cache to ensure fresh data
-				moduleId = id;
-				appState.all.questionIndex = 0;
-				// Do not clear quizData before loading to prevent flicker
-				current = 0;
-				selectedAnswers = [];
-				questionLocked = false;
-				await loadQuizForModule(id, 0);
-
-				// If in favorites view, filter to only favorites for this module (or all)
-				if (appState.currentView === 'favorites') {
-					if (id === 'all') {
-						quizData = [];
-						for (const mod of modules) {
-							if (mod.value && mod.value !== 'all') {
-								let modQuizzes: Quiz[] = [];
-								if (moduleQuizCache.has(mod.value)) {
-									modQuizzes = moduleQuizCache.get(mod.value);
-								}
-								quizData = quizData.concat(modQuizzes.filter((q) => favorites.has(q.question_id)));
-							}
-						}
-					} else {
-						quizData = quizData.filter((q) => favorites.has(q.question_id) && q.module_id === id);
-					}
-					appState.currentView = 'favorites';
-					current = 0;
-				} else {
-					appState.currentView = 'all';
-				}
-			}}
-			showFavorites={async () => {
-				const { goto } = await import('$app/navigation');
-				goto('/favorites');
-			}}
-			onBackToAll={() => {
-				if (typeof window !== 'undefined') {
-					appState.currentView = 'all';
-					moduleId = appState.all.module;
-					loadQuizForModule(moduleId, appState.all.questionIndex);
-				}
-			}}
-			onClearFavorites={() => {
-				favorites = new Set();
-				if (typeof window !== 'undefined') {
-					localStorage.setItem('favoriteQuestions', '[]');
-				}
-				if (appState.currentView === 'favorites') {
-					appState.currentView = 'all';
-					moduleId = appState.all.module;
-					loadQuizForModule(moduleId, appState.all.questionIndex);
-				}
-			}}
-		/>
+		<!-- Responsive wrapper for TopBar to avoid hamburger overlap on mobile -->
+		<!-- Responsive wrapper for TopBar to avoid hamburger overlap on mobile -->
+		<div class="w-full">
+			{#if typeof window !== 'undefined'}
+				<!-- TopBar shifted right on mobile, no prop spreading -->
+				<TopBar
+					{modules}
+					{moduleId}
+					{setModuleId}
+					{showFavorites}
+					{onBackToAll}
+					{onClearFavorites}
+					{sidebarOpen}
+					setSidebarOpen={(open: boolean) => (sidebarOpen = open)}
+				/>
+			{/if}
+		</div>
 		<!-- Main Content -->
 		<div
 			id="main-content"

@@ -2,6 +2,7 @@
 	import Sidebar from '../Sidebar.svelte';
 	import TopBar from '../TopBar.svelte';
 	import QuizCard from '../QuizCard.svelte';
+	import { onMount } from 'svelte';
 
 	type Quiz = {
 		question_id: string;
@@ -23,8 +24,6 @@
 		{ value: '9', label: '9 - MUST LEARN' },
 		{ value: 'all', label: 'All Modules' }
 	]);
-	// No dynamic fetch, keep this array in sync with main page
-	import { onMount } from 'svelte';
 
 	let appState = $state({
 		favoritesModuleId: 'all',
@@ -35,13 +34,14 @@
 	let favorites: Set<string> = $state(new Set());
 	let allQuizzes: Quiz[] = $state([]);
 
+	let sidebarOpen = $state(false);
+
 	function persistState() {
 		if (typeof window !== 'undefined') {
 			localStorage.setItem('appState', JSON.stringify(appState));
 		}
 	}
 
-	// quizData is now a $derived() rune below
 	const quizData = $derived(() => {
 		const allQuizzesVal: Quiz[] = allQuizzes;
 		const favoritesVal: Set<string> = favorites;
@@ -107,7 +107,9 @@
 		persistState();
 	}
 
-	function setSidebarOpen(open: boolean) {}
+	function setSidebarOpen(open: boolean) {
+		sidebarOpen = open;
+	}
 
 	function setModuleIdHandler(id: string) {
 		appState.favoritesModuleId = id;
@@ -117,34 +119,70 @@
 </script>
 
 <div class="flex flex-row min-h-screen min-w-screen w-screen bg-[#1D1B2C] text-[#CECDE0] font-sans">
-	<Sidebar
-		quizData={quizData()}
-		current={current()}
-		{favorites}
-		{setCurrent}
-		sidebarOpen={true}
-		{setSidebarOpen}
-		addFavorite={(id: string) => {
-			favorites = new Set([...favorites, id]);
-			localStorage.setItem('favoriteQuestions', JSON.stringify([...favorites]));
-		}}
-		removeFavorite={(id: string) => {
-			favorites = new Set([...favorites].filter((qid) => qid !== id));
-			localStorage.setItem('favoriteQuestions', JSON.stringify([...favorites]));
-		}}
-	/>
+	{#if typeof window !== 'undefined' && (window.innerWidth >= 768 || sidebarOpen)}
+		{#if sidebarOpen && window.innerWidth < 768}
+			<button
+				type="button"
+				class="fixed inset-0 z-[1000] bg-black/50 backdrop-opacity-60 md:hidden"
+				tabIndex="0"
+				aria-label="Close sidebar"
+				onclick={() => (sidebarOpen = false)}
+				onkeydown={(e) => {
+					if (e.key === 'Enter' || e.key === ' ') {
+						sidebarOpen = false;
+					}
+				}}
+			></button>
+		{/if}
+		<div
+			class="
+				md:static md:block
+				fixed top-0 left-0 z-[1001]
+				h-screen
+				transition-transform duration-200
+				bg-[#29273F]
+				{sidebarOpen ? 'translate-x-0' : '-translate-x-full'}
+				md:translate-x-0
+				md:min-w-[200px] md:w-[250px]
+			"
+			style="will-change: transform;"
+		>
+			<Sidebar
+				quizData={quizData()}
+				current={current()}
+				{favorites}
+				{setCurrent}
+				{sidebarOpen}
+				{setSidebarOpen}
+				addFavorite={(id: string) => {
+					favorites = new Set([...favorites, id]);
+					localStorage.setItem('favoriteQuestions', JSON.stringify([...favorites]));
+				}}
+				removeFavorite={(id: string) => {
+					favorites = new Set([...favorites].filter((qid) => qid !== id));
+					localStorage.setItem('favoriteQuestions', JSON.stringify([...favorites]));
+				}}
+			/>
+		</div>
+	{/if}
 	<div id="main-content-wrapper" class="flex-1 flex flex-col h-screen min-w-0 overflow-hidden">
-		<TopBar
-			{modules}
-			moduleId={moduleId()}
-			setModuleId={setModuleIdHandler}
-			showFavorites={() => {}}
-			onBackToAll={() => { import('$app/navigation').then(({ goto }) => goto('/')); }}
-			onClearFavorites={() => {
-				localStorage.setItem('favoriteQuestions', '[]');
-				location.reload();
-			}}
-		/>
+		<div class="w-full">
+			{#if typeof window !== 'undefined'}
+				<TopBar
+					{modules}
+					moduleId={moduleId()}
+					setModuleId={setModuleIdHandler}
+					showFavorites={() => {}}
+					onBackToAll={() => { import('$app/navigation').then(({ goto }) => goto('/')); }}
+					onClearFavorites={() => {
+						localStorage.setItem('favoriteQuestions', '[]');
+						location.reload();
+					}}
+					{sidebarOpen}
+					setSidebarOpen={(open: boolean) => (sidebarOpen = open)}
+				/>
+			{/if}
+		</div>
 		<div
 			id="main-content"
 			class="main-scrollbar flex-1 flex flex-col items-center justify-start overflow-y-auto max-h-full"

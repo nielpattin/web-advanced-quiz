@@ -1,0 +1,812 @@
+[
+  {
+    "question_id": "q-31",
+    "question_text": "In Laravel, what is the primary purpose of routing?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "0-0",
+        "answer_text": "Routing defines the structure of your database tables.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-1",
+        "answer_text": "Routing defines how incoming HTTP requests should be handled and mapped to controllers.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "0-2",
+        "answer_text": "Routing is used for creating user interfaces.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-3",
+        "answer_text": "Routing defines front-end JavaScript code execution.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-32",
+    "question_text": "What does the term \"named route\" refer to in Laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "1-0",
+        "answer_text": "A named route is a route without a URL.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-1",
+        "answer_text": "A named route is a route that is defined in a JavaScript file.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-2",
+        "answer_text": "A named route is a route that has a unique name assigned to it, making it easier to generate URLs.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "1-3",
+        "answer_text": "A named route is a route that uses POST as its HTTP method.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-33",
+    "question_text": "In Laravel, what is a view?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "2-0",
+        "answer_text": "A view is a file that contains the HTML markup and displays data to the user.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "2-1",
+        "answer_text": "A view is a PHP class that handles routing logic.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-2",
+        "answer_text": "A view is a controller method responsible for handling HTTP requests.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-3",
+        "answer_text": "A view is a database table used for storing user data.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-34",
+    "question_text": "In Laravel, what is the purpose of the Eloquent ORM?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "3-0",
+        "answer_text": "Eloquent ORM is used for generating HTML templates.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-1",
+        "answer_text": "Eloquent ORM is used for managing HTTP requests.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-2",
+        "answer_text": "Eloquent ORM is an advanced ActiveRecord implementation for database interaction.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "3-3",
+        "answer_text": "Eloquent ORM is used for defining routes in the application.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-35",
+    "question_text": "What is the purpose of the create method in Laravel's Eloquent ORM?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "4-0",
+        "answer_text": "The create method is used for creating new Blade templates.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-1",
+        "answer_text": "The create method is used for defining database migrations.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-2",
+        "answer_text": "The create method is used for defining controllers.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-3",
+        "answer_text": "The create method creates new database records with specified attributes.",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-36",
+    "question_text": "How can authentication be implemented securely in Laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "0-0",
+        "answer_text": "By encrypting database entries",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-1",
+        "answer_text": "Through HTTP requests interception",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-2",
+        "answer_text": "By using Blade directives",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-3",
+        "answer_text": "Using middleware and Laravel UI",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-37",
+    "question_text": "What is the correct way to register a middleware in Laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "1-0",
+        "answer_text": "Using the $routeMiddleware array in app/Http/Kernel.php",
+        "is_correct": true
+      },
+      {
+        "answer_id": "1-1",
+        "answer_text": "Adding middleware to the providers array in config/app.php",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-2",
+        "answer_text": "Using the bindMiddleware method in app/Providers/AuthServiceProvider.php",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-3",
+        "answer_text": "By calling Middleware::register() in routes/web.php",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-38",
+    "question_text": "Which Blade directive would you use to define a section of content in a layout?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "2-0",
+        "answer_text": "@section",
+        "is_correct": true
+      },
+      {
+        "answer_id": "2-1",
+        "answer_text": "@yield",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-2",
+        "answer_text": "@extend",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-3",
+        "answer_text": "@include",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-39",
+    "question_text": "How do you pass data from a controller to a Blade view in Laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "3-0",
+        "answer_text": "Using the @yield directive",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-1",
+        "answer_text": "By defining variables in web.php",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-2",
+        "answer_text": "By storing data in a session",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-3",
+        "answer_text": "Using the with method on the view object",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-40",
+    "question_text": "What is the primary role of middleware in Laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "4-0",
+        "answer_text": "Handling database migrations and seeding",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-1",
+        "answer_text": "Intercepting and filtering HTTP requests",
+        "is_correct": true
+      },
+      {
+        "answer_id": "4-2",
+        "answer_text": "Managing user sessions and cookies",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-3",
+        "answer_text": "Creating dynamic views with Blade templates",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-41",
+    "question_text": "Which of the following HTTP methods is typically used for retrieving data from a Laravel application using routing?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "0-0",
+        "answer_text": "POST",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-1",
+        "answer_text": "PUT",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-2",
+        "answer_text": "GET",
+        "is_correct": true
+      },
+      {
+        "answer_id": "0-3",
+        "answer_text": "DELETE",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-42",
+    "question_text": "What is a route parameter in Laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "1-0",
+        "answer_text": "A route parameter is a JavaScript function that executes when a route is accessed.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-1",
+        "answer_text": "A route parameter is a dynamic part of a route's URL that captures values and passes them to a controller or closure.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "1-2",
+        "answer_text": "A route parameter is a static part of a URL that never changes.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-3",
+        "answer_text": "A route parameter is a database table column.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-43",
+    "question_text": "Which of the following methods defines a resource controller's routes for CRUD operations in Laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "2-0",
+        "answer_text": "getRoutes()",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-1",
+        "answer_text": "resource()",
+        "is_correct": true
+      },
+      {
+        "answer_id": "2-2",
+        "answer_text": "defineRoutes()",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-3",
+        "answer_text": "createRoute()",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-44",
+    "question_text": "What is the purpose of route middleware in Laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "3-0",
+        "answer_text": "Route middleware is used for defining custom PHP functions.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-1",
+        "answer_text": "Route middleware is used for defining HTTP request methods.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-2",
+        "answer_text": "Route middleware is used for creating user interfaces.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-3",
+        "answer_text": "Route middleware adds additional logic layers to route handling, such as authentication or logging.",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-45",
+    "question_text": "In Laravel, what is the primary purpose of a controller?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "4-0",
+        "answer_text": "A controller handles HTTP requests and contains the application's logic to respond to those requests.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "4-1",
+        "answer_text": "A controller defines the structure and layout of HTML pages.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-2",
+        "answer_text": "A controller is used for managing database connections and queries.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-3",
+        "answer_text": "A controller is used for defining route parameters.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-46",
+    "question_text": "Which of the following statements about the Blade templating engine in Laravel is correct?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "5-0",
+        "answer_text": "Blade is a JavaScript library used for front-end development.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "5-1",
+        "answer_text": "Blade is primarily used for defining database migrations.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "5-2",
+        "answer_text": "Blade is used for creating route definitions in Laravel.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "5-3",
+        "answer_text": "Blade lets you write PHP code directly within your HTML templates.",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-47",
+    "question_text": "What is a \"view composer\" in Laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "6-0",
+        "answer_text": "A view composer is a PHP class responsible for managing controllers.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "6-1",
+        "answer_text": "A view composer is a function that handles HTTP requests.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "6-2",
+        "answer_text": "A view composer is a class or closure that provides data to multiple views, allowing you to share common data among them.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "6-3",
+        "answer_text": "A view composer is a database query builder.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-48",
+    "question_text": "Which of the following is true regarding view inheritance in Laravel's Blade templating engine?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "7-0",
+        "answer_text": "Blade does not support view inheritance.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "7-1",
+        "answer_text": "A child view can extend a parent view using the @extends directive.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "7-2",
+        "answer_text": "A child view cannot override sections defined in a parent view.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "7-3",
+        "answer_text": "View inheritance is only available in Laravel's paid version.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-49",
+    "question_text": "What is the purpose of the @yield directive in Blade templates?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "8-0",
+        "answer_text": "The @yield directive defines a route parameter.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "8-1",
+        "answer_text": "The @yield directive is used for including external JavaScript libraries.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "8-2",
+        "answer_text": "The @yield directive specifies a section where child view content can be injected.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "8-3",
+        "answer_text": "The @yield directive is used to define a view composer.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-50",
+    "question_text": "What is the primary purpose of database migrations in Laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "9-0",
+        "answer_text": "Database migrations are used to define routes for the application.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "9-1",
+        "answer_text": "Database migrations are used for creating Blade templates.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "9-2",
+        "answer_text": "Database migrations are used for defining controllers.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "9-3",
+        "answer_text": "Database migrations are used to version-control the database schema and apply changes incrementally.",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-51",
+    "question_text": "In Laravel, what does the term \"Eloquent\" refer to in the context of the Eloquent ORM?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "10-0",
+        "answer_text": "\"Eloquent\" refers to a type of database table.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "10-1",
+        "answer_text": "\"Eloquent\" refers to the use of advanced SQL queries.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "10-2",
+        "answer_text": "\"Eloquent\" refers to the application's middleware.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "10-3",
+        "answer_text": "\"Eloquent\" refers to the expressive and fluent syntax used for defining database queries and relationships.",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-52",
+    "question_text": "What is the purpose of database seeders in Laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "11-0",
+        "answer_text": "Database seeders are used for creating database tables.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "11-1",
+        "answer_text": "Database seeders populate database tables with initial data.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "11-2",
+        "answer_text": "Database seeders are used for defining routes.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "11-3",
+        "answer_text": "Database seeders are used for defining controllers.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-53",
+    "question_text": "In Laravel, what is the primary purpose of middleware?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "12-0",
+        "answer_text": "Middleware is used for defining routes.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "12-1",
+        "answer_text": "Middleware is used for defining database migrations.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "12-2",
+        "answer_text": "Middleware adds additional processing layers to HTTP requests and responses.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "12-3",
+        "answer_text": "Middleware is used for creating Blade templates.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-54",
+    "question_text": "What is the purpose of the guest middleware in Laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "13-0",
+        "answer_text": "The guest middleware is used to ensure that only guests (unauthenticated users) can access certain routes.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "13-1",
+        "answer_text": "The guest middleware is used for defining routes.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "13-2",
+        "answer_text": "The guest middleware is used for defining database migrations.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "13-3",
+        "answer_text": "The guest middleware is used for creating Blade templates.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-55",
+    "question_text": "In Laravel API development, what is the purpose of the Route::apiResource method?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "14-0",
+        "answer_text": "The Route::apiResource method is used for defining middleware.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "14-1",
+        "answer_text": "The Route::apiResource method is used for creating Blade templates.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "14-2",
+        "answer_text": "The Route::apiResource method is used for defining database migrations.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "14-3",
+        "answer_text": "The Route::apiResource method defines API resource routes that map to CRUD actions in the controller.",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-56",
+    "question_text": "In Laravel API development, what is the purpose of the JSON method on an HTTP response?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "15-0",
+        "answer_text": "The JSON method is used for defining database migrations.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "15-1",
+        "answer_text": "The JSON method is used for defining middleware.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "15-2",
+        "answer_text": "The JSON method converts data into a JSON response and sends it to the client.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "15-3",
+        "answer_text": "The JSON method is used for creating Blade templates.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-57",
+    "question_text": "What is the purpose of the ResourceController in Laravel API development?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "16-0",
+        "answer_text": "The ResourceController defines the actions that handle CRUD operations for an API resource.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "16-1",
+        "answer_text": "The ResourceController is used for defining middleware.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "16-2",
+        "answer_text": "The ResourceController is used for defining database migrations.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "16-3",
+        "answer_text": "The ResourceController is used for creating Blade templates.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-58",
+    "question_text": "What is a Blade directive in Laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "17-0",
+        "answer_text": "Blade directives are used to define database migrations.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "17-1",
+        "answer_text": "Blade directives are special syntax that allows you to include logic and dynamic content within Blade templates.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "17-2",
+        "answer_text": "Blade directives are used to define controllers.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "17-3",
+        "answer_text": "Blade directives are used for creating API resources.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-59",
+    "question_text": "In Laravel Blade templates, what does @if represent?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "18-0",
+        "answer_text": "@if is used to define API resources.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "18-1",
+        "answer_text": "@if is used to define middleware.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "18-2",
+        "answer_text": "@if is a Blade directive for defining conditional statements.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "18-3",
+        "answer_text": "@if is used for creating database migrations.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-60",
+    "question_text": "What is the purpose of the @foreach Blade directive in Laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "19-0",
+        "answer_text": "@foreach is used to define API resources.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "19-1",
+        "answer_text": "@foreach is used to define middleware.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "19-2",
+        "answer_text": "@foreach is a Blade directive for defining loops that iterate over arrays and collections.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "19-3",
+        "answer_text": "@foreach is used for creating database migrations.",
+        "is_correct": false
+      }
+    ]
+  }
+]

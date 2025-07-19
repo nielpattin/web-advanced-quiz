@@ -1,0 +1,272 @@
+[
+  {
+    "question_id": "q-90",
+    "question_text": "Mục đích chính của unit testing trong Laravel là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "0-0",
+        "answer_text": "Để kiểm tra sự tương tác giữa các đơn vị khác nhau của một ứng dụng Laravel.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-1",
+        "answer_text": "Để đảm bảo rằng các thành phần hoặc đơn vị mã riêng lẻ (chẳng hạn như các hàm hoặc phương thức) hoạt động chính xác một cách cô lập.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "0-2",
+        "answer_text": "Để kiểm tra chức năng tổng thể của một ứng dụng Laravel, bao gồm cả giao diện người dùng.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-3",
+        "answer_text": "Để kiểm tra hiệu suất và khả năng mở rộng của một ứng dụng Laravel.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-91",
+    "question_text": "Framework testing nào thường được sử dụng để viết unit test trong Laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "1-0",
+        "answer_text": "PHPUnit",
+        "is_correct": true
+      },
+      {
+        "answer_id": "1-1",
+        "answer_text": "Selenium",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-2",
+        "answer_text": "Jest",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-3",
+        "answer_text": "Mocha",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-92",
+    "question_text": "Trong Laravel, mục đích chính của việc debugging là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "2-0",
+        "answer_text": "Để thêm các yếu tố trang trí vào một trang web.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-1",
+        "answer_text": "Để nâng cao hiệu suất của ứng dụng.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-2",
+        "answer_text": "Để phân tích và giải quyết các vấn đề hoặc lỗi trong mã của ứng dụng.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "2-3",
+        "answer_text": "Để tạo các bản sao lưu dữ liệu của ứng dụng.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-93",
+    "question_text": "Phương pháp nào sau đây là một phương pháp phổ biến để debugging các ứng dụng Laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "3-0",
+        "answer_text": "Sử dụng lệnh artisan tinker.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-1",
+        "answer_text": "Ghi các tệp log.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "3-2",
+        "answer_text": "Thay đổi cấu hình của server.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-3",
+        "answer_text": "Chạy các unit test.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-94",
+    "question_text": "Tệp nào trong một dự án PHP được quản lý bởi Composer chỉ định các dependency của dự án và các phiên bản của chúng?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "4-0",
+        "answer_text": "composer.lock",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-1",
+        "answer_text": "index.php",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-2",
+        "answer_text": "package.json",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-3",
+        "answer_text": "composer.json",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-95",
+    "question_text": "Mục đích của các biến môi trường trong một cấu hình deployment là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "0-0",
+        "answer_text": "Để lưu trữ dữ liệu nhạy cảm như mật khẩu database.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-1",
+        "answer_text": "Để định nghĩa cấu trúc của lược đồ database.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-2",
+        "answer_text": "Để chỉ định ngôn ngữ lập trình của ứng dụng.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-3",
+        "answer_text": "Để cấu hình các khía cạnh khác nhau của môi trường runtime của ứng dụng.",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-96",
+    "question_text": "Điều nào sau đây là một lợi thế của việc cấu hình các biến môi trường trong một deployment?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "1-0",
+        "answer_text": "Các biến môi trường được lưu trữ dưới dạng văn bản thuần túy, khiến chúng dễ bị tấn công an ninh.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-1",
+        "answer_text": "Các biến môi trường cung cấp một cách để tách rời cấu hình khỏi mã ứng dụng.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "1-2",
+        "answer_text": "Các biến môi trường được quản lý trong mã ứng dụng, làm giảm tính linh hoạt của deployment.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-3",
+        "answer_text": "Các biến môi trường là đặc trưng cho một môi trường deployment duy nhất và không thể thay đổi.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-97",
+    "question_text": "Khi triển khai một ứng dụng PHP đến một nhà cung cấp shared hosting, phương pháp deployment nào thường KHÔNG được khuyến nghị?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "2-0",
+        "answer_text": "Sử dụng một hệ thống kiểm soát phiên bản như Git để deployment.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "2-1",
+        "answer_text": "Tải lên các tệp qua FTP hoặc SFTP.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-2",
+        "answer_text": "Sử dụng một pipeline continuous integration và continuous deployment (CI/CD).",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-3",
+        "answer_text": "Sao chép thủ công các tệp qua một trình quản lý tệp của hosting control panel.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-98",
+    "question_text": "Một lợi thế tiềm năng của việc triển khai một ứng dụng PHP lên một nền tảng đám mây như AWS hoặc GCP so với shared hosting là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "3-0",
+        "answer_text": "Shared hosting thường cung cấp nhiều quyền kiểm soát hơn đối với các cấu hình server.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-1",
+        "answer_text": "Shared hosting cung cấp khả năng mở rộng và quản lý tài nguyên tốt hơn.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-2",
+        "answer_text": "Các nền tảng đám mây cung cấp sự linh hoạt để tăng hoặc giảm tài nguyên khi cần thiết.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "3-3",
+        "answer_text": "Shared hosting cung cấp các tính năng bảo mật mạnh mẽ hơn.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-99",
+    "question_text": "Khi nói đến việc mở rộng ứng dụng Laravel, \"horizontal scaling\" là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "4-0",
+        "answer_text": "Tăng kích thước của database server.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-1",
+        "answer_text": "Thêm nhiều lõi CPU hơn vào web server.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-2",
+        "answer_text": "Tăng số lượng các phiên bản web hoặc application server.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "4-3",
+        "answer_text": "Tăng RAM của load balancer.",
+        "is_correct": false
+      }
+    ]
+  }
+]

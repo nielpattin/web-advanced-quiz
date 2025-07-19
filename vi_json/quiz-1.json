@@ -1,0 +1,812 @@
+[
+  {
+    "question_id": "q-1",
+    "question_text": "PHP chủ yếu được biết đến vì điều gì trong lĩnh vực phát triển web?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "0-0",
+        "answer_text": "PHP chủ yếu được biết đến qua việc sử dụng trong trí tuệ nhân tạo và machine learning.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-1",
+        "answer_text": "PHP chủ yếu được biết đến với vai trò là một ngôn ngữ kịch bản phía server trong phát triển web.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "0-2",
+        "answer_text": "PHP chủ yếu được biết đến qua việc sử dụng trong phát triển ứng dụng di động.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-3",
+        "answer_text": "PHP chủ yếu được biết đến với vai trò trong đồ họa máy tính và game.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-2",
+    "question_text": "PHP ban đầu được tạo ra khi nào và bởi ai?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "1-0",
+        "answer_text": "PHP ban đầu được tạo ra vào những năm 1990 bởi Mark Zuckerberg.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-1",
+        "answer_text": "PHP ban đầu được tạo ra vào đầu những năm 2000 bởi Linus Torvalds.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-2",
+        "answer_text": "PHP ban đầu được tạo ra vào những năm 1980 bởi Tim Berners-Lee.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-3",
+        "answer_text": "PHP ban đầu được tạo ra vào năm 1994 bởi Rasmus Lerdorf.",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-3",
+    "question_text": "Ký hiệu nào cho biết sự bắt đầu của mã PHP trong một tập lệnh PHP?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "2-0",
+        "answer_text": "<script>",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-1",
+        "answer_text": "<?php",
+        "is_correct": true
+      },
+      {
+        "answer_id": "2-2",
+        "answer_text": "<?",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-3",
+        "answer_text": "{% %}",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-4",
+    "question_text": "Cách chính xác để ghi chú một dòng trong PHP là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "3-0",
+        "answer_text": "/* This is a comment */",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-1",
+        "answer_text": "# This is a comment #",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-2",
+        "answer_text": "// This is a comment",
+        "is_correct": true
+      },
+      {
+        "answer_id": "3-3",
+        "answer_text": "<!-- This is a comment -->",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-5",
+    "question_text": "Câu nào sau đây mô tả đúng nhất vai trò của PHP trong phát triển web?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "4-0",
+        "answer_text": "PHP là một ngôn ngữ kịch bản phía server được sử dụng để phát triển các ứng dụng web động và tạo nội dung HTML.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "4-1",
+        "answer_text": "PHP chủ yếu được sử dụng để tạo đồ họa 3D và hoạt ảnh trang web.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-2",
+        "answer_text": "PHP là một ngôn ngữ kịch bản phía client giúp tăng cường tương tác của người dùng trong trình duyệt web.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-3",
+        "answer_text": "PHP là một ngôn ngữ đánh dấu được sử dụng để xác định cấu trúc và bố cục trang web.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-6",
+    "question_text": "Điều nào sau đây là một trong những tính năng chính của Laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "0-0",
+        "answer_text": "Laravel là một framework hoàn toàn phía client.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-1",
+        "answer_text": "Laravel cung cấp hỗ trợ tích hợp để quản lý database và migrations.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "0-2",
+        "answer_text": "Laravel là một ngôn ngữ lập trình cấp thấp.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-3",
+        "answer_text": "Laravel chỉ tập trung vào phát triển front-end.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-7",
+    "question_text": "Mục đích của Eloquent ORM (Object-Relational Mapping) của Laravel là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "1-0",
+        "answer_text": "Eloquent ORM quản lý và tương tác với các database bằng cú pháp hướng đối tượng.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "1-1",
+        "answer_text": "Eloquent ORM được sử dụng để tạo giao diện người dùng trong Laravel.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-2",
+        "answer_text": "Eloquent ORM được sử dụng để biên dịch mã JavaScript trong các ứng dụng Laravel.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-3",
+        "answer_text": "Eloquent ORM được sử dụng để cấu hình server trong Laravel.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-8",
+    "question_text": "Trong Laravel, thư mục nào thường lưu trữ các tệp cấu hình, chẳng hạn như cấu hình database?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "2-0",
+        "answer_text": "app/",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-1",
+        "answer_text": "resources/",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-2",
+        "answer_text": "config/",
+        "is_correct": true
+      },
+      {
+        "answer_id": "2-3",
+        "answer_text": "public/",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-9",
+    "question_text": "Phần mềm web server nào sau đây thường được sử dụng để lưu trữ các ứng dụng Laravel trong quá trình phát triển?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "3-0",
+        "answer_text": "Apache",
+        "is_correct": true
+      },
+      {
+        "answer_id": "3-1",
+        "answer_text": "Microsoft SQL Server",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-2",
+        "answer_text": "PostgreSQL",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-3",
+        "answer_text": "Node.js",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-10",
+    "question_text": "Bạn nên sử dụng công cụ nào để quản lý các dependency và package trong một dự án Laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "4-0",
+        "answer_text": "npm (Node Package Manager)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-1",
+        "answer_text": "Git",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-2",
+        "answer_text": "Python",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-3",
+        "answer_text": "Composer",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-11",
+    "question_text": "Một trong những lợi thế chính của việc sử dụng PHP trong phát triển web là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "0-0",
+        "answer_text": "Một trong những lợi thế chính của việc sử dụng PHP là khả năng tạo ra trải nghiệm thực tế ảo trên web.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-1",
+        "answer_text": "Một trong những lợi thế chính của việc sử dụng PHP là khả năng tương thích chỉ với một web server duy nhất.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-2",
+        "answer_text": "Một trong những lợi thế chính của việc sử dụng PHP là dễ dàng nhúng vào mã HTML, cho phép tạo nội dung web động.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "0-3",
+        "answer_text": "Một trong những lợi thế chính của việc sử dụng PHP là chỉ tập trung vào phát triển web front-end.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-12",
+    "question_text": "Tầm quan trọng của tính chất mã nguồn mở của PHP trong phát triển web là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "1-0",
+        "answer_text": "Tính chất mã nguồn mở của PHP cho phép các nhà phát triển truy cập, sửa đổi và đóng góp vào mã nguồn của nó, thúc đẩy một cộng đồng nhà phát triển sôi động và hợp tác.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "1-1",
+        "answer_text": "Tính chất mã nguồn mở của PHP chủ yếu có nghĩa là nó chỉ có thể được sử dụng cho các dự án cá nhân, không phải các ứng dụng thương mại.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-2",
+        "answer_text": "Tính chất mã nguồn mở của PHP biểu thị rằng nó là một ngôn ngữ đóng và độc quyền.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-3",
+        "answer_text": "Tính chất mã nguồn mở của PHP chủ yếu hạn chế việc sử dụng nó cho các tổ chức học thuật và các tổ chức phi lợi nhuận.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-13",
+    "question_text": "Từ viết tắt \"PHP\" ban đầu là viết tắt của từ gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "2-0",
+        "answer_text": "PHP ban đầu là viết tắt của \"Personal Home Page.\"",
+        "is_correct": true
+      },
+      {
+        "answer_id": "2-1",
+        "answer_text": "PHP ban đầu là viết tắt của \"Professional Hosting Platform.\"",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-2",
+        "answer_text": "PHP ban đầu là viết tắt của \"Public Hypertext Parser.\"",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-3",
+        "answer_text": "PHP ban đầu là viết tắt của \"Programming High Performance.\"",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-14",
+    "question_text": "Mục đích của thẻ đóng PHP trong một tập lệnh PHP là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "3-0",
+        "answer_text": "Thẻ đóng là bắt buộc và phải được bao gồm trong mọi tập lệnh PHP.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-1",
+        "answer_text": "Thẻ đóng được sử dụng để kết thúc một chú thích PHP.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-2",
+        "answer_text": "Thẻ đóng biểu thị sự kết thúc của một câu lệnh PHP.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-3",
+        "answer_text": "Thẻ đóng là tùy chọn và có thể được bỏ qua trong các tập lệnh PHP.",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-15",
+    "question_text": "Tên biến PHP nào sau đây là hợp lệ?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "4-0",
+        "answer_text": "$123variable",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-1",
+        "answer_text": "$my-variable",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-2",
+        "answer_text": "$my_variable",
+        "is_correct": true
+      },
+      {
+        "answer_id": "4-3",
+        "answer_text": "$my variable",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-16",
+    "question_text": "Mục đích của câu lệnh echo trong PHP là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "5-0",
+        "answer_text": "Câu lệnh echo được sử dụng để khai báo các biến trong PHP.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "5-1",
+        "answer_text": "Câu lệnh echo xuất văn bản hoặc các biến ra trang web.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "5-2",
+        "answer_text": "Câu lệnh echo được sử dụng để bao gồm các tệp PHP bên ngoài.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "5-3",
+        "answer_text": "Câu lệnh echo được sử dụng để định nghĩa các hàm trong PHP.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-17",
+    "question_text": "Điều nào sau đây là một lợi thế chính của việc sử dụng PHP trong phát triển web?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "6-0",
+        "answer_text": "PHP là mã nguồn mở, được hỗ trợ rộng rãi và có một cộng đồng nhà phát triển lớn.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "6-1",
+        "answer_text": "PHP là một ngôn ngữ được biên dịch, dẫn đến việc thực thi nhanh hơn.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "6-2",
+        "answer_text": "PHP cung cấp kiểm tra kiểu mạnh, ngăn ngừa lỗi.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "6-3",
+        "answer_text": "PHP chủ yếu được thiết kế cho kịch bản phía client.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-18",
+    "question_text": "Ví dụ nào sau đây là một framework PHP phổ biến được sử dụng trong phát triển web?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "7-0",
+        "answer_text": "JavaServer Faces (JSF)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "7-1",
+        "answer_text": "Ruby on Rails",
+        "is_correct": false
+      },
+      {
+        "answer_id": "7-2",
+        "answer_text": "Laravel",
+        "is_correct": true
+      },
+      {
+        "answer_id": "7-3",
+        "answer_text": "Django",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-19",
+    "question_text": "Laravel chủ yếu được biết đến vì điều gì trong lĩnh vực phát triển web?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "8-0",
+        "answer_text": "Laravel chủ yếu được biết đến qua việc sử dụng trong phát triển ứng dụng di động.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "8-1",
+        "answer_text": "Laravel chủ yếu được biết đến với vai trò là một thư viện JavaScript front-end.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "8-2",
+        "answer_text": "Laravel chủ yếu được biết đến qua việc sử dụng trong trí tuệ nhân tạo và machine learning.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "8-3",
+        "answer_text": "Laravel chủ yếu được biết đến với sự thanh lịch và đơn giản trong việc xây dựng các ứng dụng web.",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-20",
+    "question_text": "Điều nào sau đây là một lợi thế chính của việc sử dụng Laravel trong phát triển web?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "9-0",
+        "answer_text": "Laravel là một framework mã nguồn đóng đảm bảo an ninh mã.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "9-1",
+        "answer_text": "Laravel cung cấp một hệ sinh thái mạnh mẽ, bao gồm các tính năng như authentication, routing và caching.",
+        "is_correct": true
+      },
+      {
+        "answer_IBA": "9-2",
+        "answer_text": "Laravel có một đường cong học tập dốc, chỉ phù hợp với các nhà phát triển có kinh nghiệm.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "9-3",
+        "answer_text": "Laravel chủ yếu được thiết kế cho các ứng dụng web quy mô nhỏ.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-21",
+    "question_text": "Điều nào sau đây KHÔNG phải là một thành phần của Blade templating engine của Laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "10-0",
+        "answer_text": "Blade directives",
+        "is_correct": false
+      },
+      {
+        "answer_id": "10-1",
+        "answer_text": "Blade layouts",
+        "is_correct": false
+      },
+      {
+        "answer_id": "10-2",
+        "answer_text": "Blade models",
+        "is_correct": true
+      },
+      {
+        "answer_id": "10-3",
+        "answer_text": "Blade views",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-22",
+    "question_text": "Thuật ngữ \"Composer\" đề cập đến điều gì trong bối cảnh của Laravel và PHP?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "11-0",
+        "answer_text": "Composer là một trình quản lý dependency cho PHP được sử dụng để quản lý các package và thư viện trong Laravel và các dự án PHP khác.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "11-1",
+        "answer_text": "Composer là một công cụ được sử dụng để quản lý package front-end trong Laravel.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "11-2",
+        "answer_text": "Composer là một trình soạn thảo mã tích hợp trong Laravel để viết mã PHP.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "11-3",
+        "answer_text": "Composer là một framework front-end để xây dựng các thiết kế web đáp ứng trong Laravel.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-23",
+    "question_text": "Thư mục nào trong Laravel lưu trữ các Blade template được sử dụng cho giao diện người dùng?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "12-0",
+        "answer_text": "app/",
+        "is_correct": false
+      },
+      {
+        "answer_id": "12-1",
+        "answer_text": "views/",
+        "is_correct": true
+      },
+      {
+        "answer_id": "12-2",
+        "answer_text": "routes/",
+        "is_correct": false
+      },
+      {
+        "answer_id": "12-3",
+        "answer_text": "storage/",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-24",
+    "question_text": "Mục đích chính của thư mục routes/ trong Laravel là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "13-0",
+        "answer_text": "Thư mục routes/ lưu trữ mã JavaScript front-end.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "13-1",
+        "answer_text": "Thư mục routes/ chứa các tệp cấu hình cho các kết nối database.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "13-2",
+        "answer_text": "Thư mục routes/ lưu trữ các template giao diện người dùng.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "13-3",
+        "answer_text": "Thư mục routes/ định nghĩa các HTTP route của ứng dụng và xử lý URL.",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-25",
+    "question_text": "Thư mục nào chịu trách nhiệm lưu trữ các tệp liên quan đến database migrations trong Laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "14-0",
+        "answer_text": "app/",
+        "is_correct": false
+      },
+      {
+        "answer_id": "14-1",
+        "answer_text": "migrations/",
+        "is_correct": true
+      },
+      {
+        "answer_id": "14-2",
+        "answer_text": "config/",
+        "is_correct": false
+      },
+      {
+        "answer_id": "14-3",
+        "answer_text": "public/",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-26",
+    "question_text": "Các phần mở rộng PHP nào thường được Laravel yêu cầu cho các hoạt động database?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "15-0",
+        "answer_text": "Xdebug",
+        "is_correct": false
+      },
+      {
+        "answer_id": "15-1",
+        "answer_text": "OpenSSL",
+        "is_correct": false
+      },
+      {
+        "answer_id": "15-2",
+        "answer_text": "PDO (PHP Data Objects)",
+        "is_correct": true
+      },
+      {
+        "answer_id": "15-3",
+        "answer_text": "SOAP",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-27",
+    "question_text": "Thành phần phần mềm nào sau đây KHÔNG phải là thành phần bắt buộc để thiết lập môi trường phát triển Laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "16-0",
+        "answer_text": "PHP",
+        "is_correct": false
+      },
+      {
+        "answer_id": "16-1",
+        "answer_text": "Composer",
+        "is_correct": false
+      },
+      {
+        "answer_id": "16-2",
+        "answer_text": "MySQL",
+        "is_correct": false
+      },
+      {
+        "answer_id": "16-3",
+        "answer_text": "MongoDB",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-28",
+    "question_text": "Trong môi trường phát triển Laravel, tệp .env thường đóng vai trò gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "17-0",
+        "answer_text": "Tệp .env lưu trữ các cài đặt cấu hình nhạy cảm và các biến môi trường.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "17-1",
+        "answer_text": "Tệp .env lưu trữ mã PHP để xử lý các biến môi trường.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "17-2",
+        "answer_text": "Tệp .env là một bản sao lưu của database.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "17-3",
+        "answer_text": "Tệp .env được sử dụng để lưu trữ mã JavaScript.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-29",
+    "question_text": "Hệ thống quản lý database nào sau đây là một hệ thống phổ biến thường được sử dụng với Laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "18-0",
+        "answer_text": "Apache Cassandra",
+        "is_correct": false
+      },
+      {
+        "answer_id": "18-1",
+        "answer_text": "MySQL",
+        "is_correct": true
+      },
+      {
+        "answer_id": "18-2",
+        "answer_text": "MongoDB",
+        "is_correct": false
+      },
+      {
+        "answer_id": "18-3",
+        "answer_text": "SQLite",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-30",
+    "question_text": "Lệnh nào sau đây được sử dụng để cài đặt Laravel Installer trên toàn hệ thống của bạn?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "19-0",
+        "answer_text": "composer global require \"laravel/installer\"",
+        "is_correct": true
+      },
+      {
+        "answer_id": "19-1",
+        "answer_text": "composer require \"laravel/installer\" --global",
+        "is_correct": false
+      },
+      {
+        "answer_id": "19-2",
+        "answer_text": "laravel new project-name",
+        "is_correct": false
+      },
+      {
+        "answer_id": "19-3",
+        "answer_text": "php artisan laravel:install",
+        "is_correct": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,812 @@
+[
+  {
+    "question_id": "q-31",
+    "question_text": "Trong Laravel, mục đích chính của routing là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "0-0",
+        "answer_text": "Routing định nghĩa cấu trúc của các bảng database của bạn.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-1",
+        "answer_text": "Routing định nghĩa cách các HTTP request đến sẽ được xử lý và ánh xạ tới các controller.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "0-2",
+        "answer_text": "Routing được sử dụng để tạo giao diện người dùng.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-3",
+        "answer_text": "Routing định nghĩa việc thực thi mã JavaScript front-end.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-32",
+    "question_text": "Thuật ngữ \"named route\" trong Laravel có nghĩa là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "1-0",
+        "answer_text": "Một named route là một route không có URL.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-1",
+        "answer_text": "Một named route là một route được định nghĩa trong một tệp JavaScript.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-2",
+        "answer_text": "Một named route là một route có một tên duy nhất được gán cho nó, giúp dễ dàng tạo URL hơn.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "1-3",
+        "answer_text": "Một named route là một route sử dụng POST làm phương thức HTTP.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-33",
+    "question_text": "Trong Laravel, view là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "2-0",
+        "answer_text": "View là một tệp chứa mã HTML và hiển thị dữ liệu cho người dùng.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "2-1",
+        "answer_text": "View là một lớp PHP xử lý logic routing.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-2",
+        "answer_text": "View là một phương thức controller chịu trách nhiệm xử lý các HTTP request.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-3",
+        "answer_text": "View là một bảng database được sử dụng để lưu trữ dữ liệu người dùng.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-34",
+    "question_text": "Trong Laravel, mục đích của Eloquent ORM là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "3-0",
+        "answer_text": "Eloquent ORM được sử dụng để tạo các template HTML.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-1",
+        "answer_text": "Eloquent ORM được sử dụng để quản lý các HTTP request.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-2",
+        "answer_text": "Eloquent ORM là một triển khai ActiveRecord nâng cao để tương tác với database.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "3-3",
+        "answer_text": "Eloquent ORM được sử dụng để định nghĩa các route trong ứng dụng.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-35",
+    "question_text": "Mục đích của phương thức create trong Eloquent ORM của Laravel là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "4-0",
+        "answer_text": "Phương thức create được sử dụng để tạo các Blade template mới.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-1",
+        "answer_text": "Phương thức create được sử dụng để định nghĩa các database migration.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-2",
+        "answer_text": "Phương thức create được sử dụng để định nghĩa các controller.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-3",
+        "answer_text": "Phương thức create tạo các bản ghi database mới với các thuộc tính được chỉ định.",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-36",
+    "question_text": "Làm thế nào để triển khai authentication một cách an toàn trong Laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "0-0",
+        "answer_text": "Bằng cách mã hóa các mục trong database",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-1",
+        "answer_text": "Thông qua việc chặn các HTTP request",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-2",
+        "answer_text": "Bằng cách sử dụng các Blade directive",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-3",
+        "answer_text": "Sử dụng middleware và Laravel UI",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-37",
+    "question_text": "Cách chính xác để đăng ký một middleware trong Laravel là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "1-0",
+        "answer_text": "Sử dụng mảng $routeMiddleware trong app/Http/Kernel.php",
+        "is_correct": true
+      },
+      {
+        "answer_id": "1-1",
+        "answer_text": "Thêm middleware vào mảng providers trong config/app.php",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-2",
+        "answer_text": "Sử dụng phương thức bindMiddleware trong app/Providers/AuthServiceProvider.php",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-3",
+        "answer_text": "Bằng cách gọi Middleware::register() trong routes/web.php",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-38",
+    "question_text": "Bạn sẽ sử dụng Blade directive nào để định nghĩa một phần nội dung trong một layout?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "2-0",
+        "answer_text": "@section",
+        "is_correct": true
+      },
+      {
+        "answer_id": "2-1",
+        "answer_text": "@yield",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-2",
+        "answer_text": "@extend",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-3",
+        "answer_text": "@include",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-39",
+    "question_text": "Làm thế nào để bạn truyền dữ liệu từ một controller đến một Blade view trong Laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "3-0",
+        "answer_text": "Sử dụng directive @yield",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-1",
+        "answer_text": "Bằng cách định nghĩa các biến trong web.php",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-2",
+        "answer_text": "Bằng cách lưu trữ dữ liệu trong một session",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-3",
+        "answer_text": "Sử dụng phương thức with trên đối tượng view",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-40",
+    "question_text": "Vai trò chính của middleware trong Laravel là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "4-0",
+        "answer_text": "Xử lý các database migration và seeding",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-1",
+        "answer_text": "Chặn và lọc các HTTP request",
+        "is_correct": true
+      },
+      {
+        "answer_id": "4-2",
+        "answer_text": "Quản lý các user session và cookie",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-3",
+        "answer_text": "Tạo các view động với các Blade template",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-41",
+    "question_text": "Phương thức HTTP nào sau đây thường được sử dụng để truy xuất dữ liệu từ một ứng dụng Laravel bằng cách sử dụng routing?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "0-0",
+        "answer_text": "POST",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-1",
+        "answer_text": "PUT",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-2",
+        "answer_text": "GET",
+        "is_correct": true
+      },
+      {
+        "answer_id": "0-3",
+        "answer_text": "DELETE",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-42",
+    "question_text": "Route parameter trong Laravel là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "1-0",
+        "answer_text": "Route parameter là một hàm JavaScript thực thi khi một route được truy cập.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-1",
+        "answer_text": "Route parameter là một phần động của URL của một route, nó ghi lại các giá trị và chuyển chúng đến một controller hoặc closure.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "1-2",
+        "answer_text": "Route parameter là một phần tĩnh của URL không bao giờ thay đổi.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-3",
+        "answer_text": "Route parameter là một cột trong bảng database.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-43",
+    "question_text": "Phương thức nào sau đây định nghĩa các route của một resource controller cho các hoạt động CRUD trong Laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "2-0",
+        "answer_text": "getRoutes()",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-1",
+        "answer_text": "resource()",
+        "is_correct": true
+      },
+      {
+        "answer_id": "2-2",
+        "answer_text": "defineRoutes()",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-3",
+        "answer_text": "createRoute()",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-44",
+    "question_text": "Mục đích của route middleware trong Laravel là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "3-0",
+        "answer_text": "Route middleware được sử dụng để định nghĩa các hàm PHP tùy chỉnh.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-1",
+        "answer_text": "Route middleware được sử dụng để định nghĩa các phương thức HTTP request.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-2",
+        "answer_text": "Route middleware được sử dụng để tạo giao diện người dùng.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-3",
+        "answer_text": "Route middleware thêm các lớp logic bổ sung vào việc xử lý route, chẳng hạn như authentication hoặc logging.",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-45",
+    "question_text": "Trong Laravel, mục đích chính của một controller là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "4-0",
+        "answer_text": "Một controller xử lý các HTTP request và chứa logic của ứng dụng để phản hồi các request đó.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "4-1",
+        "answer_text": "Một controller định nghĩa cấu trúc và bố cục của các trang HTML.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-2",
+        "answer_text": "Một controller được sử dụng để quản lý các kết nối và truy vấn database.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-3",
+        "answer_text": "Một controller được sử dụng để định nghĩa các route parameter.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-46",
+    "question_text": "Câu nào sau đây về Blade templating engine trong Laravel là đúng?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "5-0",
+        "answer_text": "Blade là một thư viện JavaScript được sử dụng để phát triển front-end.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "5-1",
+        "answer_text": "Blade chủ yếu được sử dụng để định nghĩa các database migration.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "5-2",
+        "answer_text": "Blade được sử dụng để tạo các định nghĩa route trong Laravel.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "5-3",
+        "answer_text": "Blade cho phép bạn viết mã PHP trực tiếp trong các template HTML của mình.",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-47",
+    "question_text": "Một \"view composer\" trong Laravel là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "6-0",
+        "answer_text": "Một view composer là một lớp PHP chịu trách nhiệm quản lý các controller.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "6-1",
+        "answer_text": "Một view composer là một hàm xử lý các HTTP request.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "6-2",
+        "answer_text": "Một view composer là một lớp hoặc closure cung cấp dữ liệu cho nhiều view, cho phép bạn chia sẻ dữ liệu chung giữa chúng.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "6-3",
+        "answer_text": "Một view composer là một trình tạo truy vấn database.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-48",
+    "question_text": "Điều nào sau đây là đúng về kế thừa view trong Blade templating engine của Laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "7-0",
+        "answer_text": "Blade không hỗ trợ kế thừa view.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "7-1",
+        "answer_text": "Một child view có thể mở rộng một parent view bằng cách sử dụng directive @extends.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "7-2",
+        "answer_text": "Một child view không thể ghi đè các section được định nghĩa trong một parent view.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "7-3",
+        "answer_text": "Kế thừa view chỉ có sẵn trong phiên bản trả phí của Laravel.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-49",
+    "question_text": "Mục đích của directive @yield trong các Blade template là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "8-0",
+        "answer_text": "Directive @yield định nghĩa một route parameter.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "8-1",
+        "answer_text": "Directive @yield được sử dụng để bao gồm các thư viện JavaScript bên ngoài.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "8-2",
+        "answer_text": "Directive @yield chỉ định một section nơi nội dung của child view có thể được chèn vào.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "8-3",
+        "answer_text": "Directive @yield được sử dụng để định nghĩa một view composer.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-50",
+    "question_text": "Mục đích chính của database migrations trong Laravel là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "9-0",
+        "answer_text": "Database migrations được sử dụng để định nghĩa các route cho ứng dụng.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "9-1",
+        "answer_text": "Database migrations được sử dụng để tạo các Blade template.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "9-2",
+        "answer_text": "Database migrations được sử dụng để định nghĩa các controller.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "9-3",
+        "answer_text": "Database migrations được sử dụng để kiểm soát phiên bản lược đồ database và áp dụng các thay đổi theo từng bước.",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-51",
+    "question_text": "Trong Laravel, thuật ngữ \"Eloquent\" trong bối cảnh của Eloquent ORM có nghĩa là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "10-0",
+        "answer_text": "\"Eloquent\" đề cập đến một loại bảng database.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "10-1",
+        "answer_text": "\"Eloquent\" đề cập đến việc sử dụng các truy vấn SQL nâng cao.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "10-2",
+        "answer_text": "\"Eloquent\" đề cập đến middleware của ứng dụng.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "10-3",
+        "answer_text": "\"Eloquent\" đề cập đến cú pháp biểu cảm và trôi chảy được sử dụng để định nghĩa các truy vấn và mối quan hệ database.",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-52",
+    "question_text": "Mục đích của database seeders trong Laravel là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "11-0",
+        "answer_text": "Database seeders được sử dụng để tạo các bảng database.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "11-1",
+        "answer_text": "Database seeders điền dữ liệu ban đầu vào các bảng database.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "11-2",
+        "answer_text": "Database seeders được sử dụng để định nghĩa các route.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "11-3",
+        "answer_text": "Database seeders được sử dụng để định nghĩa các controller.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-53",
+    "question_text": "Trong Laravel, mục đích chính của middleware là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "12-0",
+        "answer_text": "Middleware được sử dụng để định nghĩa các route.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "12-1",
+        "answer_text": "Middleware được sử dụng để định nghĩa các database migration.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "12-2",
+        "answer_text": "Middleware thêm các lớp xử lý bổ sung vào các HTTP request và response.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "12-3",
+        "answer_text": "Middleware được sử dụng để tạo các Blade template.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-54",
+    "question_text": "Mục đích của guest middleware trong Laravel là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "13-0",
+        "answer_text": "Guest middleware được sử dụng để đảm bảo rằng chỉ những khách (người dùng chưa được xác thực) mới có thể truy cập một số route nhất định.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "13-1",
+        "answer_text": "Guest middleware được sử dụng để định nghĩa các route.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "13-2",
+        "answer_text": "Guest middleware được sử dụng để định nghĩa các database migration.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "13-3",
+        "answer_text": "Guest middleware được sử dụng để tạo các Blade template.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-55",
+    "question_text": "Trong phát triển API Laravel, mục đích của phương thức Route::apiResource là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "14-0",
+        "answer_text": "Phương thức Route::apiResource được sử dụng để định nghĩa middleware.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "14-1",
+        "answer_text": "Phương thức Route::apiResource được sử dụng để tạo các Blade template.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "14-2",
+        "answer_text": "Phương thức Route::apiResource được sử dụng để định nghĩa các database migration.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "14-3",
+        "answer_text": "Phương thức Route::apiResource định nghĩa các API resource route ánh xạ tới các hành động CRUD trong controller.",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-56",
+    "question_text": "Trong phát triển API Laravel, mục đích của phương thức JSON trên một HTTP response là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "15-0",
+        "answer_text": "Phương thức JSON được sử dụng để định nghĩa các database migration.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "15-1",
+        "answer_text": "Phương thức JSON được sử dụng để định nghĩa middleware.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "15-2",
+        "answer_text": "Phương thức JSON chuyển đổi dữ liệu thành một JSON response và gửi nó đến client.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "15-3",
+        "answer_text": "Phương thức JSON được sử dụng để tạo các Blade template.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-57",
+    "question_text": "Mục đích của ResourceController trong phát triển API Laravel là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "16-0",
+        "answer_text": "ResourceController định nghĩa các hành động xử lý các hoạt động CRUD cho một API resource.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "16-1",
+        "answer_text": "ResourceController được sử dụng để định nghĩa middleware.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "16-2",
+        "answer_text": "ResourceController được sử dụng để định nghĩa các database migration.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "16-3",
+        "answer_text": "ResourceController được sử dụng để tạo các Blade template.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-58",
+    "question_text": "Blade directive trong Laravel là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "17-0",
+        "answer_text": "Blade directives được sử dụng để định nghĩa các database migration.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "17-1",
+        "answer_text": "Blade directives là cú pháp đặc biệt cho phép bạn bao gồm logic và nội dung động trong các Blade template.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "17-2",
+        "answer_text": "Blade directives được sử dụng để định nghĩa các controller.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "17-3",
+        "answer_text": "Blade directives được sử dụng để tạo các API resource.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-59",
+    "question_text": "Trong các Blade template của Laravel, @if đại diện cho điều gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "18-0",
+        "answer_text": "@if được sử dụng để định nghĩa các API resource.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "18-1",
+        "answer_text": "@if được sử dụng để định nghĩa middleware.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "18-2",
+        "answer_text": "@if là một Blade directive để định nghĩa các câu lệnh điều kiện.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "18-3",
+        "answer_text": "@if được sử dụng để tạo các database migration.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-60",
+    "question_text": "Mục đích của Blade directive @foreach trong Laravel là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "19-0",
+        "answer_text": "@foreach được sử dụng để định nghĩa các API resource.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "19-1",
+        "answer_text": "@foreach được sử dụng để định nghĩa middleware.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "19-2",
+        "answer_text": "@foreach là một Blade directive để định nghĩa các vòng lặp lặp qua các mảng và collection.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "19-3",
+        "answer_text": "@foreach được sử dụng để tạo các database migration.",
+        "is_correct": false
+      }
+    ]
+  }
+]

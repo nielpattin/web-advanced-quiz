@@ -1,0 +1,785 @@
+[
+  {
+    "question_id": "q-61",
+    "question_text": "Trong PHP, mục đích của superglobal $_POST là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "0-0",
+        "answer_text": "$_POST được sử dụng để định nghĩa các API resource.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-1",
+        "answer_text": "$_POST được sử dụng để định nghĩa middleware.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-2",
+        "answer_text": "$_POST là một mảng superglobal truy cập dữ liệu được gửi đến server thông qua các HTTP POST request.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "0-3",
+        "answer_text": "$_POST được sử dụng để tạo các database migration.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-62",
+    "question_text": "Trong PHP, mục đích của các câu lệnh include và require là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "1-0",
+        "answer_text": "Các câu lệnh include và require được sử dụng để bao gồm các tệp PHP bên ngoài trong tập lệnh hiện tại.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "1-1",
+        "answer_text": "Các câu lệnh include và require được sử dụng để định nghĩa middleware.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-2",
+        "answer_text": "Các câu lệnh include và require được sử dụng để định nghĩa các database migration.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-3",
+        "answer_text": "Các câu lệnh include và require được sử dụng để tạo các API resource.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-63",
+    "question_text": "Lệnh Composer nào cài đặt một thư viện PHP trong một dự án Laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "2-0",
+        "answer_text": "composer require",
+        "is_correct": true
+      },
+      {
+        "answer_id": "2-1",
+        "answer_text": "composer install",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-2",
+        "answer_text": "composer update",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-3",
+        "answer_text": "composer create-project",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-64",
+    "question_text": "Trong Laravel, bạn thường thêm các cài đặt cấu hình cho một thư viện PHP của bên thứ ba ở đâu?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "3-0",
+        "answer_text": "Trong tệp .env",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-1",
+        "answer_text": "Trong thư mục config",
+        "is_correct": true
+      },
+      {
+        "answer_id": "3-2",
+        "answer_text": "Trong thư mục public",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-3",
+        "answer_text": "Trong thư mục routes",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-65",
+    "question_text": "Trong một Blade template của Laravel, làm thế nào để bạn xuất giá trị của một biến ra trang web?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "4-0",
+        "answer_text": "Bằng cách sử dụng {!! $variableName !!}",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-1",
+        "answer_text": "Bằng cách sử dụng @echo($variableName)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-2",
+        "answer_text": "Bằng cách sử dụng <?php echo $variableName; ?>",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-3",
+        "answer_text": "Bằng cách sử dụng {{ $variableName }}",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-66",
+    "question_text": "Mục đích chính của một API controller trong một ứng dụng Laravel là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "0-0",
+        "answer_text": "Xử lý các database migration",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-1",
+        "answer_text": "Hiển thị các Blade view",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-2",
+        "answer_text": "Xử lý các HTTP request và trả về các response",
+        "is_correct": true
+      },
+      {
+        "answer_id": "0-3",
+        "answer_text": "Quản lý các lệnh artisan",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-67",
+    "question_text": "Phương thức HTTP nào thường được sử dụng để tạo một resource mới trong một RESTful API?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "1-0",
+        "answer_text": "GET",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-1",
+        "answer_text": "POST",
+        "is_correct": true
+      },
+      {
+        "answer_id": "1-2",
+        "answer_text": "PUT",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-3",
+        "answer_text": "DELETE",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-68",
+    "question_text": "Chức năng nào sau đây không phải là một chức năng phổ biến được thực hiện bởi một API controller trong Laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "2-0",
+        "answer_text": "Xử lý data validation",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-1",
+        "answer_text": "Hiển thị các Blade view",
+        "is_correct": true
+      },
+      {
+        "answer_id": "2-2",
+        "answer_text": "Tương tác với database",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-3",
+        "answer_text": "Trả về các JSON response",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-69",
+    "question_text": "Mục đích chính của data validation trong các API controller là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "3-0",
+        "answer_text": "Định dạng các JSON response",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-1",
+        "answer_text": "Quản lý các database migration",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-2",
+        "answer_text": "Đảm bảo tính toàn vẹn và bảo mật của dữ liệu",
+        "is_correct": true
+      },
+      {
+        "answer_id": "3-3",
+        "answer_text": "Xử lý authentication",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-70",
+    "question_text": "Phương thức Laravel nào thường được sử dụng để trả về các JSON response từ một API controller?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "4-0",
+        "answer_text": "return view()",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-1",
+        "answer_text": "return text()",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-2",
+        "answer_text": "return json()",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-3",
+        "answer_text": "return response()",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-71",
+    "question_text": "Câu nào sau đây mô tả đúng nhất về việc sử dụng các hàm PHP?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "0-0",
+        "answer_text": "Các hàm PHP chủ yếu được sử dụng để định nghĩa middleware.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-1",
+        "answer_text": "Các hàm PHP chủ yếu được sử dụng để định nghĩa các database migration.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-2",
+        "answer_text": "Các hàm PHP được sử dụng để đóng gói các khối mã có thể tái sử dụng và thực hiện các tác vụ cụ thể.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "0-3",
+        "answer_text": "Các hàm PHP được sử dụng để định nghĩa các API resource.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-72",
+    "question_text": "Trong PHP, mục đích của hàm array_push() là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "1-0",
+        "answer_text": "array_push() định nghĩa các route trong một ứng dụng Laravel.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-1",
+        "answer_text": "array_push() được sử dụng để định nghĩa middleware.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-2",
+        "answer_text": "array_push() được sử dụng để tạo các database migration.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-3",
+        "answer_text": "array_push() được sử dụng để thêm các phần tử vào cuối một mảng.",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-73",
+    "question_text": "Điều nào sau đây là đúng về các chú thích trong PHP?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "2-0",
+        "answer_text": "Các chú thích trong PHP được sử dụng để thêm giải thích hoặc ghi chú vào mã nhưng không được thực thi.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "2-1",
+        "answer_text": "Các chú thích trong PHP được thực thi như một phần của mã.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-2",
+        "answer_text": "Các chú thích trong PHP được sử dụng để định nghĩa các route trong một ứng dụng Laravel.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-3",
+        "answer_text": "Các chú thích trong PHP được sử dụng để tạo các database migration.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-74",
+    "question_text": "Thành phần Laravel nào cho phép bạn quản lý các dependency và cài đặt các thư viện PHP?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "3-0",
+        "answer_text": "Blade Templating Engine",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-1",
+        "answer_text": "Composer",
+        "is_correct": true
+      },
+      {
+        "answer_id": "3-2",
+        "answer_text": "Artisan Console",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-3",
+        "answer_text": "Eloquent ORM",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-75",
+    "question_text": "Khi tích hợp một thư viện PHP vào một dự án Laravel, bước nào sau đây KHÔNG phải là một bước phổ biến?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "4-0",
+        "answer_text": "Thêm namespace của thư viện vào autoloader.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-1",
+        "answer_text": "Đăng ký một service provider nếu thư viện yêu cầu.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-2",
+        "answer_text": "Cấu hình thư viện bằng cách thêm các cài đặt vào tệp .env.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-3",
+        "answer_text": "Sửa đổi mã lõi của Laravel để phù hợp với thư viện.",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-76",
+    "question_text": "Trong Laravel, mục đích của phương thức config khi sử dụng một thư viện của bên thứ ba là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "5-0",
+        "answer_text": "Nó cấu hình môi trường server cho thư viện.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "5-1",
+        "answer_text": "Nó xuất bản các tệp cấu hình của thư viện vào thư mục config.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "5-2",
+        "answer_text": "Nó cài đặt thư viện thông qua Composer.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "5-3",
+        "answer_text": "Nó khởi tạo các bảng database của thư viện.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-77",
+    "question_text": "Các thư mục nào thường được sử dụng để lưu trữ các service provider tùy chỉnh cho các thư viện của bên thứ ba trong một dự án Laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "6-0",
+        "answer_text": "app/Providers",
+        "is_correct": true
+      },
+      {
+        "answer_id": "6-1",
+        "answer_text": "config",
+        "is_correct": false
+      },
+      {
+        "answer_id": "6-2",
+        "answer_text": "resources/views",
+        "is_correct": false
+      },
+      {
+        "answer_id": "6-3",
+        "answer_text": "routes",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-78",
+    "question_text": "Mục đích của directive @if trong các Blade template của Laravel là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "7-0",
+        "answer_text": "Nó định nghĩa một route mới trong ứng dụng Laravel.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "7-1",
+        "answer_text": "Nó bao gồm một subview hoặc partial view trong template.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "7-2",
+        "answer_text": "Nó cho phép bạn hiển thị nội dung dựa trên một điều kiện.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "7-3",
+        "answer_text": "Nó định nghĩa một hàm PHP mới.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-79",
+    "question_text": "Blade directive nào của Laravel được sử dụng để lặp qua một mảng và tạo HTML cho mỗi mục?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "8-0",
+        "answer_text": "@each",
+        "is_correct": true
+      },
+      {
+        "answer_id": "8-1",
+        "answer_text": "@loop",
+        "is_correct": false
+      },
+      {
+        "answer_id": "8-2",
+        "answer_text": "@for",
+        "is_correct": false
+      },
+      {
+        "answer_id": "8-3",
+        "answer_text": "@foreach",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-80",
+    "question_text": "Trong Laravel, mục đích của trường csrf khi tạo các biểu mẫu HTML là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "9-0",
+        "answer_text": "Nó chỉ định bộ ký tự để mã hóa dữ liệu biểu mẫu.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "9-1",
+        "answer_text": "Nó bao gồm một trường ẩn với một mã thông báo cross-site request forgery (CSRF).",
+        "is_correct": true
+      },
+      {
+        "answer_id": "9-2",
+        "answer_text": "Nó định nghĩa phương thức gửi của biểu mẫu (GET hoặc POST).",
+        "is_correct": false
+      },
+      {
+        "answer_id": "9-3",
+        "answer_text": "Nó đặt URL hành động của biểu mẫu.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-81",
+    "question_text": "Điều nào sau đây là một lợi thế của việc sử dụng Eloquent ORM của Laravel để tương tác với database?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "10-0",
+        "answer_text": "Nó yêu cầu ít bộ nhớ và sử dụng CPU hơn so với các truy vấn SQL thô.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "10-1",
+        "answer_text": "Nó cung cấp một giao diện trực quan để thiết kế các bảng database.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "10-2",
+        "answer_text": "Nó cho phép các nhà phát triển viết các truy vấn SQL thô trực tiếp trong mã PHP của họ.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "10-3",
+        "answer_text": "Nó tự động tạo các bảng và lược đồ database.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-82",
+    "question_text": "Trong Laravel, các mã thông báo CSRF thường được bao gồm ở đâu trong các biểu mẫu?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "11-0",
+        "answer_text": "Trong URL hành động của biểu mẫu.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "11-1",
+        "answer_text": "Trong thuộc tính phương thức của biểu mẫu.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "11-2",
+        "answer_text": "Trong các biểu định kiểu CSS của biểu mẫu.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "11-3",
+        "answer_text": "Là các trường đầu vào ẩn trong biểu mẫu.",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-83",
+    "question_text": "Mục đích của middleware VerifyCsrfToken của Laravel là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "12-0",
+        "answer_text": "Để xác minh tính xác thực của thông tin đăng nhập của người dùng.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "12-1",
+        "answer_text": "Để xác minh tính xác thực của các mã thông báo CSRF trong các request đến.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "12-2",
+        "answer_text": "Để xác thực và làm sạch đầu vào của người dùng trong các lần gửi biểu mẫu.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "12-3",
+        "answer_text": "Để thực thi các kết nối HTTPS để liên lạc an toàn.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-84",
+    "question_text": "Quy tắc validation nào của Laravel sau đây kiểm tra xem đầu vào do người dùng cung cấp có phải là một số nguyên dương không?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "13-0",
+        "answer_text": "integer",
+        "is_correct": false
+      },
+      {
+        "answer_id": "13-1",
+        "answer_text": "numeric",
+        "is_correct": false
+      },
+      {
+        "answer_id": "13-2",
+        "answer_text": "positive",
+        "is_correct": false
+      },
+      {
+        "answer_id": "13-3",
+        "answer_text": "integer and min:1",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-85",
+    "question_text": "Câu nào sau đây sử dụng hợp lệ hàm filter_var trong PHP để validation và sanitization đầu vào?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "14-0",
+        "answer_text": "$email = filter_var($input, FILTER_VALIDATE_EMAIL);",
+        "is_correct": true
+      },
+      {
+        "answer_id": "14-1",
+        "answer_text": "$input = filter_var($email, FILTER_SANITIZE_STRING);",
+        "is_correct": false
+      },
+      {
+        "answer_id": "14-2",
+        "answer_text": "$url = filter_var($input, FILTER_VALIDATE_URL);",
+        "is_correct": false
+      },
+      {
+        "answer_id": "14-3",
+        "answer_text": "$input = filter_var($username, FILTER_SANITIZE_EMAIL);",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-86",
+    "question_text": "Trong Laravel, mục đích chính của role-based authentication là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "15-0",
+        "answer_text": "Để mã hóa dữ liệu người dùng nhạy cảm trong quá trình truyền.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "15-1",
+        "answer_text": "Để ngăn chặn truy cập trái phép vào các tài nguyên hoặc hành động cụ thể dựa trên vai trò của người dùng.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "15-2",
+        "answer_text": "Để xác thực định dạng của dữ liệu đầu vào của người dùng.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "15-3",
+        "answer_text": "Để tạo các biểu mẫu HTML động dựa trên vai trò của người dùng.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-87",
+    "question_text": "Hàm Laravel nào sau đây thường được sử dụng để kiểm tra xem người dùng có một vai trò cụ thể không?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "16-0",
+        "answer_text": "Auth::user()->hasRole()",
+        "is_correct": true
+      },
+      {
+        "answer_id": "16-1",
+        "answer_text": "Auth::checkRole()",
+        "is_correct": false
+      },
+      {
+        "answer_id": "16-2",
+        "answer_text": "Role::hasUser()",
+        "is_correct": false
+      },
+      {
+        "answer_id": "16-3",
+        "answer_text": "User::hasPermission()",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-88",
+    "question_text": "Ví dụ nào sau đây là một ví dụ về role-based authorization trong Laravel bằng cách sử dụng middleware?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "17-0",
+        "answer_text": "Áp dụng một middleware kiểm tra xem tên của người dùng có khớp với một vai trò cụ thể không.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "17-1",
+        "answer_text": "Áp dụng một middleware xác thực định dạng địa chỉ email của người dùng.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "17-2",
+        "answer_text": "Áp dụng một middleware tạo báo cáo PDF dựa trên vai trò của người dùng.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "17-3",
+        "answer_text": "Áp dụng một middleware hạn chế quyền truy cập vào một route dựa trên vai trò của người dùng.",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-89",
+    "question_text": "Câu nào sau đây mô tả đúng nhất sự khác biệt giữa authentication và authorization trong Laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "18-0",
+        "answer_text": "Authentication xác minh danh tính của người dùng, trong khi authorization kiểm soát những hành động hoặc tài nguyên mà người dùng có thể truy cập.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "18-1",
+        "answer_text": "Authentication và authorization là hai thuật ngữ cho cùng một quy trình và không có sự khác biệt.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "18-2",
+        "answer_text": "Authentication xử lý vai trò của người dùng, trong khi authorization xử lý mật khẩu của người dùng.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "18-3",
+        "answer_text": "Authentication đảm bảo rằng trình duyệt của người dùng tương thích với framework Laravel.",
+        "is_correct": false
+      }
+    ]
+  }
+]

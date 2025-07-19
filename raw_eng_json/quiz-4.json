@@ -1,0 +1,272 @@
+[
+  {
+    "question_id": "q-90",
+    "question_text": "What is the primary purpose of unit testing in Laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "0-0",
+        "answer_text": "To test the interaction between different units of a Laravel application.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-1",
+        "answer_text": "To ensure that individual components or units of code (such as functions or methods) work correctly in isolation.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "0-2",
+        "answer_text": "To test the overall functionality of a Laravel application, including user interfaces.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-3",
+        "answer_text": "To test the performance and scalability of a Laravel application.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-91",
+    "question_text": "Which testing framework is commonly used for writing unit tests in Laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "1-0",
+        "answer_text": "PHPUnit",
+        "is_correct": true
+      },
+      {
+        "answer_id": "1-1",
+        "answer_text": "Selenium",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-2",
+        "answer_text": "Jest",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-3",
+        "answer_text": "Mocha",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-92",
+    "question_text": "In Laravel, what is the primary purpose of debugging?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "2-0",
+        "answer_text": "To add decorative elements to a web page.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-1",
+        "answer_text": "To enhance the performance of the application.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-2",
+        "answer_text": "To analyze and resolve issues or errors in the application's code.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "2-3",
+        "answer_text": "To create backups of the application data.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-93",
+    "question_text": "Which of the following is a common method for debugging Laravel applications?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "3-0",
+        "answer_text": "Using the artisan tinker command.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-1",
+        "answer_text": "Writing log files.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "3-2",
+        "answer_text": "Changing the server's configuration.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-3",
+        "answer_text": "Running unit tests.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-94",
+    "question_text": "Which file in a PHP project managed by Composer specifies the project's dependencies and their versions?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "4-0",
+        "answer_text": "composer.lock",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-1",
+        "answer_text": "index.php",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-2",
+        "answer_text": "package.json",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-3",
+        "answer_text": "composer.json",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-95",
+    "question_text": "What is the purpose of environment variables in a deployment configuration?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "0-0",
+        "answer_text": "To store sensitive data like database passwords.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-1",
+        "answer_text": "To define the structure of the database schema.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-2",
+        "answer_text": "To specify the programming language of the application.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-3",
+        "answer_text": "To configure various aspects of the application's runtime environment.",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-96",
+    "question_text": "Which of the following is an advantage of configuring environment variables in a deployment?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "1-0",
+        "answer_text": "Environment variables are stored in plain text, making them vulnerable to security breaches.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-1",
+        "answer_text": "Environment variables provide a way to decouple configuration from the application code.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "1-2",
+        "answer_text": "Environment variables are managed within the application code, reducing deployment flexibility.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-3",
+        "answer_text": "Environment variables are specific to a single deployment environment and cannot be changed.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-97",
+    "question_text": "When deploying a PHP application to a shared hosting provider, which deployment method is typically NOT recommended?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "2-0",
+        "answer_text": "Using a version control system like Git for deployment.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "2-1",
+        "answer_text": "Uploading files via FTP or SFTP.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-2",
+        "answer_text": "Using a continuous integration and continuous deployment (CI/CD) pipeline.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-3",
+        "answer_text": "Manually copy files via a hosting control panel file manager.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-98",
+    "question_text": "What is a potential advantage of deploying a PHP application to a cloud platform like AWS or GCP compared to shared hosting?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "3-0",
+        "answer_text": "Shared hosting typically provides more control over server configurations.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-1",
+        "answer_text": "Shared hosting offers better scalability and resource management.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-2",
+        "answer_text": "Cloud platforms provide flexibility to scale resources up or down as needed.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "3-3",
+        "answer_text": "Shared hosting offers more robust security features.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-99",
+    "question_text": "When it comes to Laravel application scaling, what is \"horizontal scaling\"?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "4-0",
+        "answer_text": "Increasing the size of the database server.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-1",
+        "answer_text": "Adding more CPU cores to the web server.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-2",
+        "answer_text": "Increasing the number of web or application server instances.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "4-3",
+        "answer_text": "Increasing the RAM of the load balancer.",
+        "is_correct": false
+      }
+    ]
+  }
+]

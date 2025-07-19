@@ -1,0 +1,785 @@
+[
+  {
+    "question_id": "q-61",
+    "question_text": "In PHP, what is the purpose of the $_POST superglobal?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "0-0",
+        "answer_text": "$_POST is used to define API resources.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-1",
+        "answer_text": "$_POST is used to define middleware.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-2",
+        "answer_text": "$_POST is a superglobal array that accesses data sent to the server via HTTP POST requests.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "0-3",
+        "answer_text": "$_POST is used for creating database migrations.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-62",
+    "question_text": "In PHP, what is the purpose of the include and require statements?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "1-0",
+        "answer_text": "include and require statements are used to include external PHP files in the current script.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "1-1",
+        "answer_text": "include and require statements are used to define middleware.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-2",
+        "answer_text": "include and require statements are used to define database migrations.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-3",
+        "answer_text": "include and require statements are used for creating API resources.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-63",
+    "question_text": "Which Composer command installs a PHP library in a Laravel project?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "2-0",
+        "answer_text": "composer require",
+        "is_correct": true
+      },
+      {
+        "answer_id": "2-1",
+        "answer_text": "composer install",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-2",
+        "answer_text": "composer update",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-3",
+        "answer_text": "composer create-project",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-64",
+    "question_text": "In Laravel, where would you typically add configuration settings for a third-party PHP library?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "3-0",
+        "answer_text": "In the .env file",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-1",
+        "answer_text": "In the config directory",
+        "is_correct": true
+      },
+      {
+        "answer_id": "3-2",
+        "answer_text": "In the public directory",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-3",
+        "answer_text": "In the routes directory",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-65",
+    "question_text": "In a Laravel Blade template, how do you output a variable's value to the web page?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "4-0",
+        "answer_text": "By using {!! $variableName !!}",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-1",
+        "answer_text": "By using @echo($variableName)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-2",
+        "answer_text": "By using <?php echo $variableName; ?>",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-3",
+        "answer_text": "By using {{ $variableName }}",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-66",
+    "question_text": "What is the primary purpose of an API controller in a Laravel application?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "0-0",
+        "answer_text": "Handling database migrations",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-1",
+        "answer_text": "Rendering Blade views",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-2",
+        "answer_text": "Handling HTTP requests and returning responses",
+        "is_correct": true
+      },
+      {
+        "answer_id": "0-3",
+        "answer_text": "Managing artisan commands",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-67",
+    "question_text": "Which HTTP method is typically used to create a new resource in a RESTful API?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "1-0",
+        "answer_text": "GET",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-1",
+        "answer_text": "POST",
+        "is_correct": true
+      },
+      {
+        "answer_id": "1-2",
+        "answer_text": "PUT",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-3",
+        "answer_text": "DELETE",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-68",
+    "question_text": "Which of the following is not a common function performed by an API controller in Laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "2-0",
+        "answer_text": "Handling data validation",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-1",
+        "answer_text": "Rendering Blade views",
+        "is_correct": true
+      },
+      {
+        "answer_id": "2-2",
+        "answer_text": "Database interaction",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-3",
+        "answer_text": "Returning JSON responses",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-69",
+    "question_text": "What is the primary purpose of data validation in API controllers?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "3-0",
+        "answer_text": "Formatting JSON responses",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-1",
+        "answer_text": "Managing database migrations",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-2",
+        "answer_text": "Ensuring data integrity and security",
+        "is_correct": true
+      },
+      {
+        "answer_id": "3-3",
+        "answer_text": "Handling authentication",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-70",
+    "question_text": "Which Laravel method is commonly used for returning JSON responses from an API controller?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "4-0",
+        "answer_text": "return view()",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-1",
+        "answer_text": "return text()",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-2",
+        "answer_text": "return json()",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-3",
+        "answer_text": "return response()",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-71",
+    "question_text": "Which of the following best describes the use of PHP functions?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "0-0",
+        "answer_text": "PHP functions are primarily used for defining middleware.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-1",
+        "answer_text": "PHP functions are primarily used for defining database migrations.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-2",
+        "answer_text": "PHP functions are used to encapsulate reusable blocks of code and perform specific tasks.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "0-3",
+        "answer_text": "PHP functions are used for defining API resources.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-72",
+    "question_text": "In PHP, what is the purpose of the array_push() function?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "1-0",
+        "answer_text": "array_push() defines routes in a Laravel application.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-1",
+        "answer_text": "array_push() is used to define middleware.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-2",
+        "answer_text": "array_push() is used for creating database migrations.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-3",
+        "answer_text": "array_push() is used to add elements to the end of an array.",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-73",
+    "question_text": "Which of the following is true about PHP comments?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "2-0",
+        "answer_text": "PHP comments are used to add explanations or notes within the code but are not executed.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "2-1",
+        "answer_text": "PHP comments are executed as part of the code.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-2",
+        "answer_text": "PHP comments are used to define routes in a Laravel application.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-3",
+        "answer_text": "PHP comments are used for creating database migrations.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-74",
+    "question_text": "Which Laravel component allows you to manage the dependencies and installation of PHP libraries?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "3-0",
+        "answer_text": "Blade Templating Engine",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-1",
+        "answer_text": "Composer",
+        "is_correct": true
+      },
+      {
+        "answer_id": "3-2",
+        "answer_text": "Artisan Console",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-3",
+        "answer_text": "Eloquent ORM",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-75",
+    "question_text": "When integrating a PHP library into a Laravel project, which of the following is NOT a common step?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "4-0",
+        "answer_text": "Adding the library's namespace to the autoloader.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-1",
+        "answer_text": "Registering a service provider if the library requires it.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-2",
+        "answer_text": "Configuring the library by adding settings to the .env file.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-3",
+        "answer_text": "Modifying the core Laravel code to accommodate the library.",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-76",
+    "question_text": "In Laravel, what is the purpose of the config method when using a third-party library?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "5-0",
+        "answer_text": "It configures the server environment for the library.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "5-1",
+        "answer_text": "It publishes the configuration files of the library to the config directory.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "5-2",
+        "answer_text": "It installs the library via Composer.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "5-3",
+        "answer_text": "It initializes the library's database tables.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-77",
+    "question_text": "Which directories are commonly used to store custom service providers for third-party libraries in a Laravel project?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "6-0",
+        "answer_text": "app/Providers",
+        "is_correct": true
+      },
+      {
+        "answer_id": "6-1",
+        "answer_text": "config",
+        "is_correct": false
+      },
+      {
+        "answer_id": "6-2",
+        "answer_text": "resources/views",
+        "is_correct": false
+      },
+      {
+        "answer_id": "6-3",
+        "answer_text": "routes",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-78",
+    "question_text": "What is the purpose of the @if directive in Laravel Blade templates?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "7-0",
+        "answer_text": "It defines a new route in the Laravel application.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "7-1",
+        "answer_text": "It includes a subview or partial view in the template.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "7-2",
+        "answer_text": "It allows you to render content based on a condition conditionally.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "7-3",
+        "answer_text": "It defines a new PHP function.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-79",
+    "question_text": "Which Laravel Blade directive is used to loop through an array and generate HTML for each item?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "8-0",
+        "answer_text": "@each",
+        "is_correct": true
+      },
+      {
+        "answer_id": "8-1",
+        "answer_text": "@loop",
+        "is_correct": false
+      },
+      {
+        "answer_id": "8-2",
+        "answer_text": "@for",
+        "is_correct": false
+      },
+      {
+        "answer_id": "8-3",
+        "answer_text": "@foreach",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-80",
+    "question_text": "In Laravel, what is the purpose of the csrf field when creating HTML forms?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "9-0",
+        "answer_text": "It specifies the character set for form data encoding.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "9-1",
+        "answer_text": "It includes a hidden field with a cross-site request forgery (CSRF) token.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "9-2",
+        "answer_text": "It defines the form's submission method (GET or POST).",
+        "is_correct": false
+      },
+      {
+        "answer_id": "9-3",
+        "answer_text": "It sets the form's action URL.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-81",
+    "question_text": "Which of the following is an advantage of using Laravel's Eloquent ORM for database interactions?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "10-0",
+        "answer_text": "It requires less memory and CPU usage than raw SQL queries.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "10-1",
+        "answer_text": "It provides a visual interface for designing database tables.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "10-2",
+        "answer_text": "It allows developers to write raw SQL queries directly in their PHP code.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "10-3",
+        "answer_text": "It automatically generates database tables and schema.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-82",
+    "question_text": "In Laravel, where are CSRF tokens typically included within forms?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "11-0",
+        "answer_text": "In the form's action URL.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "11-1",
+        "answer_text": "In the form's method attribute.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "11-2",
+        "answer_text": "In the form's CSS stylesheets.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "11-3",
+        "answer_text": "As hidden input fields within the form.",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-83",
+    "question_text": "What is the purpose of Laravel's VerifyCsrfToken middleware?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "12-0",
+        "answer_text": "To verify the authenticity of user login credentials.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "12-1",
+        "answer_text": "To verify the authenticity of CSRF tokens in incoming requests.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "12-2",
+        "answer_text": "To validate and sanitize user inputs in form submissions.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "12-3",
+        "answer_text": "To enforce HTTPS connections for secure communication.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-84",
+    "question_text": "Which of the following Laravel validation rules checks that a user-provided input is a positive integer?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "13-0",
+        "answer_text": "integer",
+        "is_correct": false
+      },
+      {
+        "answer_id": "13-1",
+        "answer_text": "numeric",
+        "is_correct": false
+      },
+      {
+        "answer_id": "13-2",
+        "answer_text": "positive",
+        "is_correct": false
+      },
+      {
+        "answer_id": "13-3",
+        "answer_text": "integer and min:1",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-85",
+    "question_text": "Which of the following validly uses the filter_var function in PHP for input validation and sanitization?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "14-0",
+        "answer_text": "$email = filter_var($input, FILTER_VALIDATE_EMAIL);",
+        "is_correct": true
+      },
+      {
+        "answer_id": "14-1",
+        "answer_text": "$input = filter_var($email, FILTER_SANITIZE_STRING);",
+        "is_correct": false
+      },
+      {
+        "answer_id": "14-2",
+        "answer_text": "$url = filter_var($input, FILTER_VALIDATE_URL);",
+        "is_correct": false
+      },
+      {
+        "answer_id": "14-3",
+        "answer_text": "$input = filter_var($username, FILTER_SANITIZE_EMAIL);",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-86",
+    "question_text": "In Laravel, what is the primary purpose of role-based authentication?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "15-0",
+        "answer_text": "To encrypt sensitive user data during transmission.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "15-1",
+        "answer_text": "To prevent unauthorized access to specific resources or actions based on user roles.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "15-2",
+        "answer_text": "To validate the format of user input data.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "15-3",
+        "answer_text": "To generate dynamic HTML forms based on user roles.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-87",
+    "question_text": "Which of the following Laravel functions is commonly used to check if a user has a specific role?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "16-0",
+        "answer_text": "Auth::user()->hasRole()",
+        "is_correct": true
+      },
+      {
+        "answer_id": "16-1",
+        "answer_text": "Auth::checkRole()",
+        "is_correct": false
+      },
+      {
+        "answer_id": "16-2",
+        "answer_text": "Role::hasUser()",
+        "is_correct": false
+      },
+      {
+        "answer_id": "16-3",
+        "answer_text": "User::hasPermission()",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-88",
+    "question_text": "Which of the following is an example of role-based authorization in Laravel using middleware?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "17-0",
+        "answer_text": "Applying a middleware that checks if the user's name matches a specific role.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "17-1",
+        "answer_text": "Applying a middleware that validates the user's email address format.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "17-2",
+        "answer_text": "Applying a middleware that generates PDF reports based on the user's role.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "17-3",
+        "answer_text": "Applying a middleware that restricts access to a route based on the user's role.",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-89",
+    "question_text": "Which of the following best describes the difference between authentication and authorization in Laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "18-0",
+        "answer_text": "Authentication verifies the user's identity, while authorization controls what actions or resources the user can access.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "18-1",
+        "answer_text": "Authentication and authorization are two terms for the same process and have no difference.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "18-2",
+        "answer_text": "Authentication deals with user roles, while authorization deals with user passwords.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "18-3",
+        "answer_text": "Authentication ensures that the user's browser is compatible with the Laravel framework.",
+        "is_correct": false
+      }
+    ]
+  }
+]

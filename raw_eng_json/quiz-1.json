@@ -1,0 +1,812 @@
+[
+  {
+    "question_id": "q-1",
+    "question_text": "What is PHP primarily known for in the realm of web development?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "0-0",
+        "answer_text": "PHP is primarily known for its use in artificial intelligence and machine learning.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-1",
+        "answer_text": "PHP is primarily known for its role as a server-side scripting language in web development.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "0-2",
+        "answer_text": "PHP is primarily known for its use in mobile app development.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-3",
+        "answer_text": "PHP is primarily known for its role in computer graphics and gaming.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-2",
+    "question_text": "When was PHP originally created, and by whom?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "1-0",
+        "answer_text": "PHP was originally created in the 1990s by Mark Zuckerberg.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-1",
+        "answer_text": "PHP was originally created in the early 2000s by Linus Torvalds.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-2",
+        "answer_text": "PHP was originally created in the 1980s by Tim Berners-Lee.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-3",
+        "answer_text": "PHP was originally created in 1994 by Rasmus Lerdorf.",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-3",
+    "question_text": "Which symbol indicates the start of PHP code in a PHP script?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "2-0",
+        "answer_text": "<script>",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-1",
+        "answer_text": "<?php",
+        "is_correct": true
+      },
+      {
+        "answer_id": "2-2",
+        "answer_text": "<?",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-3",
+        "answer_text": "{% %}",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-4",
+    "question_text": "What is the correct way to comment a single-line comment in PHP?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "3-0",
+        "answer_text": "/* This is a comment /",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-1",
+        "answer_text": "# This is a comment #",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-2",
+        "answer_text": "// This is a comment",
+        "is_correct": true
+      },
+      {
+        "answer_id": "3-3",
+        "answer_text": "<!-- This is a comment -->",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-5",
+    "question_text": "Which of the following best describes the role of PHP in web development?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "4-0",
+        "answer_text": "PHP is a server-side scripting language used for developing dynamic web applications and generating HTML content.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "4-1",
+        "answer_text": "PHP is primarily used for creating 3D graphics and website animations.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-2",
+        "answer_text": "PHP is a client-side scripting language that enhances user interactions in web browsers.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-3",
+        "answer_text": "PHP is a markup language used to define web page structure and layout.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-6",
+    "question_text": "Which of the following is one of the key features of Laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "0-0",
+        "answer_text": "Laravel is a purely client-side framework.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-1",
+        "answer_text": "Laravel provides built-in support for database management and migrations.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "0-2",
+        "answer_text": "Laravel is a low-level programming language.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-3",
+        "answer_text": "Laravel focuses exclusively on front-end development.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-7",
+    "question_text": "What is the purpose of Laravel's Eloquent ORM (Object-Relational Mapping)?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "1-0",
+        "answer_text": "Eloquent ORM manages and interacts with databases using object-oriented syntax.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "1-1",
+        "answer_text": "Eloquent ORM is used to create user interfaces in Laravel.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-2",
+        "answer_text": "Eloquent ORM is used to compile JavaScript code in Laravel applications.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-3",
+        "answer_text": "Eloquent ORM is used for server configuration in Laravel.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-8",
+    "question_text": "In Laravel, which directory typically stores configuration files, such as database configuration?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "2-0",
+        "answer_text": "app/",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-1",
+        "answer_text": "resources/",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-2",
+        "answer_text": "config/",
+        "is_correct": true
+      },
+      {
+        "answer_id": "2-3",
+        "answer_text": "public/",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-9",
+    "question_text": "Which of the following is a commonly used web server software for hosting Laravel applications during development?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "3-0",
+        "answer_text": "Apache",
+        "is_correct": true
+      },
+      {
+        "answer_id": "3-1",
+        "answer_text": "Microsoft SQL Server",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-2",
+        "answer_text": "PostgreSQL",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-3",
+        "answer_text": "Node.js",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-10",
+    "question_text": "Which tool should you use to manage dependencies and packages in a Laravel project?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "4-0",
+        "answer_text": "npm (Node Package Manager)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-1",
+        "answer_text": "Git",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-2",
+        "answer_text": "Python",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-3",
+        "answer_text": "Composer",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-11",
+    "question_text": "What is one of the key advantages of using PHP in web development?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "0-0",
+        "answer_text": "One of the key advantages of using PHP is its ability to create virtual reality experiences on the web.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-1",
+        "answer_text": "One of the key advantages of using PHP is its compatibility with only a single web server.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "0-2",
+        "answer_text": "One of the key advantages of using PHP is its ease of embedding within HTML code, allowing for dynamic web content.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "0-3",
+        "answer_text": "One of the key advantages of using PHP is its exclusive focus on front-end web development.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-12",
+    "question_text": "What is the significance of PHP's open-source nature in web development?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "1-0",
+        "answer_text": "PHP's open-source nature allows developers to access, modify, and contribute to its source code, fostering a vibrant and collaborative developer community.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "1-1",
+        "answer_text": "PHP's open-source nature primarily means it can only be used for personal projects, not commercial applications.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-2",
+        "answer_text": "PHP's open-source nature signifies that it is a closed and proprietary language.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "1-3",
+        "answer_text": "PHP's open-source nature primarily restricts its use to academic institutions and non-profit organizations.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-13",
+    "question_text": "What does the acronym \"PHP\" originally stand for?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "2-0",
+        "answer_text": "PHP originally stands for \"Personal Home Page.\"",
+        "is_correct": true
+      },
+      {
+        "answer_id": "2-1",
+        "answer_text": "PHP originally stands for \"Professional Hosting Platform.\"",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-2",
+        "answer_text": "PHP originally stands for \"Public Hypertext Parser.\"",
+        "is_correct": false
+      },
+      {
+        "answer_id": "2-3",
+        "answer_text": "PHP originally stands for \"Programming High Performance.\"",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-14",
+    "question_text": "What is the purpose of the PHP closing tag in a PHP script?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "3-0",
+        "answer_text": "The closing tag is mandatory and must be included in every PHP script.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-1",
+        "answer_text": "The closing tag is used to end a PHP comment.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-2",
+        "answer_text": "The closing tag denotes the end of a PHP statement.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "3-3",
+        "answer_text": "The closing tag is optional and can be omitted in PHP scripts.",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-15",
+    "question_text": "Which of the following is a valid PHP variable name?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "4-0",
+        "answer_text": "$123variable",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-1",
+        "answer_text": "$my-variable",
+        "is_correct": false
+      },
+      {
+        "answer_id": "4-2",
+        "answer_text": "$my_variable",
+        "is_correct": true
+      },
+      {
+        "answer_id": "4-3",
+        "answer_text": "$my variable",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-16",
+    "question_text": "What is the purpose of the PHP echo statement?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "5-0",
+        "answer_text": "The echo statement is used to declare variables in PHP.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "5-1",
+        "answer_text": "The echo statement outputs text or variables to the web page.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "5-2",
+        "answer_text": "The echo statement is used to include external PHP files.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "5-3",
+        "answer_text": "The echo statement is used to define functions in PHP.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-17",
+    "question_text": "Which of the following is a key advantage of using PHP in web development?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "6-0",
+        "answer_text": "PHP is open source, widely supported, and has a large developer community.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "6-1",
+        "answer_text": "PHP is a compiled language, resulting in faster execution.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "6-2",
+        "answer_text": "PHP offers strong type checking, preventing errors.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "6-3",
+        "answer_text": "PHP is primarily designed for client-side scripting.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-18",
+    "question_text": "Which of the following is an example of a popular PHP framework used in web development?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "7-0",
+        "answer_text": "JavaServer Faces (JSF)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "7-1",
+        "answer_text": "Ruby on Rails",
+        "is_correct": false
+      },
+      {
+        "answer_id": "7-2",
+        "answer_text": "Laravel",
+        "is_correct": true
+      },
+      {
+        "answer_id": "7-3",
+        "answer_text": "Django",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-19",
+    "question_text": "What is Laravel primarily known for in the realm of web development?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "8-0",
+        "answer_text": "Laravel is primarily known for its use in mobile app development.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "8-1",
+        "answer_text": "Laravel is primarily known for its role as a front-end JavaScript library.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "8-2",
+        "answer_text": "Laravel is primarily known for its use in artificial intelligence and machine learning.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "8-3",
+        "answer_text": "Laravel is primarily known for its elegance and simplicity in building web applications.",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-20",
+    "question_text": "Which of the following is a key advantage of using Laravel in web development?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "9-0",
+        "answer_text": "Laravel is a closed-source framework ensuring code security.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "9-1",
+        "answer_text": "Laravel provides a robust ecosystem, including features like authentication, routing, and caching.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "9-2",
+        "answer_text": "Laravel has a steep learning curve, making it suitable for experienced developers only.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "9-3",
+        "answer_text": "Laravel is primarily designed for small-scale web applications.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-21",
+    "question_text": "Which of the following is NOT a component of Laravel's Blade templating engine?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "10-0",
+        "answer_text": "Blade directives",
+        "is_correct": false
+      },
+      {
+        "answer_id": "10-1",
+        "answer_text": "Blade layouts",
+        "is_correct": false
+      },
+      {
+        "answer_id": "10-2",
+        "answer_text": "Blade models",
+        "is_correct": true
+      },
+      {
+        "answer_id": "10-3",
+        "answer_text": "Blade views",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-22",
+    "question_text": "What does the term \"Composer\" refer to in the context of Laravel and PHP?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "11-0",
+        "answer_text": "Composer is a dependency manager for PHP used to manage packages and libraries in Laravel and other PHP projects.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "11-1",
+        "answer_text": "Composer is a tool used for front-end package management in Laravel.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "11-2",
+        "answer_text": "Composer is a built-in code editor in Laravel for writing PHP code.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "11-3",
+        "answer_text": "Composer is a front-end framework for building responsive web designs in Laravel.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-23",
+    "question_text": "Which directory in Laravel stores Blade templates used for the user interface?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "12-0",
+        "answer_text": "app/",
+        "is_correct": false
+      },
+      {
+        "answer_id": "12-1",
+        "answer_text": "views/",
+        "is_correct": true
+      },
+      {
+        "answer_id": "12-2",
+        "answer_text": "routes/",
+        "is_correct": false
+      },
+      {
+        "answer_id": "12-3",
+        "answer_text": "storage/",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-24",
+    "question_text": "What is the primary purpose of the routes/ directory in Laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "13-0",
+        "answer_text": "The routes/ directory stores front-end JavaScript code.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "13-1",
+        "answer_text": "The routes/ directory contains configuration files for database connections.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "13-2",
+        "answer_text": "The routes/ directory stores user interface templates.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "13-3",
+        "answer_text": "The routes/ directory defines the application's HTTP routes and URL handling.",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-25",
+    "question_text": "Which directory is responsible for storing files related to database migrations in Laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "14-0",
+        "answer_text": "app/",
+        "is_correct": false
+      },
+      {
+        "answer_id": "14-1",
+        "answer_text": "migrations/",
+        "is_correct": true
+      },
+      {
+        "answer_id": "14-2",
+        "answer_text": "config/",
+        "is_correct": false
+      },
+      {
+        "answer_id": "14-3",
+        "answer_text": "public/",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-26",
+    "question_text": "Which PHP extensions are commonly required by Laravel for database operations?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "15-0",
+        "answer_text": "Xdebug",
+        "is_correct": false
+      },
+      {
+        "answer_id": "15-1",
+        "answer_text": "OpenSSL",
+        "is_correct": false
+      },
+      {
+        "answer_id": "15-2",
+        "answer_text": "PDO (PHP Data Objects)",
+        "is_correct": true
+      },
+      {
+        "answer_id": "15-3",
+        "answer_text": "SOAP",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-27",
+    "question_text": "Which of the following is NOT a required software component for setting up a Laravel development environment?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "16-0",
+        "answer_text": "PHP",
+        "is_correct": false
+      },
+      {
+        "answer_id": "16-1",
+        "answer_text": "Composer",
+        "is_correct": false
+      },
+      {
+        "answer_id": "16-2",
+        "answer_text": "MySQL",
+        "is_correct": false
+      },
+      {
+        "answer_id": "16-3",
+        "answer_text": "MongoDB",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-28",
+    "question_text": "In a Laravel development environment, what role does a .env file typically play?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "17-0",
+        "answer_text": "The .env file stores sensitive configuration settings and environment variables.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "17-1",
+        "answer_text": "The .env file stores PHP code for handling environment variables.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "17-2",
+        "answer_text": "The .env file is a backup of the database.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "17-3",
+        "answer_text": "The .env file is used for storing JavaScript code.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-29",
+    "question_text": "Which of the following is a popular database management system often used with Laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "18-0",
+        "answer_text": "Apache Cassandra",
+        "is_correct": false
+      },
+      {
+        "answer_id": "18-1",
+        "answer_text": "MySQL",
+        "is_correct": true
+      },
+      {
+        "answer_id": "18-2",
+        "answer_text": "MongoDB",
+        "is_correct": false
+      },
+      {
+        "answer_id": "18-3",
+        "answer_text": "SQLite",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-30",
+    "question_text": "Which of the following commands is used to install Laravel Installer globally on your system?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "19-0",
+        "answer_text": "composer global require \"laravel/installer\"",
+        "is_correct": true
+      },
+      {
+        "answer_id": "19-1",
+        "answer_text": "composer require \"laravel/installer\" --global",
+        "is_correct": false
+      },
+      {
+        "answer_id": "19-2",
+        "answer_text": "laravel new project-name",
+        "is_correct": false
+      },
+      {
+        "answer_id": "19-3",
+        "answer_text": "php artisan laravel:install",
+        "is_correct": false
+      }
+    ]
+  }
+]
