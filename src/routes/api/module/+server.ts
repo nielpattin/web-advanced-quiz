@@ -1,13 +1,13 @@
 import { json } from '@sveltejs/kit';
 import { createClient } from '@libsql/client';
-import { TURSO_URL, TURSO_AUTH_TOKEN } from '$env/static/private';
+import { env } from '$env/dynamic/private';
 
 export async function GET({ url }) {
 	const id = url.searchParams.get('id')?.trim().toLowerCase();
 
 	const db = createClient({
-		url: TURSO_URL,
-		authToken: TURSO_AUTH_TOKEN
+		url: env.TURSO_URL,
+		authToken: env.TURSO_AUTH_TOKEN
 	});
 
 	let quizzes: unknown[] = [];
