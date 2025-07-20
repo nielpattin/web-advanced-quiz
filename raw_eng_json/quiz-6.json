@@ -1,0 +1,542 @@
+[
+  {
+    "question_id": "q-32",
+    "question_text": "SQL Injection can result in modifications to a website’s what?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "32-0",
+        "answer_text": "URL address",
+        "is_correct": false
+      },
+      {
+        "answer_id": "32-1",
+        "answer_text": "image files",
+        "is_correct": false
+      },
+      {
+        "answer_id": "32-2",
+        "answer_text": "data",
+        "is_correct": true
+      },
+      {
+        "answer_id": "32-3",
+        "answer_text": "layout",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-33",
+    "question_text": "Which of the following is an example of SQL injection?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "33-0",
+        "answer_text": "Entering a search query in a search bar",
+        "is_correct": false
+      },
+      {
+        "answer_id": "33-1",
+        "answer_text": "Entering malicious SQL code into an input field",
+        "is_correct": true
+      },
+      {
+        "answer_id": "33-2",
+        "answer_text": "Entering a password on a login page",
+        "is_correct": false
+      },
+      {
+        "answer_id": "33-3",
+        "answer_text": "Entering a username on a login page",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-34",
+    "question_text": "All of the following can contribute to SQL injection EXCEPT:",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "34-0",
+        "answer_text": "Passing a SQL comment into an input field",
+        "is_correct": false
+      },
+      {
+        "answer_id": "34-1",
+        "answer_text": "Clicking on an option from a drop-down menu on a website",
+        "is_correct": true
+      },
+      {
+        "answer_id": "34-2",
+        "answer_text": "Placing a meta character into a data input field",
+        "is_correct": false
+      },
+      {
+        "answer_id": "34-3",
+        "answer_text": "SQL makes no real distinction between the control and data planes",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-35",
+    "question_text": "Which of the following is NOT a recommended SQL injection prevention suggestion?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "35-0",
+        "answer_text": "Use of prepared statements",
+        "is_correct": false
+      },
+      {
+        "answer_id": "35-1",
+        "answer_text": "Use of string concatenation to build a query",
+        "is_correct": true
+      },
+      {
+        "answer_id": "35-2",
+        "answer_text": "Use of stored procedures",
+        "is_correct": false
+      },
+      {
+        "answer_id": "35-3",
+        "answer_text": "Escape all user-supplied input",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-36",
+    "question_text": "Which of the following methods is NOT a manual way to detect SQL Injection?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "36-0",
+        "answer_text": "Submitting a cookie with a Secure flag.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "36-1",
+        "answer_text": "Submitting the single quote character ' and looking for errors or other anomalies.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "36-2",
+        "answer_text": "Submitting Boolean conditions and looking for differences in the application’s responses.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "36-3",
+        "answer_text": "Submitting several SQL-specific syntax evaluations and looking for systematic differences in the application’s responses.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-37",
+    "question_text": "Which of the following best describes semantic validation?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "37-0",
+        "answer_text": "Enforcing the correct syntax of structured fields",
+        "is_correct": false
+      },
+      {
+        "answer_id": "37-1",
+        "answer_text": "Confirming that the data provided matches the expected format",
+        "is_correct": false
+      },
+      {
+        "answer_id": "37-2",
+        "answer_text": "Ensuring that the data’s values are appropriate within a specific business context",
+        "is_correct": true
+      },
+      {
+        "answer_id": "37-3",
+        "answer_text": "Checking if user inputs adhere to requirements such as integer values for integer fields",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-38",
+    "question_text": "Which of the following is the primary reason for implementing input validation in software applications?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "38-0",
+        "answer_text": "To improve application performance",
+        "is_correct": false
+      },
+      {
+        "answer_id": "38-1",
+        "answer_text": "To protect against malicious attacks and prevent vulnerabilities",
+        "is_correct": true
+      },
+      {
+        "answer_id": "38-2",
+        "answer_text": "To ensure data is properly stored in a database",
+        "is_correct": false
+      },
+      {
+        "answer_id": "38-3",
+        "answer_text": "To prevent users from accessing sensitive information",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-39",
+    "question_text": "Which of the following is NOT an example of input form validation?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "39-0",
+        "answer_text": "Please enter your phone number in the format xxx-xxx-xxxx",
+        "is_correct": false
+      },
+      {
+        "answer_id": "39-1",
+        "answer_text": "This field is required",
+        "is_correct": false
+      },
+      {
+        "answer_id": "39-2",
+        "answer_text": "Please enter a valid email address",
+        "is_correct": false
+      },
+      {
+        "answer_id": "39-3",
+        "answer_text": "Please enter your information here",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-40",
+    "question_text": "Which attribute allows a user agent to verify that a fetched resource has been delivered free of unexpected manipulation?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "40-0",
+        "answer_text": "integrity",
+        "is_correct": true
+      },
+      {
+        "answer_id": "40-1",
+        "answer_text": "src",
+        "is_correct": false
+      },
+      {
+        "answer_id": "40-2",
+        "answer_text": "crossorigin",
+        "is_correct": false
+      },
+      {
+        "answer_id": "40-3",
+        "answer_text": "hash",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-41",
+    "question_text": "Which of the following is a potential problem with specifying only the library version in the package.json file without using a lockfile like package-lock.json?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "41-0",
+        "answer_text": "Different developers may have different versions of dependencies",
+        "is_correct": false
+      },
+      {
+        "answer_id": "41-1",
+        "answer_text": "We have not tested new versions of the library for performance and compatibility",
+        "is_correct": false
+      },
+      {
+        "answer_id": "41-2",
+        "answer_text": "We can install an elevated version of a dependency without our will",
+        "is_correct": true
+      },
+      {
+        "answer_id": "41-3",
+        "answer_text": "The new version of the library may be compromised or have a vulnerability",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-42",
+    "question_text": "Which of the following practices is NOT recommended for maintaining security in your application through third-party package management?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "42-0",
+        "answer_text": "Regularly scanning for vulnerabilities and subscribing to security bulletins related to the components you use.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "42-1",
+        "answer_text": "Neglecting to update or upgrade the underlying platform, frameworks, and dependencies in a risk-based, timely fashion.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "42-2",
+        "answer_text": "Obtaining components only from official sources over secure links and preferring signed packages to reduce the chance of including a modified, malicious component.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "42-3",
+        "answer_text": "Pinning scripts to specific versions and using integrity checks.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-43",
+    "question_text": "Consider the following scenario: You’re using npm version 6 and you run npm audit on your project. The audit report shows a security vulnerability for package highlight.js with severity 'moderate' and indicates that 'No fix is available'. Which of the following would be an appropriate next step?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "43-0",
+        "answer_text": "Ignore the vulnerability as its severity is only moderate.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "43-1",
+        "answer_text": "Search for an alternative package that performs a similar function without this vulnerability.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "43-2",
+        "answer_text": "Apply the update automatically using npm audit fix.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "43-3",
+        "answer_text": "Run npm audit again to see if the vulnerability has been fixed.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-44",
+    "question_text": "Which of the following statements BEST describes the functionality of Dependabot as a package security tool?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "44-0",
+        "answer_text": "Dependabot requires a manual trigger to check for new versions of dependencies.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "44-1",
+        "answer_text": "Dependabot can be set up to regularly check for updates in your dependencies and automatically open pull requests for any outdated dependency.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "44-2",
+        "answer_text": "Dependabot only supports NodeJS for automating dependency updates.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "44-3",
+        "answer_text": "Dependabot alerts about security flaws and vulnerabilities but does not automate the process of updating dependencies.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-45",
+    "question_text": "What is \"rate limiting\"?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "45-0",
+        "answer_text": "A technique used to detect and prevent SQL injection attacks",
+        "is_correct": false
+      },
+      {
+        "answer_id": "45-1",
+        "answer_text": "A technique used to encrypt data in transit between a web server and a client",
+        "is_correct": false
+      },
+      {
+        "answer_id": "45-2",
+        "answer_text": "A technique used to limit the number of requests a user or IP address can make to a web application",
+        "is_correct": true
+      },
+      {
+        "answer_id": "45-3",
+        "answer_text": "A technique used to protect against distributed denial of service (DDoS) attacks",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-46",
+    "question_text": "Which of the following statements BEST describes the difference between Infrastructure Layer Attacks and Application Layer Attacks in the context of DDoS attacks?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "46-0",
+        "answer_text": "Infrastructure Layer Attacks are less common, more sophisticated, and target specific parts of the application.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "46-1",
+        "answer_text": "Application Layer Attacks are usually large in volume and aim to overload the capacity of the network or the application servers.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "46-2",
+        "answer_text": "Infrastructure Layer Attacks are typically large in volume and aim to overload the capacity of the network or the application servers.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "46-3",
+        "answer_text": "Application Layer Attacks are less common and usually aim to overload the capacity of the network.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-47",
+    "question_text": "What is a method to limit the rate of incoming requests to an application, using NGINX as a preventative measure against Application Layer DDoS attacks?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "47-0",
+        "answer_text": "By integrating a third-party security service like Cloudflare to handle DDoS protection.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "47-1",
+        "answer_text": "By applying the limit_req_zone directive, a shared memory zone is configured to store the state of requests for a specified key, such as the client IP address.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "47-2",
+        "answer_text": "By deploying a rate limiting tool on the server side of the application.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "47-3",
+        "answer_text": "By applying the limit_conn_zone directive, a shared memory zone is created to store requests for a specified key.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-48",
+    "question_text": "Which of the following is a potential consequence of a successful SQL injection attack?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "48-0",
+        "answer_text": "The attacker gains access to sensitive data on the server.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "48-1",
+        "answer_text": "The victim’s computer is infected with malware.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "48-2",
+        "answer_text": "The attacker can bypass authentication without the correct credentials.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "48-3",
+        "answer_text": "The attacker executes arbitrary code on the server.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-49",
+    "question_text": "All of the following principles should be followed to reach a secure file upload implementation state EXCEPT:",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "49-0",
+        "answer_text": "Allow any user to upload files",
+        "is_correct": true
+      },
+      {
+        "answer_id": "49-1",
+        "answer_text": "List allowed file extensions",
+        "is_correct": false
+      },
+      {
+        "answer_id": "49-2",
+        "answer_text": "Run the file through an antivirus or a sandbox",
+        "is_correct": false
+      },
+      {
+        "answer_id": "49-3",
+        "answer_text": "Set a file size limit",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-50",
+    "question_text": "To prevent issues caused by different versions of dependencies being installed on different machines, packages that need to be installed strictly in the specified versions should be listed in which file?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "50-0",
+        "answer_text": "package-lock.json",
+        "is_correct": true
+      },
+      {
+        "answer_id": "50-1",
+        "answer_text": "package.json",
+        "is_correct": false
+      },
+      {
+        "answer_id": "50-2",
+        "answer_text": "package-npm.json",
+        "is_correct": false
+      },
+      {
+        "answer_id": "50-3",
+        "answer_text": "package-specified.json",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-51",
+    "question_text": "Nginx and Nginx Plus are powerful tools that can be used to protect against various application layer attacks, including DDoS attacks. All of the following are recommended techniques to preventing DDoS attacks EXCEPT:",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "51-0",
+        "answer_text": "Using haproxy, a popular loadbalancer",
+        "is_correct": false
+      },
+      {
+        "answer_id": "51-1",
+        "answer_text": "Avoiding the encryption of traffic to allow better traffic flow",
+        "is_correct": true
+      },
+      {
+        "answer_id": "51-2",
+        "answer_text": "Limiting the rate of requests to a value typical for real users",
+        "is_correct": false
+      },
+      {
+        "answer_id": "51-3",
+        "answer_text": "Limiting the number of connections that can be opened by a single client IP address",
+        "is_correct": false
+      }
+    ]
+  }
+]

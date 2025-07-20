@@ -461,5 +461,279 @@
         "is_correct": true
       }
     ]
+  },
+  {
+    "question_id": "q-20",
+    "question_text": "Which of the following is NOT a purpose of cookies?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "20-0",
+        "answer_text": "Performance management",
+        "is_correct": true
+      },
+      {
+        "answer_id": "20-1",
+        "answer_text": "Session management",
+        "is_correct": false
+      },
+      {
+        "answer_id": "20-2",
+        "answer_text": "Personalization",
+        "is_correct": false
+      },
+      {
+        "answer_id": "20-3",
+        "answer_text": "Tracking",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-21",
+    "question_text": "Which of the following types of cookies are responsible for remembering your items inside a shopping cart?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "21-0",
+        "answer_text": "Third-party cookies",
+        "is_correct": false
+      },
+      {
+        "answer_id": "21-1",
+        "answer_text": "Session cookies",
+        "is_correct": true
+      },
+      {
+        "answer_id": "21-2",
+        "answer_text": "Persistent cookies",
+        "is_correct": false
+      },
+      {
+        "answer_id": "21-3",
+        "answer_text": "First-party cookies",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-22",
+    "question_text": "Cookies can store which of the following type of data?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "22-0",
+        "answer_text": "User passwords",
+        "is_correct": false
+      },
+      {
+        "answer_id": "22-1",
+        "answer_text": "Credit card data",
+        "is_correct": false
+      },
+      {
+        "answer_id": "22-2",
+        "answer_text": "Access tokens",
+        "is_correct": true
+      },
+      {
+        "answer_id": "22-3",
+        "answer_text": "Personal identification data",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-23",
+    "question_text": "TRUE or FALSE: Secure cookies are encrypted and can only be transmitted over HTTPS.",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "23-0",
+        "answer_text": "FALSE",
+        "is_correct": false
+      },
+      {
+        "answer_id": "23-1",
+        "answer_text": "TRUE",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-24",
+    "question_text": "TRUE or FALSE: HttpOnly cookies can be accessed by client-side JavaScript code.",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "24-0",
+        "answer_text": "TRUE",
+        "is_correct": false
+      },
+      {
+        "answer_id": "24-1",
+        "answer_text": "FALSE",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-25",
+    "question_text": "TRUE or FALSE: The SameSite attribute in cookies is used to prevent cross-site request forgery (CSRF) attacks.",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "25-0",
+        "answer_text": "FALSE",
+        "is_correct": false
+      },
+      {
+        "answer_id": "25-1",
+        "answer_text": "TRUE",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-26",
+    "question_text": "TRUE or FALSE: A cookie set with a domain of example.com will be accessible from a subdomain like test.example.com.",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "26-0",
+        "answer_text": "TRUE",
+        "is_correct": true
+      },
+      {
+        "answer_id": "26-1",
+        "answer_text": "FALSE",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-27",
+    "question_text": "TRUE or FALSE: Persistent cookies are automatically deleted when a user closes their web browser.",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "27-0",
+        "answer_text": "TRUE",
+        "is_correct": false
+      },
+      {
+        "answer_id": "27-1",
+        "answer_text": "FALSE",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-28",
+    "question_text": "All of the following are types of XSS (Cross-Site Scripting) EXCEPT:",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "28-0",
+        "answer_text": "DOM XSS",
+        "is_correct": false
+      },
+      {
+        "answer_id": "28-1",
+        "answer_text": "Distributed XSS",
+        "is_correct": true
+      },
+      {
+        "answer_id": "28-2",
+        "answer_text": "Reflected XSS",
+        "is_correct": false
+      },
+      {
+        "answer_id": "28-3",
+        "answer_text": "Stored XSS",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-29",
+    "question_text": "Which of the following is a mitigation technique to prevent XSS (Cross-Site Scripting)?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "29-0",
+        "answer_text": "Enabling remote code execution on the server.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "29-1",
+        "answer_text": "Using weak passwords for user accounts.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "29-2",
+        "answer_text": "Using Output Encoding.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "29-3",
+        "answer_text": "Allowing users to upload arbitrary files to the server.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-30",
+    "question_text": "What is Cross-Site Request Forgery (CSRF)?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "30-0",
+        "answer_text": "A type of attack that tricks a victim into performing an unwanted action on a website.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "30-1",
+        "answer_text": "A type of attack that allows an attacker to execute malicious scripts in a victim’s browser.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "30-2",
+        "answer_text": "A type of attack that allows an attacker to steal a victim’s login credentials.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "30-3",
+        "answer_text": "A type of attack that allows an attacker to intercept network traffic between a victim and a server.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-31",
+    "question_text": "All of the following are valid types of cookies EXCEPT:",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "31-0",
+        "answer_text": "First-party cookies",
+        "is_correct": false
+      },
+      {
+        "answer_id": "31-1",
+        "answer_text": "Session Cookies",
+        "is_correct": false
+      },
+      {
+        "answer_id": "31-2",
+        "answer_text": "Second-party cookies",
+        "is_correct": true
+      },
+      {
+        "answer_id": "31-3",
+        "answer_text": "Persistent Cookies",
+        "is_correct": false
+      }
+    ]
   }
 ]

@@ -1,0 +1,667 @@
+[
+  {
+    "question_id": "q-52",
+    "question_text": "Random data that is used as an additional input to a one-way function that hashes data, a password or passphrase:",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "52-0",
+        "answer_text": "Hashing",
+        "is_correct": false
+      },
+      {
+        "answer_id": "52-1",
+        "answer_text": "salt",
+        "is_correct": true
+      },
+      {
+        "answer_id": "52-2",
+        "answer_text": "key derivation",
+        "is_correct": false
+      },
+      {
+        "answer_id": "52-3",
+        "answer_text": "encryption",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-53",
+    "question_text": "The process of transforming a password into data that cannot be converted back to its original form:",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "53-0",
+        "answer_text": "encryption",
+        "is_correct": false
+      },
+      {
+        "answer_id": "53-1",
+        "answer_text": "encoding",
+        "is_correct": false
+      },
+      {
+        "answer_id": "53-2",
+        "answer_text": "Hashing",
+        "is_correct": true
+      },
+      {
+        "answer_id": "53-3",
+        "answer_text": "salting",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-54",
+    "question_text": "TRUE or FALSE - A cryptographic hash function used for password hashing needs to be fast to compute because a rapidly computed algorithm could make brute-force attacks harder to conduct:",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "54-0",
+        "answer_text": "TRUE",
+        "is_correct": false
+      },
+      {
+        "answer_id": "54-1",
+        "answer_text": "FALSE",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-55",
+    "question_text": "Which of the following statements accurately describes the properties of modern hashing algorithms used for password storage?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "55-0",
+        "answer_text": "MD5 and SHA-1 are the most secure hashing algorithms as they are designed to be slow, providing increased security through adjustable work factors.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "55-1",
+        "answer_text": "The bcrypt algorithm, with a work factor as large as the verification server performance allows, is the top choice for password storage if Argon2id is not available or PBKDF2 is required for FIPS-140 compliance.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "55-2",
+        "answer_text": "Argon2id is the least secure among modern hashing algorithms and should not be used for password storage.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "55-3",
+        "answer_text": "Scrypt and Argon2id are password-based key derivation functions with three different parameters that can be configured for both CPU and RAM usage trade-offs.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-56",
+    "question_text": "Which of the following characteristics is NOT recommended as part of a strong password policy?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "56-0",
+        "answer_text": "Permitting the use of all characters, including unicode and whitespace",
+        "is_correct": false
+      },
+      {
+        "answer_id": "56-1",
+        "answer_text": "Silently truncating passwords that exceed a certain length",
+        "is_correct": true
+      },
+      {
+        "answer_id": "56-2",
+        "answer_text": "Enforcing a minimum password length of 8 characters",
+        "is_correct": false
+      },
+      {
+        "answer_id": "56-3",
+        "answer_text": "Using a password strength meter to help users create more complex passwords",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-57",
+    "question_text": "The user or system that owns the protected resources and can grant access to them:",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "57-0",
+        "answer_text": "Client",
+        "is_correct": false
+      },
+      {
+        "answer_id": "57-1",
+        "answer_text": "Resource Server",
+        "is_correct": false
+      },
+      {
+        "answer_id": "57-2",
+        "answer_text": "Authorization Server",
+        "is_correct": false
+      },
+      {
+        "answer_id": "57-3",
+        "answer_text": "Resource Owner",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-58",
+    "question_text": "The application that wants to access the user’s account:",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "58-0",
+        "answer_text": "Client",
+        "is_correct": true
+      },
+      {
+        "answer_id": "58-1",
+        "answer_text": "Resource Server",
+        "is_correct": false
+      },
+      {
+        "answer_id": "58-2",
+        "answer_text": "Authorization Server",
+        "is_correct": false
+      },
+      {
+        "answer_id": "58-3",
+        "answer_text": "Resource Owner",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-59",
+    "question_text": "The server that issues access tokens upon successful authentication and consent by the Resource Owner:",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "59-0",
+        "answer_text": "Client",
+        "is_correct": false
+      },
+      {
+        "answer_id": "59-1",
+        "answer_text": "Resource Server",
+        "is_correct": false
+      },
+      {
+        "answer_id": "59-2",
+        "answer_text": "Authorization Server",
+        "is_correct": true
+      },
+      {
+        "answer_id": "59-3",
+        "answer_text": "Resource Owner",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-60",
+    "question_text": "The server that hosts the protected user accounts:",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "60-0",
+        "answer_text": "Client",
+        "is_correct": false
+      },
+      {
+        "answer_id": "60-1",
+        "answer_text": "Resource Server",
+        "is_correct": true
+      },
+      {
+        "answer_id": "60-2",
+        "answer_text": "Authorization Server",
+        "is_correct": false
+      },
+      {
+        "answer_id": "60-3",
+        "answer_text": "Resource Owner",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-61",
+    "question_text": "Which of the following statements BEST describes the relationship between OpenID Connect and OAuth 2.0?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "61-0",
+        "answer_text": "OAuth 2.0 is an extension of OpenID Connect.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "61-1",
+        "answer_text": "OpenID Connect and OAuth 2.0 are competing standards with the same functionality.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "61-2",
+        "answer_text": "OpenID Connect is an older version of OAuth 2.0.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "61-3",
+        "answer_text": "OpenID Connect is an identity layer built on top of the OAuth 2.0 framework.",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-62",
+    "question_text": "Which of the following statements BEST describes the relationship between OpenID Connect and OAuth 2.0?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "62-0",
+        "answer_text": "OAuth 2.0 is an extension of OpenID Connect.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "62-1",
+        "answer_text": "OpenID Connect and OAuth 2.0 are competing standards with the same functionality.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "62-2",
+        "answer_text": "OpenID Connect is an older version of OAuth 2.0.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "62-3",
+        "answer_text": "OpenID Connect is an identity layer built on top of the OAuth 2.0 framework.",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-63",
+    "question_text": "All of the following are true regarding ACL (Access Control List) EXCEPT:",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "63-0",
+        "answer_text": "It can protect against social engineering attacks or malware that bypasses access controls",
+        "is_correct": true
+      },
+      {
+        "answer_id": "63-1",
+        "answer_text": "It determines who or what can access an object (program, process or file)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "63-2",
+        "answer_text": "It determines what operations are allowed to be performed by the subject (user or user group)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "63-3",
+        "answer_text": "It determines what operations are prohibited to be performed by the subject (user or user group)",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-64",
+    "question_text": "Which of the following statements BEST describes the relationship between Role-Based Access Control (RBAC) and Mandatory Access Control (MAC)?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "64-0",
+        "answer_text": "MAC is a type of RBAC.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "64-1",
+        "answer_text": "RBAC is a subset of MAC.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "64-2",
+        "answer_text": "RBAC and MAC are competing models with similar functionalities.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "64-3",
+        "answer_text": "RBAC is a completely separate model from MAC.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-65",
+    "question_text": "Assuming you have an instance of AccessControl and have defined the ‘user’ and ‘admin’ roles as per the lesson, what would the output be if you execute the following command:\nlet permission = ac.can('admin').createOwn('book');\nconsole.log(permission.granted);",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "65-0",
+        "answer_text": "true",
+        "is_correct": true
+      },
+      {
+        "answer_id": "65-1",
+        "answer_text": "false",
+        "is_correct": false
+      },
+      {
+        "answer_id": "65-2",
+        "answer_text": "An error is thrown",
+        "is_correct": false
+      },
+      {
+        "answer_id": "65-3",
+        "answer_text": "undefined",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-66",
+    "question_text": "Which of the following is NOT considered to be a strong password?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "66-0",
+        "answer_text": "X6#9kYp$mZ",
+        "is_correct": false
+      },
+      {
+        "answer_id": "66-1",
+        "answer_text": "qwerty",
+        "is_correct": true
+      },
+      {
+        "answer_id": "66-2",
+        "answer_text": "CorrectHorseBatteryStaple",
+        "is_correct": false
+      },
+      {
+        "answer_id": "66-3",
+        "answer_text": "Tr0ub4dor&3",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-67",
+    "question_text": "Which of the following is FALSE regarding OAuth 2.0?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "67-0",
+        "answer_text": "Authorization code, client credentials, and device code are grant types that OAuth 2.0 offers.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "67-1",
+        "answer_text": "OAuth 2.0 is only suitable for use in web applications, and cannot be used in mobile or desktop applications.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "67-2",
+        "answer_text": "Scope is a mechanism in OAuth 2.0 to limit an application’s access to a user’s account.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "67-3",
+        "answer_text": "OAuth 2.0 is a standard designed to allow a website or application to access resources hosted by other web applications on behalf of a user.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-68",
+    "question_text": "What is the FIRST step in the OAuth 2.0 authorization-code flow?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "68-0",
+        "answer_text": "The client (application) asks for authorization from the resource owner.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "68-1",
+        "answer_text": "The application receives an access token from the authorization server.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "68-2",
+        "answer_text": "The client requests resources from the API with the access token.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "68-3",
+        "answer_text": "The resource server returns data to the client.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-69",
+    "question_text": "What is the SECOND step in the OAuth 2.0 authorization-code flow?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "69-0",
+        "answer_text": "The client asks for authorization from the resource owner.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "69-1",
+        "answer_text": "If the user approves, the application receives an authorization grant.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "69-2",
+        "answer_text": "The client requests an access token from the authorization server.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "69-3",
+        "answer_text": "The resource server returns data to the client.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-70",
+    "question_text": "OAuth 2.0 authorization-code flow: which step happens THIRD?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "70-0",
+        "answer_text": "The client requests an access token from the authorization server by authorization grant and client secret.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "70-1",
+        "answer_text": "If the user approves the request - the application gets an authorization grant.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "70-2",
+        "answer_text": "If the application request is verified - it will receive the access token from the authorization server.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "70-3",
+        "answer_text": "With obtained access token, application could request the resources from API.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-71",
+    "question_text": "OAuth 2.0 authorization-code flow: which step happens FOURTH?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "71-0",
+        "answer_text": "If the application request is verified - it will receive the access token from the authorization server.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "71-1",
+        "answer_text": "The client requests an access token from the authorization server by authorization grant and client secret.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "71-2",
+        "answer_text": "With obtained access token, application could request the resources from API.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "71-3",
+        "answer_text": "If the access token is valid, the resource server returns data to the client.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-72",
+    "question_text": "OAuth 2.0 authorization-code flow: which step happens FIFTH?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "72-0",
+        "answer_text": "With obtained access token, application could request the resources from API.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "72-1",
+        "answer_text": "If the application request is verified - it will receive the access token from the authorization server.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "72-2",
+        "answer_text": "If the access token is valid, the resource server returns data to the client.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "72-3",
+        "answer_text": "The client requests an access token from the authorization server by authorization grant and client secret.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-73",
+    "question_text": "OAuth 2.0 authorization-code flow: which step happens LAST?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "73-0",
+        "answer_text": "If the access token is valid, the resource server returns data to the client.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "73-1",
+        "answer_text": "With obtained access token, application could request the resources from API.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "73-2",
+        "answer_text": "The client requests an access token from the authorization server by authorization grant and client secret.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "73-3",
+        "answer_text": "If the user approves the request - the application gets an authorization grant.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-74",
+    "question_text": "There are three file-type permissions in Linux. What does the 'r' permission represent?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "74-0",
+        "answer_text": "write",
+        "is_correct": false
+      },
+      {
+        "answer_id": "74-1",
+        "answer_text": "read",
+        "is_correct": true
+      },
+      {
+        "answer_id": "74-2",
+        "answer_text": "execute",
+        "is_correct": false
+      },
+      {
+        "answer_id": "74-3",
+        "answer_text": "delete",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-75",
+    "question_text": "There are three file-type permissions in Linux. What does the 'w' permission represent?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "75-0",
+        "answer_text": "read",
+        "is_correct": false
+      },
+      {
+        "answer_id": "75-1",
+        "answer_text": "write",
+        "is_correct": true
+      },
+      {
+        "answer_id": "75-2",
+        "answer_text": "execute",
+        "is_correct": false
+      },
+      {
+        "answer_id": "75-3",
+        "answer_text": "rename",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-76",
+    "question_text": "There are three file-type permissions in Linux. What does the 'x' permission represent?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "76-0",
+        "answer_text": "read",
+        "is_correct": false
+      },
+      {
+        "answer_id": "76-1",
+        "answer_text": "write",
+        "is_correct": false
+      },
+      {
+        "answer_id": "76-2",
+        "answer_text": "execute",
+        "is_correct": true
+      },
+      {
+        "answer_id": "76-3",
+        "answer_text": "share",
+        "is_correct": false
+      }
+    ]
+  }
+]

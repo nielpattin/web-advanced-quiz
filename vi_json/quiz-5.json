@@ -461,5 +461,279 @@
         "is_correct": true
       }
     ]
+  },
+  {
+    "question_id": "q-20",
+    "question_text": "Điều nào sau đây KHÔNG phải là mục đích của cookie?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "20-0",
+        "answer_text": "Quản lý hiệu suất",
+        "is_correct": true
+      },
+      {
+        "answer_id": "20-1",
+        "answer_text": "Quản lý phiên",
+        "is_correct": false
+      },
+      {
+        "answer_id": "20-2",
+        "answer_text": "Cá nhân hóa",
+        "is_correct": false
+      },
+      {
+        "answer_id": "20-3",
+        "answer_text": "Theo dõi",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-21",
+    "question_text": "Loại cookie nào sau đây chịu trách nhiệm ghi nhớ các mặt hàng của bạn trong giỏ hàng?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "21-0",
+        "answer_text": "Third-party cookies",
+        "is_correct": false
+      },
+      {
+        "answer_id": "21-1",
+        "answer_text": "Session cookies",
+        "is_correct": true
+      },
+      {
+        "answer_id": "21-2",
+        "answer_text": "Persistent cookies",
+        "is_correct": false
+      },
+      {
+        "answer_id": "21-3",
+        "answer_text": "First-party cookies",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-22",
+    "question_text": "Cookie có thể lưu trữ loại dữ liệu nào sau đây?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "22-0",
+        "answer_text": "Mật khẩu người dùng",
+        "is_correct": false
+      },
+      {
+        "answer_id": "22-1",
+        "answer_text": "Dữ liệu thẻ tín dụng",
+        "is_correct": false
+      },
+      {
+        "answer_id": "22-2",
+        "answer_text": "Access tokens",
+        "is_correct": true
+      },
+      {
+        "answer_id": "22-3",
+        "answer_text": "Dữ liệu nhận dạng cá nhân",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-23",
+    "question_text": "ĐÚNG hay SAI: Secure cookies được mã hóa và chỉ có thể được truyền qua HTTPS.",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "23-0",
+        "answer_text": "SAI",
+        "is_correct": false
+      },
+      {
+        "answer_id": "23-1",
+        "answer_text": "ĐÚNG",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-24",
+    "question_text": "ĐÚNG hay SAI: HttpOnly cookies có thể được truy cập bởi mã JavaScript phía máy khách.",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "24-0",
+        "answer_text": "ĐÚNG",
+        "is_correct": false
+      },
+      {
+        "answer_id": "24-1",
+        "answer_text": "SAI",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-25",
+    "question_text": "ĐÚNG hay SAI: Thuộc tính SameSite trong cookie được dùng để ngăn chặn các cuộc tấn công giả mạo yêu cầu xuyên trang (CSRF).",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "25-0",
+        "answer_text": "SAI",
+        "is_correct": false
+      },
+      {
+        "answer_id": "25-1",
+        "answer_text": "ĐÚNG",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-26",
+    "question_text": "ĐÚNG hay SAI: Một cookie được đặt với miền example.com sẽ có thể truy cập được từ một tên miền phụ như test.example.com.",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "26-0",
+        "answer_text": "ĐÚNG",
+        "is_correct": true
+      },
+      {
+        "answer_id": "26-1",
+        "answer_text": "SAI",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-27",
+    "question_text": "ĐÚNG hay SAI: Persistent cookies tự động bị xóa khi người dùng đóng trình duyệt web của họ.",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "27-0",
+        "answer_text": "ĐÚNG",
+        "is_correct": false
+      },
+      {
+        "answer_id": "27-1",
+        "answer_text": "SAI",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-28",
+    "question_text": "Tất cả những điều sau đây là các loại XSS (Cross-Site Scripting) NGOẠI TRỪ:",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "28-0",
+        "answer_text": "DOM XSS",
+        "is_correct": false
+      },
+      {
+        "answer_id": "28-1",
+        "answer_text": "Distributed XSS",
+        "is_correct": true
+      },
+      {
+        "answer_id": "28-2",
+        "answer_text": "Reflected XSS",
+        "is_correct": false
+      },
+      {
+        "answer_id": "28-3",
+        "answer_text": "Stored XSS",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-29",
+    "question_text": "Điều nào sau đây là một kỹ thuật giảm thiểu để ngăn chặn XSS (Cross-Site Scripting)?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "29-0",
+        "answer_text": "Cho phép thực thi mã từ xa trên máy chủ.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "29-1",
+        "answer_text": "Sử dụng mật khẩu yếu cho tài khoản người dùng.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "29-2",
+        "answer_text": "Sử dụng Output Encoding.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "29-3",
+        "answer_text": "Cho phép người dùng tải lên các tệp tùy ý lên máy chủ.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-30",
+    "question_text": "Cross-Site Request Forgery (CSRF) là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "30-0",
+        "answer_text": "Một loại tấn công lừa nạn nhân thực hiện một hành động không mong muốn trên một trang web.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "30-1",
+        "answer_text": "Một loại tấn công cho phép kẻ tấn công thực thi các tập lệnh độc hại trong trình duyệt của nạn nhân.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "30-2",
+        "answer_text": "Một loại tấn công cho phép kẻ tấn công đánh cắp thông tin đăng nhập của nạn nhân.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "30-3",
+        "answer_text": "Một loại tấn công cho phép kẻ tấn công chặn lưu lượng mạng giữa nạn nhân và máy chủ.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-31",
+    "question_text": "Tất cả những điều sau đây là các loại cookie hợp lệ NGOẠI TRỪ:",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "31-0",
+        "answer_text": "First-party cookies",
+        "is_correct": false
+      },
+      {
+        "answer_id": "31-1",
+        "answer_text": "Session Cookies",
+        "is_correct": false
+      },
+      {
+        "answer_id": "31-2",
+        "answer_text": "Second-party cookies",
+        "is_correct": true
+      },
+      {
+        "answer_id": "31-3",
+        "answer_text": "Persistent Cookies",
+        "is_correct": false
+      }
+    ]
   }
 ]

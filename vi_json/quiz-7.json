@@ -1,0 +1,667 @@
+[
+  {
+    "question_id": "q-52",
+    "question_text": "Dữ liệu ngẫu nhiên được sử dụng làm đầu vào bổ sung cho một hàm một chiều băm dữ liệu, mật khẩu hoặc cụm mật khẩu:",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "52-0",
+        "answer_text": "Hashing",
+        "is_correct": false
+      },
+      {
+        "answer_id": "52-1",
+        "answer_text": "salt",
+        "is_correct": true
+      },
+      {
+        "answer_id": "52-2",
+        "answer_text": "key derivation",
+        "is_correct": false
+      },
+      {
+        "answer_id": "52-3",
+        "answer_text": "encryption",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-53",
+    "question_text": "Quá trình biến đổi mật khẩu thành dữ liệu không thể chuyển đổi ngược lại về dạng ban đầu:",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "53-0",
+        "answer_text": "encryption",
+        "is_correct": false
+      },
+      {
+        "answer_id": "53-1",
+        "answer_text": "encoding",
+        "is_correct": false
+      },
+      {
+        "answer_id": "53-2",
+        "answer_text": "Hashing",
+        "is_correct": true
+      },
+      {
+        "answer_id": "53-3",
+        "answer_text": "salting",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-54",
+    "question_text": "ĐÚNG hay SAI - Một hàm băm mật mã được sử dụng để băm mật khẩu cần phải tính toán nhanh vì một thuật toán tính toán nhanh có thể làm cho các cuộc tấn công vét cạn (brute-force attacks) khó thực hiện hơn:",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "54-0",
+        "answer_text": "ĐÚNG",
+        "is_correct": false
+      },
+      {
+        "answer_id": "54-1",
+        "answer_text": "SAI",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-55",
+    "question_text": "Tuyên bố nào sau đây mô tả chính xác các thuộc tính của các thuật toán băm hiện đại được sử dụng để lưu trữ mật khẩu?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "55-0",
+        "answer_text": "MD5 và SHA-1 là các thuật toán băm an toàn nhất vì chúng được thiết kế chậm, cung cấp bảo mật tăng cường thông qua các yếu tố công việc có thể điều chỉnh.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "55-1",
+        "answer_text": "Thuật toán bcrypt, với yếu tố công việc lớn nhất mà hiệu suất máy chủ xác minh cho phép, là lựa chọn hàng đầu để lưu trữ mật khẩu nếu Argon2id không khả dụng hoặc PBKDF2 được yêu cầu để tuân thủ FIPS-140.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "55-2",
+        "answer_text": "Argon2id là thuật toán kém an toàn nhất trong số các thuật toán băm hiện đại và không nên được sử dụng để lưu trữ mật khẩu.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "55-3",
+        "answer_text": "Scrypt và Argon2id là các hàm dẫn xuất khóa dựa trên mật khẩu với ba tham số khác nhau có thể được cấu hình cho cả việc sử dụng CPU và RAM.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-56",
+    "question_text": "Đặc điểm nào sau đây KHÔNG được khuyến nghị là một phần của chính sách mật khẩu mạnh?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "56-0",
+        "answer_text": "Cho phép sử dụng tất cả các ký tự, bao gồm unicode và khoảng trắng",
+        "is_correct": false
+      },
+      {
+        "answer_id": "56-1",
+        "answer_text": "Tự động cắt bớt mật khẩu vượt quá độ dài nhất định",
+        "is_correct": true
+      },
+      {
+        "answer_id": "56-2",
+        "answer_text": "Thực thi độ dài mật khẩu tối thiểu là 8 ký tự",
+        "is_correct": false
+      },
+      {
+        "answer_id": "56-3",
+        "answer_text": "Sử dụng công cụ đo độ mạnh mật khẩu để giúp người dùng tạo mật khẩu phức tạp hơn",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-57",
+    "question_text": "Người dùng hoặc hệ thống sở hữu các tài nguyên được bảo vệ và có thể cấp quyền truy cập vào chúng:",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "57-0",
+        "answer_text": "Client",
+        "is_correct": false
+      },
+      {
+        "answer_id": "57-1",
+        "answer_text": "Resource Server",
+        "is_correct": false
+      },
+      {
+        "answer_id": "57-2",
+        "answer_text": "Authorization Server",
+        "is_correct": false
+      },
+      {
+        "answer_id": "57-3",
+        "answer_text": "Resource Owner",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-58",
+    "question_text": "Ứng dụng muốn truy cập tài khoản của người dùng:",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "58-0",
+        "answer_text": "Client",
+        "is_correct": true
+      },
+      {
+        "answer_id": "58-1",
+        "answer_text": "Resource Server",
+        "is_correct": false
+      },
+      {
+        "answer_id": "58-2",
+        "answer_text": "Authorization Server",
+        "is_correct": false
+      },
+      {
+        "answer_id": "58-3",
+        "answer_text": "Resource Owner",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-59",
+    "question_text": "Máy chủ cấp mã thông báo truy cập khi xác thực thành công và được sự đồng ý của Chủ sở hữu tài nguyên:",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "59-0",
+        "answer_text": "Client",
+        "is_correct": false
+      },
+      {
+        "answer_id": "59-1",
+        "answer_text": "Resource Server",
+        "is_correct": false
+      },
+      {
+        "answer_id": "59-2",
+        "answer_text": "Authorization Server",
+        "is_correct": true
+      },
+      {
+        "answer_id": "59-3",
+        "answer_text": "Resource Owner",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-60",
+    "question_text": "Máy chủ lưu trữ các tài khoản người dùng được bảo vệ:",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "60-0",
+        "answer_text": "Client",
+        "is_correct": false
+      },
+      {
+        "answer_id": "60-1",
+        "answer_text": "Resource Server",
+        "is_correct": true
+      },
+      {
+        "answer_id": "60-2",
+        "answer_text": "Authorization Server",
+        "is_correct": false
+      },
+      {
+        "answer_id": "60-3",
+        "answer_text": "Resource Owner",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-61",
+    "question_text": "Tuyên bố nào sau đây MÔ TẢ ĐÚNG NHẤT mối quan hệ giữa OpenID Connect và OAuth 2.0?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "61-0",
+        "answer_text": "OAuth 2.0 là một phần mở rộng của OpenID Connect.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "61-1",
+        "answer_text": "OpenID Connect và OAuth 2.0 là các tiêu chuẩn cạnh tranh với cùng chức năng.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "61-2",
+        "answer_text": "OpenID Connect là một phiên bản cũ hơn của OAuth 2.0.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "61-3",
+        "answer_text": "OpenID Connect là một lớp nhận dạng được xây dựng trên nền tảng OAuth 2.0.",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-62",
+    "question_text": "Tuyên bố nào sau đây MÔ TẢ ĐÚNG NHẤT mối quan hệ giữa OpenID Connect và OAuth 2.0?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "62-0",
+        "answer_text": "OAuth 2.0 là một phần mở rộng của OpenID Connect.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "62-1",
+        "answer_text": "OpenID Connect và OAuth 2.0 là các tiêu chuẩn cạnh tranh với cùng chức năng.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "62-2",
+        "answer_text": "OpenID Connect là một phiên bản cũ hơn của OAuth 2.0.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "62-3",
+        "answer_text": "OpenID Connect là một lớp nhận dạng được xây dựng trên nền tảng OAuth 2.0.",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-63",
+    "question_text": "Tất cả những điều sau đây đều đúng về ACL (Access Control List) NGOẠI TRỪ:",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "63-0",
+        "answer_text": "Nó có thể bảo vệ chống lại các cuộc tấn công kỹ thuật xã hội hoặc phần mềm độc hại bỏ qua kiểm soát truy cập",
+        "is_correct": true
+      },
+      {
+        "answer_id": "63-1",
+        "answer_text": "Nó xác định ai hoặc cái gì có thể truy cập một đối tượng (chương trình, tiến trình hoặc tệp)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "63-2",
+        "answer_text": "Nó xác định các hoạt động được phép thực hiện bởi chủ thể (người dùng hoặc nhóm người dùng)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "63-3",
+        "answer_text": "Nó xác định các hoạt động bị cấm thực hiện bởi chủ thể (người dùng hoặc nhóm người dùng)",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-64",
+    "question_text": "Tuyên bố nào sau đây MÔ TẢ ĐÚNG NHẤT mối quan hệ giữa Kiểm soát truy cập dựa trên vai trò (RBAC) và Kiểm soát truy cập bắt buộc (MAC)?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "64-0",
+        "answer_text": "MAC là một loại RBAC.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "64-1",
+        "answer_text": "RBAC là một tập hợp con của MAC.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "64-2",
+        "answer_text": "RBAC và MAC là các mô hình cạnh tranh với các chức năng tương tự.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "64-3",
+        "answer_text": "RBAC là một mô hình hoàn toàn riêng biệt với MAC.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-65",
+    "question_text": "Giả sử bạn có một phiên bản AccessControl và đã định nghĩa các vai trò 'user' và 'admin' theo bài học, đầu ra sẽ là gì nếu bạn thực thi lệnh sau:\nlet permission = ac.can('admin').createOwn('book');\nconsole.log(permission.granted);",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "65-0",
+        "answer_text": "true",
+        "is_correct": true
+      },
+      {
+        "answer_id": "65-1",
+        "answer_text": "false",
+        "is_correct": false
+      },
+      {
+        "answer_id": "65-2",
+        "answer_text": "Một lỗi được ném ra",
+        "is_correct": false
+      },
+      {
+        "answer_id": "65-3",
+        "answer_text": "undefined",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-66",
+    "question_text": "Điều nào sau đây KHÔNG được coi là mật khẩu mạnh?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "66-0",
+        "answer_text": "X6#9kYp$mZ",
+        "is_correct": false
+      },
+      {
+        "answer_id": "66-1",
+        "answer_text": "qwerty",
+        "is_correct": true
+      },
+      {
+        "answer_id": "66-2",
+        "answer_text": "CorrectHorseBatteryStaple",
+        "is_correct": false
+      },
+      {
+        "answer_id": "66-3",
+        "answer_text": "Tr0ub4dor&3",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-67",
+    "question_text": "Điều nào sau đây là SAI về OAuth 2.0?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "67-0",
+        "answer_text": "Mã ủy quyền, thông tin đăng nhập client và mã thiết bị là các loại cấp quyền mà OAuth 2.0 cung cấp.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "67-1",
+        "answer_text": "OAuth 2.0 chỉ phù hợp để sử dụng trong các ứng dụng web và không thể sử dụng trong các ứng dụng di động hoặc máy tính để bàn.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "67-2",
+        "answer_text": "Scope là một cơ chế trong OAuth 2.0 để giới hạn quyền truy cập của ứng dụng vào tài khoản của người dùng.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "67-3",
+        "answer_text": "OAuth 2.0 là một tiêu chuẩn được thiết kế để cho phép một trang web hoặc ứng dụng truy cập các tài nguyên được lưu trữ bởi các ứng dụng web khác thay mặt người dùng.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-68",
+    "question_text": "Bước ĐẦU TIÊN trong luồng mã ủy quyền OAuth 2.0 là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "68-0",
+        "answer_text": "Client (ứng dụng) yêu cầu ủy quyền từ chủ sở hữu tài nguyên.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "68-1",
+        "answer_text": "Ứng dụng nhận mã thông báo truy cập từ máy chủ ủy quyền.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "68-2",
+        "answer_text": "Client yêu cầu tài nguyên từ API bằng mã thông báo truy cập.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "68-3",
+        "answer_text": "Máy chủ tài nguyên trả về dữ liệu cho client.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-69",
+    "question_text": "Bước THỨ HAI trong luồng mã ủy quyền OAuth 2.0 là gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "69-0",
+        "answer_text": "Client yêu cầu ủy quyền từ chủ sở hữu tài nguyên.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "69-1",
+        "answer_text": "Nếu người dùng chấp thuận, ứng dụng sẽ nhận được quyền ủy quyền.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "69-2",
+        "answer_text": "Client yêu cầu mã thông báo truy cập từ máy chủ ủy quyền.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "69-3",
+        "answer_text": "Máy chủ tài nguyên trả về dữ liệu cho client.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-70",
+    "question_text": "Luồng mã ủy quyền OAuth 2.0: bước nào xảy ra THỨ BA?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "70-0",
+        "answer_text": "Client yêu cầu mã thông báo truy cập từ máy chủ ủy quyền bằng quyền ủy quyền và client secret.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "70-1",
+        "answer_text": "Nếu người dùng chấp thuận yêu cầu - ứng dụng sẽ nhận được quyền ủy quyền.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "70-2",
+        "answer_text": "Nếu yêu cầu ứng dụng được xác minh - nó sẽ nhận được mã thông báo truy cập từ máy chủ ủy quyền.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "70-3",
+        "answer_text": "Với mã thông báo truy cập đã có, ứng dụng có thể yêu cầu tài nguyên từ API.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-71",
+    "question_text": "Luồng mã ủy quyền OAuth 2.0: bước nào xảy ra THỨ TƯ?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "71-0",
+        "answer_text": "Nếu yêu cầu ứng dụng được xác minh - nó sẽ nhận được mã thông báo truy cập từ máy chủ ủy quyền.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "71-1",
+        "answer_text": "Client yêu cầu mã thông báo truy cập từ máy chủ ủy quyền bằng quyền ủy quyền và client secret.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "71-2",
+        "answer_text": "Với mã thông báo truy cập đã có, ứng dụng có thể yêu cầu tài nguyên từ API.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "71-3",
+        "answer_text": "Nếu mã thông báo truy cập hợp lệ, máy chủ tài nguyên sẽ trả về dữ liệu cho client.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-72",
+    "question_text": "Luồng mã ủy quyền OAuth 2.0: bước nào xảy ra THỨ NĂM?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "72-0",
+        "answer_text": "Với mã thông báo truy cập đã có, ứng dụng có thể yêu cầu tài nguyên từ API.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "72-1",
+        "answer_text": "Nếu yêu cầu ứng dụng được xác minh - nó sẽ nhận được mã thông báo truy cập từ máy chủ ủy quyền.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "72-2",
+        "answer_text": "Nếu mã thông báo truy cập hợp lệ, máy chủ tài nguyên sẽ trả về dữ liệu cho client.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "72-3",
+        "answer_text": "Client yêu cầu mã thông báo truy cập từ máy chủ ủy quyền bằng quyền ủy quyền và client secret.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-73",
+    "question_text": "Luồng mã ủy quyền OAuth 2.0: bước nào xảy ra CUỐI CÙNG?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "73-0",
+        "answer_text": "Nếu mã thông báo truy cập hợp lệ, máy chủ tài nguyên sẽ trả về dữ liệu cho client.",
+        "is_correct": true
+      },
+      {
+        "answer_id": "73-1",
+        "answer_text": "Với mã thông báo truy cập đã có, ứng dụng có thể yêu cầu tài nguyên từ API.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "73-2",
+        "answer_text": "Client yêu cầu mã thông báo truy cập từ máy chủ ủy quyền bằng quyền ủy quyền và client secret.",
+        "is_correct": false
+      },
+      {
+        "answer_id": "73-3",
+        "answer_text": "Nếu người dùng chấp thuận yêu cầu - ứng dụng sẽ nhận được quyền ủy quyền.",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-74",
+    "question_text": "Có ba quyền loại tệp trong Linux. Quyền 'r' đại diện cho điều gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "74-0",
+        "answer_text": "write",
+        "is_correct": false
+      },
+      {
+        "answer_id": "74-1",
+        "answer_text": "read",
+        "is_correct": true
+      },
+      {
+        "answer_id": "74-2",
+        "answer_text": "execute",
+        "is_correct": false
+      },
+      {
+        "answer_id": "74-3",
+        "answer_text": "delete",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-75",
+    "question_text": "Có ba quyền loại tệp trong Linux. Quyền 'w' đại diện cho điều gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "75-0",
+        "answer_text": "read",
+        "is_correct": false
+      },
+      {
+        "answer_id": "75-1",
+        "answer_text": "write",
+        "is_correct": true
+      },
+      {
+        "answer_id": "75-2",
+        "answer_text": "execute",
+        "is_correct": false
+      },
+      {
+        "answer_id": "75-3",
+        "answer_text": "rename",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-76",
+    "question_text": "Có ba quyền loại tệp trong Linux. Quyền 'x' đại diện cho điều gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "76-0",
+        "answer_text": "read",
+        "is_correct": false
+      },
+      {
+        "answer_id": "76-1",
+        "answer_text": "write",
+        "is_correct": false
+      },
+      {
+        "answer_id": "76-2",
+        "answer_text": "execute",
+        "is_correct": true
+      },
+      {
+        "answer_id": "76-3",
+        "answer_text": "share",
+        "is_correct": false
+      }
+    ]
+  }
+]
