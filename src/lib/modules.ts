@@ -7,5 +7,7 @@ export const modules = [
 	{ value: '5', label: 'Module 1 - Security' },
 	{ value: '6', label: 'Module 2 - Security' },
 	{ value: '7', label: 'Module 3 - Security' },
+	{ value: '8', label: 'Part 1 - Learn First' },
+	{ value: '9', label: 'Part 2 - Learn First' },
 	{ value: 'all', label: 'All Modules' }
 ];

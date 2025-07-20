@@ -1,0 +1,972 @@
+[
+  {
+    "question_id": "q-176",
+    "question_text": "Which of the following are NOT valid Blade directives in Laravel? (Chỉ thị nào sau đây KHÔNG hợp lệ trong Laravel?)(có thể chọn nhiều đáp án)",
+    "question_type": "multiple_answers_question",
+    "answers": [
+      {
+        "answer_id": "176-0",
+        "answer_text": "@extend",
+        "is_correct": false
+      },
+      {
+        "answer_id": "176-1",
+        "answer_text": "@foreach",
+        "is_correct": false
+      },
+      {
+        "answer_id": "176-2",
+        "answer_text": "@middleware",
+        "is_correct": true
+      },
+      {
+        "answer_id": "176-3",
+        "answer_text": "@if",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-177",
+    "question_text": "Trong PHP, sau khi thực hiện đoạn mã kết quả hiển thị sẽ là gì? (Nhập đúng cả dấu cách)\n\n<?php\n\n$num = 1;\n\n$ber = 2;\n\necho $num.\"+\".$ber;\n\n?>",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "177-0",
+        "answer_text": "lỗi",
+        "is_correct": false
+      },
+      {
+        "answer_id": "177-1",
+        "answer_text": "3",
+        "is_correct": false
+      },
+      {
+        "answer_id": "177-2",
+        "answer_text": "1+2",
+        "is_correct": true
+      },
+      {
+        "answer_id": "177-3",
+        "answer_text": "1 + 2",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-178",
+    "question_text": "Đoạn mã sau, in ra giá trị nào sau đây?\n\n<?php $check = 'false'; if($check) { echo 'true'; } else { echo 'false'; }?>",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "178-0",
+        "answer_text": "false",
+        "is_correct": false
+      },
+      {
+        "answer_id": "178-1",
+        "answer_text": "true false",
+        "is_correct": false
+      },
+      {
+        "answer_id": "178-2",
+        "answer_text": "Không có giá trị",
+        "is_correct": false
+      },
+      {
+        "answer_id": "178-3",
+        "answer_text": "true",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-179",
+    "question_text": "Which Laravel command is used to create a new database migration? (Lệnh nào trong Laravel được sử dụng để tạo chuyển dịch CSDL mới?)",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "179-0",
+        "answer_text": "C. php artisan make:model",
+        "is_correct": false
+      },
+      {
+        "answer_id": "179-1",
+        "answer_text": "A. php artisan make:request",
+        "is_correct": false
+      },
+      {
+        "answer_id": "179-2",
+        "answer_text": "B. php artisan make:controller",
+        "is_correct": false
+      },
+      {
+        "answer_id": "179-3",
+        "answer_text": "D. php artisan make:migration",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-180",
+    "question_text": "Trong PHP, sau khi thực hiện đoạn mã kết quả hiển thị sẽ là gì? (Nhập đúng cả dấu cách)\n\n<?php $father = \"mother\";$mother = \"son\";echo $$father;?>",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "180-0",
+        "answer_text": "mother",
+        "is_correct": false
+      },
+      {
+        "answer_id": "180-1",
+        "answer_text": "son",
+        "is_correct": true
+      },
+      {
+        "answer_id": "180-2",
+        "answer_text": "null",
+        "is_correct": false
+      },
+      {
+        "answer_id": "180-3",
+        "answer_text": "error",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-181",
+    "question_text": "Which Blade directives are used for template inheritance in Laravel? (Chi thị\n\nBlade nào được sử dụng để kế thừa mẫu trong Laravel?) (chọn 2)",
+    "question_type": "multiple_answers_question",
+    "answers": [
+      {
+        "answer_id": "181-0",
+        "answer_text": "@foreach",
+        "is_correct": false
+      },
+      {
+        "answer_id": "181-1",
+        "answer_text": "@route",
+        "is_correct": false
+      },
+      {
+        "answer_id": "181-2",
+        "answer_text": "@extends",
+        "is_correct": true
+      },
+      {
+        "answer_id": "181-3",
+        "answer_text": "@inject",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-182",
+    "question_text": "Đoạn mã sau, in ra giá trị nào sau đây?\n\n<?php $RESULT = 11 + 011 + 0x11;echo \"$RESULT\";?>",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "182-0",
+        "answer_text": "37",
+        "is_correct": true
+      },
+      {
+        "answer_id": "182-1",
+        "answer_text": "22",
+        "is_correct": false
+      },
+      {
+        "answer_id": "182-2",
+        "answer_text": "39",
+        "is_correct": false
+      },
+      {
+        "answer_id": "182-3",
+        "answer_text": "11",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-183",
+    "question_text": "What is the purpose of a Blade template in Laravel? (Mục đích chính của mẫu Blade trong Laravel là gì?)",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "183-0",
+        "answer_text": "To generate dynamic HTML content for views (Tạo nội dung động HTML cho hiển thị)",
+        "is_correct": true
+      },
+      {
+        "answer_id": "183-1",
+        "answer_text": "To define the structure and relationships of database tables (Định nghĩa cấu trúc và mối liên hệ của các bảng CSDL)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "183-2",
+        "answer_text": "To interact with the database using Eloquent ORM (Tương tác với CSDL sử dụng Eloquent ORM)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "183-3",
+        "answer_text": "To handle HTTP requests and return responses (Xử lý các yêu cầu HTTP và trả lời đáp ứng)",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-184",
+    "question_text": "Which HTML attribute is used to specify the URL of a form’s submission location? (Thuộc tính HTML nào được sử dụng để chỉ định URL cho đích nhận dữ liệu khi gửi Form)",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "184-0",
+        "answer_text": "action (Hành động)",
+        "is_correct": true
+      },
+      {
+        "answer_id": "184-1",
+        "answer_text": "enctype (Mã hóa)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "184-2",
+        "answer_text": "target (Đích)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "184-3",
+        "answer_text": "method (Phương thức)",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-185",
+    "question_text": "Which of the following is an actual function of Laravel’s Artisan CLI? (Chức năng nào sau đây thực sự thuộc về Artisan CLI của Laravel?)",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "185-0",
+        "answer_text": "Serving web pages to clients (Cung cấp trang web cho khách hàng)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "185-1",
+        "answer_text": "Running scheduled tasks (Chạy các nhiệm vụ được đặt lịch trước)",
+        "is_correct": true
+      },
+      {
+        "answer_id": "185-2",
+        "answer_text": "Handling user authentication logic (Xử lý logic xác thực người dùng)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "185-3",
+        "answer_text": "Managing database transactions automatically (Tự động quản lý các giao dịch cơ sở dữ liệu)",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-186",
+    "question_text": "Which of the following is NOT a key component of Laravel’s well-structured architecture? (Thành phần nào sau đây KHÔNG phải là thành phần chính của kiến trúc Laravel?)",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "186-0",
+        "answer_text": "Middleware (Phần mềm trung gian)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "186-1",
+        "answer_text": "URL Generators (Bộ tạo URL)",
+        "is_correct": true
+      },
+      {
+        "answer_id": "186-2",
+        "answer_text": "Service Providers (Nhà cung cấp dịch vụ)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "186-3",
+        "answer_text": "View Composers (Bộ biên soạn hiển thị)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "186-4",
+        "answer_text": "Event Listeners (Bộ lắng nghe sự kiện)",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-187",
+    "question_text": "Trong PHP, sau khi thực hiện đoạn mã kết quả hiển thị sẽ là gì? (Nhập đúng cả dấu cách) $foo = 'bar';\n\necho '$foo\\' ' . \"$foo\\ ' \";",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "187-0",
+        "answer_text": "$foo'bar\\",
+        "is_correct": false
+      },
+      {
+        "answer_id": "187-1",
+        "answer_text": "$foo'bar'",
+        "is_correct": false
+      },
+      {
+        "answer_id": "187-2",
+        "answer_text": "$foo'bar\\'",
+        "is_correct": true
+      },
+      {
+        "answer_id": "187-3",
+        "answer_text": "$foo'bar'",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-188",
+    "question_text": "Đặc tính laravel nào giúp bảo vệ chống lại tấn công XSS?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "188-0",
+        "answer_text": "tối ưu hóa các truy vấn csdl",
+        "is_correct": false
+      },
+      {
+        "answer_id": "188-1",
+        "answer_text": "Làm sạch HTML",
+        "is_correct": true
+      },
+      {
+        "answer_id": "188-2",
+        "answer_text": "nhà/bộ cung cấp dịch vụ",
+        "is_correct": false
+      },
+      {
+        "answer_id": "188-3",
+        "answer_text": "phần mềm trung gian",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-189",
+    "question_text": "Đoạn mã sau, in ra giá trị nào sau đây?\n\n$var = 'a';$VAR = 'b';echo \"$var$VAR\";",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "189-0",
+        "answer_text": "lỗi không có biến $varb",
+        "is_correct": false
+      },
+      {
+        "answer_id": "189-1",
+        "answer_text": "aa",
+        "is_correct": false
+      },
+      {
+        "answer_id": "189-2",
+        "answer_text": "bb",
+        "is_correct": false
+      },
+      {
+        "answer_id": "189-3",
+        "answer_text": "ab",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-190",
+    "question_text": "Toán tử nào sau đây không tồn tại trong PHP?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "190-0",
+        "answer_text": "<>",
+        "is_correct": false
+      },
+      {
+        "answer_id": "190-1",
+        "answer_text": "<=>",
+        "is_correct": false
+      },
+      {
+        "answer_id": "190-2",
+        "answer_text": "><",
+        "is_correct": true
+      },
+      {
+        "answer_id": "190-3",
+        "answer_text": "!==",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-191",
+    "question_text": "Đoạn mã sau, in ra giá trị nào sau đây?\n\n<?php $check='false'; if($check){ echo 'true'; } else{echo 'false';}?>",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "191-0",
+        "answer_text": "Không có giá trị",
+        "is_correct": false
+      },
+      {
+        "answer_id": "191-1",
+        "answer_text": "false",
+        "is_correct": false
+      },
+      {
+        "answer_id": "191-2",
+        "answer_text": "true false",
+        "is_correct": false
+      },
+      {
+        "answer_id": "191-3",
+        "answer_text": "true",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-192",
+    "question_text": "Trong PHP, sau khi thực hiện đoạn mã kết quả hiển thị sẽ là gì? (Nhập đúng cả dấu cách)\n\nfor ($x = 1; $x <= 2; $x++) {\n\nfor ($y = 1; $y <= 3; $y++) {\n\nif ($x == $y) continue;\n\nprint(\"x = $x y = $y\");\n\n}\n\n}",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "192-0",
+        "answer_text": "x = 1 y = 1 x = 2 y = 2 x = 2 y = 3 x = 1 y = 2",
+        "is_correct": false
+      },
+      {
+        "answer_id": "192-1",
+        "answer_text": "x = 1 y = 2 x = 1 y = 3 x = 2 y = 1x = 2 y = 3",
+        "is_correct": false
+      },
+      {
+        "answer_id": "192-2",
+        "answer_text": "x = 1 y = 1x = 2 y = 2x = 2 y = 3x = 1 y = 2",
+        "is_correct": false
+      },
+      {
+        "answer_id": "192-3",
+        "answer_text": "x = 1 y = 2x = 1 y = 3x = 2 y = 1x = 2 y = 3",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-193",
+    "question_text": "Câu lệnh nào sau đây dùng để xuất nội dung ra trình duyệt?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "193-0",
+        "answer_text": "echo",
+        "is_correct": true
+      },
+      {
+        "answer_id": "193-1",
+        "answer_text": "say",
+        "is_correct": false
+      },
+      {
+        "answer_id": "193-2",
+        "answer_text": "write",
+        "is_correct": false
+      },
+      {
+        "answer_id": "193-3",
+        "answer_text": "cout<<",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-194",
+    "question_text": "Which of the following tasks can be performed using Eloquent ORM in Laravel? (Cái gì là nhiệm vụ cần được thực hiện khi sử dụng Eloquent ORM trong Laravel?) (Chọn 2)",
+    "question_type": "multiple_answers_question",
+    "answers": [
+      {
+        "answer_id": "194-0",
+        "answer_text": "Deleting records in the database (Xóa các bản ghi trong CSDL)",
+        "is_correct": true
+      },
+      {
+        "answer_id": "194-1",
+        "answer_text": "Serving static assets like CSS and JavaScript files (Chạy các tài nguyên tĩnh như CSS và các tệp tin JavaScript)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "194-2",
+        "answer_text": "Defining routes and handling middleware (Định nghĩa tuyến và xử lý phần mềm trung gian)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "194-3",
+        "answer_text": "Creating records in the database (Tạo các bản ghi trong CSDL)",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-195",
+    "question_text": "Kỹ thuật nào sau đây được sử dụng để ngăn cản tấn công Cross-site REQUIEST FORGERY trong laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "195-0",
+        "answer_text": "Kích hoạt HTTP cookes",
+        "is_correct": false
+      },
+      {
+        "answer_id": "195-1",
+        "answer_text": "Loại bỏ kí tự không an toàn(làm sạch) [trong] đầu vào người dùng",
+        "is_correct": false
+      },
+      {
+        "answer_id": "195-2",
+        "answer_text": "sử dụng thẻ csrf trong from",
+        "is_correct": true
+      },
+      {
+        "answer_id": "195-3",
+        "answer_text": "Dừng các truy vấn trong cơ sở dữ liệu",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-196",
+    "question_text": "What is the purpose of using Composer in Laravel? (Mục đích chính của Composer trong Laravel?)",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "196-0",
+        "answer_text": "To handle HTTP requests (Xử lý các yêu cầu của HTTP)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "196-1",
+        "answer_text": "To manage PHP library dependencies (Quản lý các thư viện phụ thuộc PHP)",
+        "is_correct": true
+      },
+      {
+        "answer_id": "196-2",
+        "answer_text": "To build front-end assets (Xây dựng các tài nguyên của front end)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "196-3",
+        "answer_text": "To configure database connections (Cấu hình các kết nối CSDL)",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-197",
+    "question_text": "Trong PHP, sau khi thực hiện đoạn mã kết quả hiển thị sẽ là gì? (Nhập chính xác cả dấu cách)\n\n$s = '13149';\n\n$s[$s[1]] = $s[1] + $s[3];\n\necho($s);",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "197-0",
+        "answer_text": "17179",
+        "is_correct": false
+      },
+      {
+        "answer_id": "197-1",
+        "answer_text": "17149",
+        "is_correct": false
+      },
+      {
+        "answer_id": "197-2",
+        "answer_text": "13179",
+        "is_correct": true
+      },
+      {
+        "answer_id": "197-3",
+        "answer_text": "7",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-198",
+    "question_text": "Which of the following is NOT a valid data type in PHP? (Kiểu dữ liệu nào sau đây KHÔNG hợp lệ trong PHP?)",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "198-0",
+        "answer_text": "String (Chuỗi)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "198-1",
+        "answer_text": "Boolean (Kiểu logic)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "198-2",
+        "answer_text": "Character (Ký tự)",
+        "is_correct": true
+      },
+      {
+        "answer_id": "198-3",
+        "answer_text": "Float (Kiểu số [động])",
+        "is_correct": false
+      },
+      {
+        "answer_id": "198-4",
+        "answer_text": "Integer (Số nguyên)",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-199",
+    "question_text": "Trong PHP, sau khi thực hiện đoạn mã kết quả hiển thị sẽ là gì? (Nhập đúng cả dấu cách)\n\n<?php\n\n$num = \"1\";\n\n$ber = \"2\";\n\necho $num + $ber;\n\n?>",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "199-0",
+        "answer_text": "1+2",
+        "is_correct": false
+      },
+      {
+        "answer_id": "199-1",
+        "answer_text": "lỗi",
+        "is_correct": false
+      },
+      {
+        "answer_id": "199-2",
+        "answer_text": "1 + 2",
+        "is_correct": false
+      },
+      {
+        "answer_id": "199-3",
+        "answer_text": "3",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-200",
+    "question_text": "In Laravel, what is the primary purpose of the store method in a RESTful API controller? (Mục đích chính của phương thức store trong bộ điều khiển RESTful API trong Laravel?)",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "200-0",
+        "answer_text": "To fetch all resources from the database (Lấy ra tất cả tài nguyên từ CSDL)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "200-1",
+        "answer_text": "To save a new resource to the database (Lưu trữ tài nguyên mới tới CSDL)",
+        "is_correct": true
+      },
+      {
+        "answer_id": "200-2",
+        "answer_text": "To delete a resource from the database (Xóa tài nguyên đã tồn tại trong CSDL)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "200-3",
+        "answer_text": "To update an existing resource in the database (Cập nhật tài nguyên hiện có trong CSDL)",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-201",
+    "question_text": "chiến lược chung nào sau đây ngăn cản tấn công csrf trong laravel?(chọn 3)",
+    "question_type": "multiple_answers_question",
+    "answers": [
+      {
+        "answer_id": "201-0",
+        "answer_text": "thẩm định đầu vào người dùng",
+        "is_correct": false
+      },
+      {
+        "answer_id": "201-1",
+        "answer_text": "sử dụng chức năng bảo vệ csrf được xây dựng sẵn",
+        "is_correct": true
+      },
+      {
+        "answer_id": "201-2",
+        "answer_text": "sử dụng thẻ csrf",
+        "is_correct": true
+      },
+      {
+        "answer_id": "201-3",
+        "answer_text": "phiên mã hóa",
+        "is_correct": true
+      },
+      {
+        "answer_id": "201-4",
+        "answer_text": "https",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-202",
+    "question_text": "What is a recommended practice for handling validation in a Laravel API controller? (Thực hành được khuyến nghị để xử lý xác thực trong bộ điều khiển API của Laravel là gì?)",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "202-0",
+        "answer_text": "Ignoring validation and storing data directly (Bỏ qua xác thực và lưu dữ liệu trực tiếp)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "202-1",
+        "answer_text": "Manually checking each input field with isset() before saving (Kiểm tra từng trường nhập liệu theo cách thủ công bằng isset() trước khi lưu)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "202-2",
+        "answer_text": "Using Laravel’s Form Request classes for validation (Sử dụng các lớp Form Request của Laravel để xác thực)",
+        "is_correct": true
+      },
+      {
+        "answer_id": "202-3",
+        "answer_text": "Returning a 500 Internal Server Error status for validation failures( (Trả về mã lỗi 500 Internal Server Error khi xác thực thất bại)",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-203",
+    "question_text": "tính năng chính của bộ xây dựng truy vấn của laravel?(chọn 2)",
+    "question_type": "multiple_answers_question",
+    "answers": [
+      {
+        "answer_id": "203-0",
+        "answer_text": "nâng cao thiết kế trực quan của trang wed",
+        "is_correct": false
+      },
+      {
+        "answer_id": "203-1",
+        "answer_text": "xử lý xác thực và định danh người dùng",
+        "is_correct": false
+      },
+      {
+        "answer_id": "203-2",
+        "answer_text": "phụ trợ đa kết nối csdl",
+        "is_correct": true
+      },
+      {
+        "answer_id": "203-3",
+        "answer_text": "cung cấp giao diện đơn giản và hiệu quả để tạo và chạy các truy vấn csdl",
+        "is_correct": true
+      },
+      {
+        "answer_id": "203-4",
+        "answer_text": "tự động làm sạch dữ liệu đầu vào người dùng (chưa chốt)",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-204",
+    "question_text": "vai trò của bộ cung cấp định vị trong ứng dụng laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "204-0",
+        "answer_text": "Được sử dụng cho chuyển hóa cơ sở dữ liệu",
+        "is_correct": false
+      },
+      {
+        "answer_id": "204-1",
+        "answer_text": "Giúp khởi động và cấu hình các dịch vụ ứng dụng",
+        "is_correct": true
+      },
+      {
+        "answer_id": "204-2",
+        "answer_text": "Cung cấp phương thức để xử lý các yêu cầu",
+        "is_correct": false
+      },
+      {
+        "answer_id": "204-3",
+        "answer_text": "xác nhận và làm sạch dữ liệu các đầu vào người dùng",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-205",
+    "question_text": "Mặc định của một biến không có giá trị được thể hiện với từ khóa nào sau đây?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "205-0",
+        "answer_text": "undef",
+        "is_correct": false
+      },
+      {
+        "answer_id": "205-1",
+        "answer_text": "null",
+        "is_correct": true
+      },
+      {
+        "answer_id": "205-2",
+        "answer_text": "Không có khái niệm như vậy trong PHP",
+        "is_correct": false
+      },
+      {
+        "answer_id": "205-3",
+        "answer_text": "none",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-206",
+    "question_text": "What are some key responsibilities of an API controller in a Laravel application? (Chức năng chính của bộ điều khiển API trong ứng dụng Laravel?) (chọn 2)",
+    "question_type": "multiple_answers_question",
+    "answers": [
+      {
+        "answer_id": "206-0",
+        "answer_text": "Managing the database schema and migrations (Quản lý lược đồ CSDL và dịch chuyển CSDL)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "206-1",
+        "answer_text": "Handling HTTP requests and returning appropriate responses (Xử lý yêu cầu HTTP và trả về đáp ứng tương ứng)",
+        "is_correct": true
+      },
+      {
+        "answer_id": "206-2",
+        "answer_text": "Defining routes within the controller (Định nghĩa tuyến trong Bộ điều khiển)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "206-3",
+        "answer_text": "Interacting with the model layer to perform CRUD operations (Tương tác với các lớp mô hình dữ liệu để thực thi vận hành CRUD)",
+        "is_correct": true
+      },
+      {
+        "answer_id": "206-4",
+        "answer_text": "Implementing business logic directly within controller methods (Hoàn thành các quy tắc doanh nghiệp trong các phương thức trong Bộ điều khiển)",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-207",
+    "question_text": "Trong PHP, sau khi thực hiện đoạn mã kết quả hiển thị sẽ là gì? (Nhập chính xác cả dấu cách)\n\n$string1 = \"ab\";\n\n$string2 = \"cd\";\n\n$string1 = $string1 . $string2;\n\n$string3 = \"abc\"; $string1 .= $string3;\n\necho $string1;",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "207-0",
+        "answer_text": "abcabc",
+        "is_correct": false
+      },
+      {
+        "answer_id": "207-1",
+        "answer_text": "abcdabc",
+        "is_correct": true
+      },
+      {
+        "answer_id": "207-2",
+        "answer_text": "abcd",
+        "is_correct": false
+      },
+      {
+        "answer_id": "207-3",
+        "answer_text": "ab",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-208",
+    "question_text": "Trong PHP, sau khi thực hiện đoạn mã kết quả hiển thị sẽ là gì? (Nhập chính xác cả dấu cách)\n\necho (int) \"1235Jason\";",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "208-0",
+        "answer_text": "1235Jason",
+        "is_correct": false
+      },
+      {
+        "answer_id": "208-1",
+        "answer_text": "Jason",
+        "is_correct": false
+      },
+      {
+        "answer_id": "208-2",
+        "answer_text": "1235",
+        "is_correct": true
+      },
+      {
+        "answer_id": "208-3",
+        "answer_text": "12345",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-209",
+    "question_text": "Which of the following are SQL Injection attack vectors? (Các cơ chế tiêm nhiễm trong SQL Injection gồm có?)",
+    "question_type": "multiple_answers_question",
+    "answers": [
+      {
+        "answer_id": "209-0",
+        "answer_text": "Through user input (HTTP GET/POST). (Thông qua user input (HTTP GET/POST).)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "209-1",
+        "answer_text": "Through user input (HTTP GET/POST) and cookies. (Thông qua user input (HTTP GET/POST) và cookies.)",
+        "is_correct": true
+      },
+      {
+        "answer_id": "209-2",
+        "answer_text": "Through cookies. (Thông qua cookies.)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "209-3",
+        "answer_text": "All are incorrect. (Tất cả đều sai.)",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-210",
+    "question_text": "Tên biến nào sau đây là không đúng?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "210-0",
+        "answer_text": "$number-in-class",
+        "is_correct": true
+      },
+      {
+        "answer_id": "210-1",
+        "answer_text": "$number_in_class",
+        "is_correct": false
+      },
+      {
+        "answer_id": "210-2",
+        "answer_text": "$nic",
+        "is_correct": false
+      },
+      {
+        "answer_id": "210-3",
+        "answer_text": "$NumberInClass",
+        "is_correct": false
+      }
+    ]
+  }
+]

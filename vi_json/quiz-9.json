@@ -1,0 +1,1016 @@
+[
+  {
+    "question_id": "q-211",
+    "question_text": "Which of the following are valid data types in PHP? (Kiểu dữ liệu phù hợp của PHP?)",
+    "question_type": "multiple_answers_question",
+    "answers": [
+      {
+        "answer_id": "211-0",
+        "answer_text": "Character (Ký tự)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "211-1",
+        "answer_text": "Decimal (Kiểu thập phân)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "211-2",
+        "answer_text": "Tuple (Bộ dữ liệu)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "211-3",
+        "answer_text": "Integer (Số nguyên)",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-212",
+    "question_text": "Which of the following is a valid use case for Laravel’s Artisan CLI? (Trường hợp sử dụng hợp lệ nào sau đây dành cho Artisan CLI của Laravel?)",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "212-0",
+        "answer_text": "Running JavaScript frameworks like React (Chạy các framework JavaScript như React)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "212-1",
+        "answer_text": "Configuring web server settings (Cấu hình cài đặt máy chủ web)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "212-2",
+        "answer_text": "Generating boilerplate code (Tạo mã sẵn)",
+        "is_correct": true
+      },
+      {
+        "answer_id": "212-3",
+        "answer_text": "Handling HTTP requests directly (Xử lý trực tiếp các yêu cầu HTTP)",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-213",
+    "question_text": "Toán tử ?? trong biểu thức $x = $y ?? $z có ý nghĩa gì?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "213-0",
+        "answer_text": "$x nhận giá trị $y nếu $y là sai (false)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "213-1",
+        "answer_text": "$x nhận giá trị $y nếu $y là đúng (true)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "213-2",
+        "answer_text": "$x nhận giá trị $y nếu $y > $z",
+        "is_correct": false
+      },
+      {
+        "answer_id": "213-3",
+        "answer_text": "$x nhận giá trị $y nếu $y tồn tại và có giá trị",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-214",
+    "question_text": "Cái gì dưới đây là quan trọng an toàn phiên trong laravel(chọn 3)",
+    "question_type": "multiple_answers_question",
+    "answers": [
+      {
+        "answer_id": "214-0",
+        "answer_text": "tạo phát các id phiên",
+        "is_correct": true
+      },
+      {
+        "answer_id": "214-1",
+        "answer_text": "sử dụng cookies bảo mật",
+        "is_correct": true
+      },
+      {
+        "answer_id": "214-2",
+        "answer_text": "sử dụng thời gian hoạt động lâu/dài cho các phiên",
+        "is_correct": false
+      },
+      {
+        "answer_id": "214-3",
+        "answer_text": "cấu hình bộ lưu trũ trong CSDL",
+        "is_correct": true
+      },
+      {
+        "answer_id": "214-4",
+        "answer_text": "không bật cookies phiên",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-215",
+    "question_text": "Which action cannot be performed through a successful SQL injection attack? (Hành động nào không thể thực hiện được thông qua tấn công SQL injection thành công?)",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "215-0",
+        "answer_text": "Display a list of customer phone numbers (Hiển thị danh sách số điện thoại của khách hàng)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "215-1",
+        "answer_text": "Explore the names of different fields in a table (Khám phá tên của các trường khác nhau trong bảng)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "215-2",
+        "answer_text": "Delete a database table (Xóa bảng cơ sở dữ liệu)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "215-3",
+        "answer_text": "Reformat the hard drive of the web application server (Định dạng lại ổ cứng của máy chủ ứng dụng web)",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-216",
+    "question_text": "Thư viện PHP nào được tích hợp trong ứng dụng laravel sử dụng Composer(chọn 4)",
+    "question_type": "multiple_answers_question",
+    "answers": [
+      {
+        "answer_id": "216-0",
+        "answer_text": "Monolog",
+        "is_correct": true
+      },
+      {
+        "answer_id": "216-1",
+        "answer_text": "Guzzle",
+        "is_correct": true
+      },
+      {
+        "answer_id": "216-2",
+        "answer_text": "Eloquent",
+        "is_correct": false
+      },
+      {
+        "answer_id": "216-3",
+        "answer_text": "Symfony Console",
+        "is_correct": true
+      },
+      {
+        "answer_id": "216-4",
+        "answer_text": "Carbon",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-217",
+    "question_text": "Đoạn mã sau, in ra giá trị nào sau đây?\n\n$var = '0';if ($var) { echo 'true';} else { echo 'false';}",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "217-0",
+        "answer_text": "true false",
+        "is_correct": false
+      },
+      {
+        "answer_id": "217-1",
+        "answer_text": "true",
+        "is_correct": false
+      },
+      {
+        "answer_id": "217-2",
+        "answer_text": "không có giá trị",
+        "is_correct": false
+      },
+      {
+        "answer_id": "217-3",
+        "answer_text": "false",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-218",
+    "question_text": "In Laravel, which syntax is valid to define a route that uses a controller action? (Trong Laravel, cú pháp nào là hợp lệ để xác định tuyến đường sử dụng một hành động của bộ điều khiển?)",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "218-0",
+        "answer_text": "Route::controller(‘/user’, ‘UserController@show’);",
+        "is_correct": true
+      },
+      {
+        "answer_id": "218-1",
+        "answer_text": "Route::get(‘/user’, ‘UserController@show’);",
+        "is_correct": true
+      },
+      {
+        "answer_id": "218-2",
+        "answer_text": "Route::post(‘/user’, ‘UserController’);",
+        "is_correct": false
+      },
+      {
+        "answer_id": "218-3",
+        "answer_text": "Route::action(‘/user’, ‘UserController@show’);",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-219",
+    "question_text": "PHP là viết tắt của cụm từ nào sau đây?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "219-0",
+        "answer_text": "Hypertext Transfer Protocol",
+        "is_correct": false
+      },
+      {
+        "answer_id": "219-1",
+        "answer_text": "Hypertext Markup Language",
+        "is_correct": false
+      },
+      {
+        "answer_id": "219-2",
+        "answer_text": "PHP: Hypertext Preprocessor",
+        "is_correct": true
+      },
+      {
+        "answer_id": "219-3",
+        "answer_text": "Preprocessed Hypertext Page",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-220",
+    "question_text": "Ký hiệu nào được dùng khi sử dụng biến trong PHP?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "220-0",
+        "answer_text": "$",
+        "is_correct": true
+      },
+      {
+        "answer_id": "220-1",
+        "answer_text": "@",
+        "is_correct": false
+      },
+      {
+        "answer_id": "220-2",
+        "answer_text": "&",
+        "is_correct": false
+      },
+      {
+        "answer_id": "220-3",
+        "answer_text": "#",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-221",
+    "question_text": "Which loop in PHP is specifically designed for iterating over arrays? (Vòng lặp nào trong PHP được thiết kế đặc biệt để duyệt qua các mảng?)",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "221-0",
+        "answer_text": "while loop",
+        "is_correct": false
+      },
+      {
+        "answer_id": "221-1",
+        "answer_text": "foreach loop",
+        "is_correct": true
+      },
+      {
+        "answer_id": "221-2",
+        "answer_text": "for loop",
+        "is_correct": false
+      },
+      {
+        "answer_id": "221-3",
+        "answer_text": "do-while loop",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-222",
+    "question_text": "Which of the following is a task you can accomplish using the Laravel framework? (Nhiệm vụ nào sau đây có thể được thực hiện bằng Laravel framework?)",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "222-0",
+        "answer_text": "Creating desktop applications (Tạo các ứng dụng cục bộ)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "222-1",
+        "answer_text": "Running machine learning models (Chạy mô hình máy học)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "222-2",
+        "answer_text": "Building RESTful APIs (Xây dựng RESTful API)",
+        "is_correct": true
+      },
+      {
+        "answer_id": "222-3",
+        "answer_text": "Developing mobile games (Phát triển trò chơi di động)",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-223",
+    "question_text": "Toán tử <=> có ý nghĩa như thế nào?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "223-0",
+        "answer_text": "Trả về các giá trị nhỏ hơn không, bằng không hoặc lớn hơn không tùy thuộc vào hai đối số",
+        "is_correct": true
+      },
+      {
+        "answer_id": "223-1",
+        "answer_text": "So sánh khác",
+        "is_correct": false
+      },
+      {
+        "answer_id": "223-2",
+        "answer_text": "So sánh khác về giá trị và kiểu dữ liệu",
+        "is_correct": false
+      },
+      {
+        "answer_id": "223-3",
+        "answer_text": "Toán tử không tồn tại trong PHP",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-224",
+    "question_text": "What are some considerations when deploying to shared hosts and cloud platforms? (Điều gì cần lưu ý khi triển khai ứng dụng tới đám mây hoặc các máy chủ chia sẻ (dùng chung)?) (Chọn 3)",
+    "question_type": "multiple_answers_question",
+    "answers": [
+      {
+        "answer_id": "224-0",
+        "answer_text": "Security measures (Phương án / biện pháp an ninh an toàn)",
+        "is_correct": true
+      },
+      {
+        "answer_id": "224-1",
+        "answer_text": "Cost and pricing plans (Giá cả và kế hoạch chi phí)",
+        "is_correct": true
+      },
+      {
+        "answer_id": "224-2",
+        "answer_text": "Scalability and performance (Khả năng mở rộng và hiệu suất)",
+        "is_correct": true
+      },
+      {
+        "answer_id": "224-3",
+        "answer_text": "User interface design (Thiết kế giao diện người dùng)",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-225",
+    "question_text": "Which of the following commands is used to create a new Laravel project? (Lệnh nào sau đây được sử dụng để tạo dự án Laravel?)",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "225-0",
+        "answer_text": "composer new-project laravel/laravel projectname",
+        "is_correct": false
+      },
+      {
+        "answer_id": "225-1",
+        "answer_text": "laravel new projectname",
+        "is_correct": false
+      },
+      {
+        "answer_id": "225-2",
+        "answer_text": "composer create-project –prefer-dist laravel/laravel projectname",
+        "is_correct": true
+      },
+      {
+        "answer_id": "225-3",
+        "answer_text": "composer install laravel/laravel projectname",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-226",
+    "question_text": "Which of the following are advantages of using the Laravel framework? (Lợi ích sử dụng Laravel?) (chọn 3)",
+    "question_type": "multiple_answers_question",
+    "answers": [
+      {
+        "answer_id": "226-0",
+        "answer_text": "Artisan CLI",
+        "is_correct": true
+      },
+      {
+        "answer_id": "226-1",
+        "answer_text": "Eloquent ORM (Eloquent ORM)",
+        "is_correct": true
+      },
+      {
+        "answer_id": "226-2",
+        "answer_text": "Modularity (Tiêu chuẩn/modun hóa)",
+        "is_correct": true
+      },
+      {
+        "answer_id": "226-3",
+        "answer_text": "Limited library support (Phụ trợ thư viện hạn chế)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "226-4",
+        "answer_text": "Complex configuration (Cấu hình phức tạp)",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-227",
+    "question_text": "What are some best practices for organizing Laravel applications? (Cách sử dụng tốt nhất cho quản lý các ứng dụng của Laravel) (chọn 2)",
+    "question_type": "multiple_answers_question",
+    "answers": [
+      {
+        "answer_id": "227-0",
+        "answer_text": "Employing descriptive names for files and directories (Làm việc với các tên miêu tả cho các tệp tin và các thư mục tệp tin)",
+        "is_correct": true
+      },
+      {
+        "answer_id": "227-1",
+        "answer_text": "Documenting code (Tài liệu hóa code)",
+        "is_correct": true
+      },
+      {
+        "answer_id": "227-2",
+        "answer_text": "Avoiding the use of Laravel’s built-in features (Tránh sử dụng các đặc tính tính xây dựng sẵn của Laravel)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "227-3",
+        "answer_text": "Ignoring PSR standards (Bỏ qua tiêu chuẩn PSR)",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-228",
+    "question_text": "Trong PHP, sau khi thực hiện đoạn mã kết quả hiển thị sẽ là gì? (Nhập chính xác cả dấu cách)\n\nswitch (1) {\n\ncase 1:\n\nprint(\"Book Details\");\n\ncase 2:\n\nprint(\"Book Author\");\n\ndefault:\n\nprint(\"Missing Book\"); }",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "228-0",
+        "answer_text": "Book AuthorMissing Book",
+        "is_correct": false
+      },
+      {
+        "answer_id": "228-1",
+        "answer_text": "Book DetailsBook AuthorMissing Book",
+        "is_correct": true
+      },
+      {
+        "answer_id": "228-2",
+        "answer_text": "Missing Book",
+        "is_correct": false
+      },
+      {
+        "answer_id": "228-3",
+        "answer_text": "Book Details",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-229",
+    "question_text": "Đoạn mã nào sau đây được sử dụng để chú thích PHP",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "229-0",
+        "answer_text": "# you are pretty",
+        "is_correct": false
+      },
+      {
+        "answer_id": "229-1",
+        "answer_text": "/* commented code here */",
+        "is_correct": false
+      },
+      {
+        "answer_id": "229-2",
+        "answer_text": "Tất cả đều đúng",
+        "is_correct": true
+      },
+      {
+        "answer_id": "229-3",
+        "answer_text": "// you are handsome",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-230",
+    "question_text": "mục đích chính của thẩm định yêu cầu được xây dựng sẵn trong laravel?",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "230-0",
+        "answer_text": "quản lý định danh và xác thực",
+        "is_correct": false
+      },
+      {
+        "answer_id": "230-1",
+        "answer_text": "tối ưu hóa truy vấn csdl để nâng cao hiệu suất",
+        "is_correct": false
+      },
+      {
+        "answer_id": "230-2",
+        "answer_text": "cải thiện phần hiển thị và thiết kế của ứng dụng",
+        "is_correct": false
+      },
+      {
+        "answer_id": "230-3",
+        "answer_text": "để đảm bảo dữ liệu người dùng được làm sạch khỏi các ký tự rác và thẩm định trước khi xử lý",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-231",
+    "question_text": "Trong PHP, sau khi thực hiện đoạn mã kết quả hiển thị sẽ là gì? (Nhập đúng cả dấu cách)\n\n<?php\n\n$str = \"5dollars\";\n\n$a = 10;\n\n$a += $str;\n\necho $a;\n\n?>",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "231-0",
+        "answer_text": "15",
+        "is_correct": true
+      },
+      {
+        "answer_id": "231-1",
+        "answer_text": "105",
+        "is_correct": false
+      },
+      {
+        "answer_id": "231-2",
+        "answer_text": "5",
+        "is_correct": false
+      },
+      {
+        "answer_id": "231-3",
+        "answer_text": "10",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-232",
+    "question_text": "Giá trị của biến $var là gì?\n\n$var = 1 / 2;",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "232-0",
+        "answer_text": "1",
+        "is_correct": false
+      },
+      {
+        "answer_id": "232-1",
+        "answer_text": "0",
+        "is_correct": false
+      },
+      {
+        "answer_id": "232-2",
+        "answer_text": "0,5",
+        "is_correct": true
+      },
+      {
+        "answer_id": "232-3",
+        "answer_text": "2",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-233",
+    "question_text": "Truy cập đến phần từ có giá trị 'd' cần sử dụng chỉ số nào với mảng $a?\n\n$a = array( 'a', 3 => 'b', 1 => 'c', 'd');",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "233-0",
+        "answer_text": "$a[2]",
+        "is_correct": false
+      },
+      {
+        "answer_id": "233-1",
+        "answer_text": "$a[1]",
+        "is_correct": false
+      },
+      {
+        "answer_id": "233-2",
+        "answer_text": "$a[3]",
+        "is_correct": false
+      },
+      {
+        "answer_id": "233-3",
+        "answer_text": "$a[4]",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-234",
+    "question_text": "Đoạn mã sau, in ra giá trị nào sauđây?\n\n$a = array();if ($a == null) { echo 'true';} else { echo 'false'; )",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "234-0",
+        "answer_text": "false",
+        "is_correct": false
+      },
+      {
+        "answer_id": "234-1",
+        "answer_text": "không in",
+        "is_correct": false
+      },
+      {
+        "answer_id": "234-2",
+        "answer_text": "lỗi",
+        "is_correct": false
+      },
+      {
+        "answer_id": "234-3",
+        "answer_text": "true",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-235",
+    "question_text": "What is the primary role of the Eloquent ORM in Laravel? (Mục đích chính của Eloquent ORM trong Laravel?)",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "235-0",
+        "answer_text": "To handle HTTP requests and responses (Xử lý các yêu cầu và đáp ứng HTTP)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "235-1",
+        "answer_text": "To provide an interface for interacting with the database (Cung cấp giao diện cho tương tác CSDL)",
+        "is_correct": true
+      },
+      {
+        "answer_id": "235-2",
+        "answer_text": "To define routes for the application (Định nghĩa tuyến cho các ứng dụng)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "235-3",
+        "answer_text": "To manage database schema and migrations (Quản lý lược đồ và dịch chuyển CSDL)",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-236",
+    "question_text": "What is the primary role of the Eloquent ORM in Laravel? (Mục đích chính của Eloquent ORM trong Laravel?)",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "236-0",
+        "answer_text": "To handle HTTP requests and responses (Xử lý các yêu cầu và đáp ứng HTTP)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "236-1",
+        "answer_text": "To provide an interface for interacting with the database (Cung cấp giao diện cho tương tác CSDL)",
+        "is_correct": true
+      },
+      {
+        "answer_id": "236-2",
+        "answer_text": "To define routes for the application (Định nghĩa tuyến cho các ứng dụng)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "236-3",
+        "answer_text": "To manage database schema and migrations (Quản lý lược đồ và dịch chuyển CSDL)",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-237",
+    "question_text": "Cơ sở của một cuộc tấn công SQL injection là gì? (Điều gì là bản chất của một cuộc tấn công SQL injection?)",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "237-0",
+        "answer_text": "Để máy chủ SQL tấn công trình duyệt web máy khách",
+        "is_correct": false
+      },
+      {
+        "answer_id": "237-1",
+        "answer_text": "Để liên kết các máy chủ SQL thành một botnet",
+        "is_correct": false
+      },
+      {
+        "answer_id": "237-2",
+        "answer_text": "Để chèn câu lệnh SQL thông qua đầu vào người dùng chưa được lọc",
+        "is_correct": true
+      },
+      {
+        "answer_id": "237-3",
+        "answer_text": "Để hiển thị mã SQL để nó có thể được kiểm tra",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-238",
+    "question_text": "Cookie that is not created by the website being viewed is called what? (Cookie không được tạo bởi trang web đang được xem là gì?)",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "238-0",
+        "answer_text": "Second-party cookie (Cookie của bên thứ hai)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "238-1",
+        "answer_text": "Third-party cookie (Cookie của bên thứ ba)",
+        "is_correct": true
+      },
+      {
+        "answer_id": "238-2",
+        "answer_text": "Fourth-party cookie (Cookie của bên thứ tư)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "238-3",
+        "answer_text": "First-party cookie (Cookie chính chủ)",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-239",
+    "question_text": "Trong PHP, sau khi thực hiện đoạn mã kết quả hiển thị sẽ là gì? (Nhập đúng cả dấu cách)\n\n<?php\n\n$str = \"5.5dollars\";\n\n(double) $str;\n\n(int) $str;\n\n(string) $str;\n\necho $str;\n\n?>",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "239-0",
+        "answer_text": "5",
+        "is_correct": false
+      },
+      {
+        "answer_id": "239-1",
+        "answer_text": "5.5",
+        "is_correct": false
+      },
+      {
+        "answer_id": "239-2",
+        "answer_text": "5.5dollars",
+        "is_correct": true
+      },
+      {
+        "answer_id": "239-3",
+        "answer_text": "0",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-240",
+    "question_text": "Đoạn mã sau, in ra giá trị nào sau đây?\n\nif (null === false) { echo 'true';} else { echo 'false';}",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "240-0",
+        "answer_text": "true",
+        "is_correct": false
+      },
+      {
+        "answer_id": "240-1",
+        "answer_text": "lỗi",
+        "is_correct": false
+      },
+      {
+        "answer_id": "240-2",
+        "answer_text": "false",
+        "is_correct": true
+      },
+      {
+        "answer_id": "240-3",
+        "answer_text": "không in",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-241",
+    "question_text": "Which folder in a Laravel application contains the HTTP controllers? (Thư mục nào trong Laravel chứa bộ điều khiển HTTP?)",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "241-0",
+        "answer_text": "config/Controllers",
+        "is_correct": false
+      },
+      {
+        "answer_id": "241-1",
+        "answer_text": "public/Controllers",
+        "is_correct": false
+      },
+      {
+        "answer_id": "241-2",
+        "answer_text": "app/Http/Controllers",
+        "is_correct": true
+      },
+      {
+        "answer_id": "241-3",
+        "answer_text": "app/Http/Routes",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-242",
+    "question_text": "Which of the following is an essential part of Laravel’s architecture? (Thành phần nào sau đây là một phần thiết yếu của kiến trúc Laravel?)",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "242-0",
+        "answer_text": "URL Generators (Bộ tạo URL)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "242-1",
+        "answer_text": "XML Parsers (Bộ phân tích cú pháp XML)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "242-2",
+        "answer_text": "REST API Controllers (Bộ điều khiển REST API)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "242-3",
+        "answer_text": "Middleware (Phần mềm trung gian)",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-243",
+    "question_text": "Trong PHP, sau khi thực hiện đoạn mã kết quả hiển thị sẽ là gì?\n\n$x = 25; while ($x < 10) { $x--; } echo($x);",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "243-0",
+        "answer_text": "9",
+        "is_correct": false
+      },
+      {
+        "answer_id": "243-1",
+        "answer_text": "0",
+        "is_correct": false
+      },
+      {
+        "answer_id": "243-2",
+        "answer_text": "25",
+        "is_correct": true
+      },
+      {
+        "answer_id": "243-3",
+        "answer_text": "10",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-244",
+    "question_text": "What is the primary role of a controller in the MVC pattern of Laravel? (Mục đích chính của bộ điều khiển Controller trong mô hình Model View Controller là gì?)",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "244-0",
+        "answer_text": "To manage the data and business logic of the application (Quản lý dữ liệu và các quy tắc doanh nghiệp trong ứng dụng)",
+        "is_correct": true
+      },
+      {
+        "answer_id": "244-1",
+        "answer_text": "Creating records in the database (Tạo các bản ghi trong CSDL)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "244-2",
+        "answer_text": "Defining routes and handling middleware (Định nghĩa tuyến và xử lý phần mềm trung gian)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "244-3",
+        "answer_text": "To handle the presentation logic and display views to the user (Giải quyết quy tắc trình bày và hiển thị tới người dùng)",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question_id": "q-245",
+    "question_text": "Điều nào trong số này Không phải là tấn công DOS (Không phải là tấn công từ chối dịch vụ DOS?)",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "245-0",
+        "answer_text": "Smurf",
+        "is_correct": false
+      },
+      {
+        "answer_id": "245-1",
+        "answer_text": "Ping flood",
+        "is_correct": false
+      },
+      {
+        "answer_id": "245-2",
+        "answer_text": "SYN flood",
+        "is_correct": false
+      },
+      {
+        "answer_id": "245-3",
+        "answer_text": "Push flood",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-246",
+    "question_text": "Which of the following is an actual function of Laravel’s Artisan CLI? (Chức năng nào sau đây thực sự thuộc về Artisan CLI của Laravel?)",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "246-0",
+        "answer_text": "Managing database transactions automatically (Tự động quản lý các giao dịch cơ sở dữ liệu)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "246-1",
+        "answer_text": "Handling user authentication logic (Xử lý logic xác thực người dùng)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "246-2",
+        "answer_text": "Serving web pages to clients (Cung cấp trang web cho khách hàng)",
+        "is_correct": false
+      },
+      {
+        "answer_id": "246-3",
+        "answer_text": "Running scheduled tasks (Chạy các nhiệm vụ được đặt lịch trước)",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question_id": "q-247",
+    "question_text": "mục đích trong của phần mềm trung gian (middeleware) trong ứng dụng laravel",
+    "question_type": "single_answer_question",
+    "answers": [
+      {
+        "answer_id": "247-0",
+        "answer_text": "để quản lý các kết nối csdl",
+        "is_correct": false
+      },
+      {
+        "answer_id": "247-1",
+        "answer_text": "Thực hiện các nhiệm vụ nội tại",
+        "is_correct": false
+      },
+      {
+        "answer_id": "247-2",
+        "answer_text": "Để giải quyết các quy tắc định tuyến",
+        "is_correct": false
+      },
+      {
+        "answer_id": "247-3",
+        "answer_text": "Lọc yêu cầu http tới các ứng dụng",
+        "is_correct": true
+      }
+    ]
+  }
+]
