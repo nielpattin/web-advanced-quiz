@@ -1,6 +1,7 @@
 <script lang="ts">
+	import { createEventDispatcher } from 'svelte';
+
 	interface Props {
-		// QuizCard component for displaying the current question and answers
 		currentQuestion: any;
 		current: number;
 		quizData: any[];
@@ -25,11 +26,77 @@
 		toggleFavorite,
 		answers
 	}: Props = $props();
+
+	const dispatch = createEventDispatcher();
+
+	let startX = 0;
+	let currentX = 0;
+	let translateX = 0;
+	let animating = false;
+	let animationDirection: 'left' | 'right' | null = null;
+
+	function handleTouchStart(e: TouchEvent) {
+		if (animating) return;
+		if (e.touches.length !== 1) return;
+		startX = e.touches[0].clientX;
+		currentX = startX;
+	}
+
+	function handleTouchMove(e: TouchEvent) {
+		if (animating) return;
+		if (e.touches.length !== 1) return;
+		currentX = e.touches[0].clientX;
+		const delta = currentX - startX;
+		// Only allow swipe on mobile width
+		if (window.innerWidth < 768) {
+			translateX = delta;
+		}
+	}
+
+	function handleTouchEnd() {
+		if (animating) return;
+		const delta = currentX - startX;
+		const threshold = 60; // px
+		if (window.innerWidth < 768) {
+			if (delta < -threshold) {
+				// Swipe left
+				animationDirection = 'left';
+				translateX = -window.innerWidth * 0.7;
+				animating = true;
+				setTimeout(() => {
+					dispatch('swipeLeft');
+					translateX = 0;
+					animationDirection = null;
+					animating = false;
+				}, 200);
+			} else if (delta > threshold) {
+				// Swipe right
+				animationDirection = 'right';
+				translateX = window.innerWidth * 0.7;
+				animating = true;
+				setTimeout(() => {
+					dispatch('swipeRight');
+					translateX = 0;
+					animationDirection = null;
+					animating = false;
+				}, 200);
+			} else {
+				// Snap back
+				translateX = 0;
+			}
+		}
+	}
 </script>
 
 <!-- Quiz Card -->
 <div
-	class="quiz-card bg-[#29273F] text-[#CECDE0] rounded-2xl shadow-lg w-[90%] max-w-[90vw] px-4 pt-16 relative flex flex-col gap-2 mt-8"
+	class="quiz-card bg-[#29273F] text-[#CECDE0] rounded-2xl shadow-lg w-[90%] max-w-[90vw] px-4 pt-16 relative flex flex-col gap-2 mt-8 touch-pan-x select-none"
+	ontouchstart={handleTouchStart}
+	ontouchmove={handleTouchMove}
+	ontouchend={handleTouchEnd}
+	style="transform: translateX({translateX}px); transition: {animating || animationDirection
+		? 'transform 0.2s cubic-bezier(0.4,0,0.2,1)'
+		: 'none'};"
 >
 	<!-- Question number and Favorite Button row -->
 	<div class="flex items-center justify-between mb-2">

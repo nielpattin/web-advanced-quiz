@@ -22,6 +22,7 @@
 	let current = $derived(() => appState.favoritesCurrent);
 	let favorites: Set<string> = $state(new Set());
 	let allQuizzes: Quiz[] = $state([]);
+	let isLoading = $state(false);
 
 	let sidebarOpen = $state(false);
 
@@ -64,6 +65,7 @@
 				favorites = new Set(favs);
 
 				try {
+					isLoading = true;
 					if ((window as any)._allModulesCache) {
 						allQuizzes = (window as any)._allModulesCache;
 					} else {
@@ -77,6 +79,8 @@
 					}
 				} catch (error) {
 					console.error('Failed to load quiz data:', error);
+				} finally {
+					isLoading = false;
 				}
 			};
 
@@ -108,18 +112,6 @@
 </script>
 
 <div class="flex flex-row min-h-screen min-w-screen w-screen bg-[#1D1B2C] text-[#CECDE0] font-sans">
-	<!-- Hamburger button for mobile sidebar toggle -->
-	{#if !sidebarOpen && typeof window !== 'undefined' && window.innerWidth < 768}
-		<button
-			class="hamburger-btn fixed top-4 left-4 z-20 bg-[#C294FF] rounded-lg p-2 mr-16"
-			aria-label="Open sidebar"
-			onclick={() => (sidebarOpen = true)}
-		>
-			<span class="block w-6 h-[3px] bg-[#222] my-1"></span>
-			<span class="block w-6 h-[3px] bg-[#222] my-1"></span>
-			<span class="block w-6 h-[3px] bg-[#222] my-1"></span>
-		</button>
-	{/if}
 	{#if typeof window !== 'undefined' && (window.innerWidth >= 768 || sidebarOpen)}
 		{#if sidebarOpen && window.innerWidth < 768}
 			<button
@@ -188,7 +180,21 @@
 			id="main-content"
 			class="main-scrollbar flex-1 flex flex-col items-center justify-start overflow-y-auto max-h-full"
 		>
-			{#if quizData().length > 0}
+			{#if isLoading}
+				<div class="flex flex-col items-center justify-center w-full h-[350px]">
+					<svg
+						class="animate-spin h-16 w-16 text-[#C294FF]"
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+					>
+						<circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"
+						></circle>
+						<path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+						></path>
+					</svg>
+				</div>
+			{:else if quizData().length > 0}
 				<QuizCard
 					currentQuestion={quizData()[current()]}
 					current={current()}
@@ -209,17 +215,21 @@
 						localStorage.setItem('favoriteQuestions', JSON.stringify([...favorites]));
 					}}
 					answers={quizData()[current()]?.answers ?? []}
+					on:swipeLeft={() => {
+						if (current() < quizData().length - 1) {
+							appState.favoritesCurrent = current() + 1;
+							persistState();
+						}
+					}}
+					on:swipeRight={() => {
+						if (current() > 0) {
+							appState.favoritesCurrent = current() - 1;
+							persistState();
+						}
+					}}
 				/>
 			{:else}
-				<div class="text-center text-lg mt-10 text-[#8582B0]">
-					No favorite questions found.
-					<button
-						class="mt-6 px-4 py-2 rounded bg-[#28264a] text-[#CECDE0] hover:bg-[#3a3760] transition"
-						onclick={() => import('$app/navigation').then(({ goto }) => goto('/'))}
-					>
-						Go to main page to add favorites
-					</button>
-				</div>
+				<div class="text-center text-lg mt-10 text-[#8582B0]">No favorite questions found.</div>
 			{/if}
 		</div>
 	</div>

@@ -1,736 +1,736 @@
 [
   {
-    "question_id": "q-1",
+    "question_id": "q-100",
     "question_text": "Tất cả những điều sau đây là các loại XSS (Cross-Site Scripting) NGOẠI TRỪ:",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "1-0",
+        "answer_id": "100-0",
         "answer_text": "Distributed XSS",
         "is_correct": true
       },
       {
-        "answer_id": "1-1",
+        "answer_id": "100-1",
         "answer_text": "Reflected XSS",
         "is_correct": false
       },
       {
-        "answer_id": "1-2",
+        "answer_id": "100-2",
         "answer_text": "Stored XSS",
         "is_correct": false
       },
       {
-        "answer_id": "1-3",
+        "answer_id": "100-3",
         "answer_text": "DOM XSS",
         "is_correct": false
       }
     ]
   },
   {
-    "question_id": "q-2",
+    "question_id": "q-101",
     "question_text": "Kỹ thuật giảm thiểu nào sau đây giúp ngăn chặn XSS (Cross-Site Scripting)?",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "2-0",
+        "answer_id": "101-0",
         "answer_text": "Cho phép người dùng tải lên các tệp tùy ý lên máy chủ.",
         "is_correct": false
       },
       {
-        "answer_id": "2-1",
+        "answer_id": "101-1",
         "answer_text": "Sử dụng Output Encoding.",
         "is_correct": true
       },
       {
-        "answer_id": "2-2",
+        "answer_id": "101-2",
         "answer_text": "Cho phép thực thi mã từ xa trên máy chủ.",
         "is_correct": false
       },
       {
-        "answer_id": "2-3",
+        "answer_id": "101-3",
         "answer_text": "Sử dụng mật khẩu yếu cho tài khoản người dùng.",
         "is_correct": false
       }
     ]
   },
   {
-    "question_id": "q-3",
+    "question_id": "q-102",
     "question_text": "Cross-Site Request Forgery (CSRF) là gì?",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "3-0",
+        "answer_id": "102-0",
         "answer_text": "Một loại tấn công cho phép kẻ tấn công chặn lưu lượng mạng giữa nạn nhân và máy chủ.",
         "is_correct": false
       },
       {
-        "answer_id": "3-1",
+        "answer_id": "102-1",
         "answer_text": "Một loại tấn công lừa nạn nhân thực hiện một hành động không mong muốn trên một trang web.",
         "is_correct": true
       },
       {
-        "answer_id": "3-2",
+        "answer_id": "102-2",
         "answer_text": "Một loại tấn công cho phép kẻ tấn công thực thi các tập lệnh độc hại trong trình duyệt của nạn nhân.",
         "is_correct": false
       },
       {
-        "answer_id": "3-3",
+        "answer_id": "102-3",
         "answer_text": "Một loại tấn công cho phép kẻ tấn công đánh cắp thông tin đăng nhập của nạn nhân.",
         "is_correct": false
       }
     ]
   },
   {
-    "question_id": "q-4",
+    "question_id": "q-103",
     "question_text": "Tất cả các loại cookie hợp lệ sau đây NGOẠI TRỪ:",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "4-0",
+        "answer_id": "103-0",
         "answer_text": "Second-party cookies",
         "is_correct": true
       },
       {
-        "answer_id": "4-1",
+        "answer_id": "103-1",
         "answer_text": "First-party cookies",
         "is_correct": false
       },
       {
-        "answer_id": "4-2",
+        "answer_id": "103-2",
         "answer_text": "Session Cookies",
         "is_correct": false
       },
       {
-        "answer_id": "4-3",
+        "answer_id": "103-3",
         "answer_text": "Persistent Cookies",
         "is_correct": false
       }
     ]
   },
   {
-    "question_id": "q-5",
+    "question_id": "q-104",
     "question_text": "Điểm khác biệt giữa login CSRF và stored CSRF là gì?",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "5-0",
+        "answer_id": "104-0",
         "answer_text": "Login CSRF được gọi là “session riding” trong khi stored CSRF được gọi là “tấn công một cú nhấp chuột.”",
         "is_correct": false
       },
       {
-        "answer_id": "5-1",
+        "answer_id": "104-1",
         "answer_text": "Stored CSRF được gọi là “session riding” trong khi login CSRF được gọi là “tấn công một cú nhấp chuột.”",
         "is_correct": false
       },
       {
-        "answer_id": "5-2",
+        "answer_id": "104-2",
         "answer_text": "Stored CSRF xảy ra khi người dùng gửi thông tin đến tài khoản của kẻ tấn công trong khi login CSRF xảy ra khi người dùng gửi thông tin đến ứng dụng dễ bị tấn công.",
         "is_correct": true
       },
       {
-        "answer_id": "5-3",
+        "answer_id": "104-3",
         "answer_text": "Login CSRF xảy ra khi người dùng gửi thông tin đến tài khoản của kẻ tấn công trong khi stored CSRF xảy ra khi người dùng gửi thông tin đến ứng dụng dễ bị tấn công.",
         "is_correct": false
       }
     ]
   },
   {
-    "question_id": "q-6",
+    "question_id": "q-105",
     "question_text": "Điều nào sau đây KHÔNG cần thiết để một cuộc tấn công CSRF xảy ra?",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "6-0",
+        "answer_id": "105-0",
         "answer_text": "Một yêu cầu GET",
         "is_correct": true
       },
       {
-        "answer_id": "6-1",
+        "answer_id": "105-1",
         "answer_text": "Một hành động liên quan",
         "is_correct": false
       },
       {
-        "answer_id": "6-2",
+        "answer_id": "105-2",
         "answer_text": "Xử lý phiên dựa trên cookie",
         "is_correct": false
       },
       {
-        "answer_id": "6-3",
+        "answer_id": "105-3",
         "answer_text": "Không có tham số yêu cầu không thể đoán trước",
         "is_correct": false
       }
     ]
   },
   {
-    "question_id": "q-7",
+    "question_id": "q-106",
     "question_text": "Sử dụng cơ chế tấn công một chiều:",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "7-0",
+        "answer_id": "106-0",
         "answer_text": "CSRF",
         "is_correct": true
       },
       {
-        "answer_id": "7-1",
+        "answer_id": "106-1",
         "answer_text": "XSS",
         "is_correct": false
       }
     ]
   },
   {
-    "question_id": "q-8",
+    "question_id": "q-107",
     "question_text": "Sử dụng cơ chế tấn công hai chiều:",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "8-0",
+        "answer_id": "107-0",
         "answer_text": "CSRF",
         "is_correct": false
       },
       {
-        "answer_id": "8-1",
+        "answer_id": "107-1",
         "answer_text": "XSS",
         "is_correct": true
       }
     ]
   },
   {
-    "question_id": "q-9",
+    "question_id": "q-108",
     "question_text": "Có phạm vi hạn chế hơn, hoặc yêu cầu người dùng thực hiện một số hành động nhất định:",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "9-0",
+        "answer_id": "108-0",
         "answer_text": "CSRF",
         "is_correct": true
       },
       {
-        "answer_id": "9-1",
+        "answer_id": "108-1",
         "answer_text": "XSS",
         "is_correct": false
       }
     ]
   },
   {
-    "question_id": "q-10",
+    "question_id": "q-109",
     "question_text": "Yêu cầu người dùng phải có phiên web xác thực đang hoạt động:",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "10-0",
+        "answer_id": "109-0",
         "answer_text": "CSRF",
         "is_correct": true
       },
       {
-        "answer_id": "10-1",
+        "answer_id": "109-1",
         "answer_text": "XSS",
         "is_correct": false
       }
     ]
   },
   {
-    "question_id": "q-11",
+    "question_id": "q-110",
     "question_text": "Mã độc được lưu trữ trực tiếp trong trang web dễ bị tấn công:",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "11-0",
+        "answer_id": "110-0",
         "answer_text": "CSRF",
         "is_correct": false
       },
       {
-        "answer_id": "11-1",
+        "answer_id": "110-1",
         "answer_text": "XSS",
         "is_correct": true
       }
     ]
   },
   {
-    "question_id": "q-12",
+    "question_id": "q-111",
     "question_text": "Điều nào sau đây KHÔNG phải là một hình thức phòng chống CSRF được khuyến nghị?",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "12-0",
+        "answer_id": "111-0",
         "answer_text": "CSRF tokens",
         "is_correct": false
       },
       {
-        "answer_id": "12-1",
+        "answer_id": "111-1",
         "answer_text": "Hệ thống quản lý mật khẩu",
         "is_correct": true
       },
       {
-        "answer_id": "12-2",
+        "answer_id": "111-2",
         "answer_text": "Tiêu đề HTTP tiêu chuẩn",
         "is_correct": false
       },
       {
-        "answer_id": "12-3",
+        "answer_id": "111-3",
         "answer_text": "Ủy quyền dựa trên CAPTCHA",
         "is_correct": false
       }
     ]
   },
   {
-    "question_id": "q-13",
+    "question_id": "q-112",
     "question_text": "Điều nào sau đây là ĐÚNG về token?",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "13-0",
+        "answer_id": "112-0",
         "answer_text": "CSRF token nên có thể dự đoán được.",
         "is_correct": false
       },
       {
-        "answer_id": "13-1",
+        "answer_id": "112-1",
         "answer_text": "Chèn CSRF token vào tiêu đề yêu cầu HTTP tùy chỉnh qua JavaScript kém an toàn hơn so với việc thêm nó vào tham số trường ẩn của biểu mẫu.",
         "is_correct": false
       },
       {
-        "answer_id": "13-2",
+        "answer_id": "112-2",
         "answer_text": "Đối với Synchronised Token Pattern, CSRF token nên được truyền bằng cookie.",
         "is_correct": false
       },
       {
-        "answer_id": "13-3",
+        "answer_id": "112-3",
         "answer_text": "Nếu không có token, kẻ tấn công không thể tạo yêu cầu hợp lệ đến máy chủ backend.",
         "is_correct": true
       }
     ]
   },
   {
-    "question_id": "q-14",
+    "question_id": "q-113",
     "question_text": "Chọn TẤT CẢ các cách mà kỹ thuật double submit cookie có thể được triển khai.",
     "question_type": "multiple_answer_question",
     "answers": [
       {
-        "answer_id": "14-0",
+        "answer_id": "113-0",
         "answer_text": "Sử dụng HMAC (Hash-based Message Authentication Code)",
         "is_correct": true
       },
       {
-        "answer_id": "14-1",
+        "answer_id": "113-1",
         "answer_text": "Sử dụng phương pháp xác thực AJAX",
         "is_correct": false
       },
       {
-        "answer_id": "14-2",
+        "answer_id": "113-2",
         "answer_text": "Bao gồm một token bên trong một cookie được mã hóa",
         "is_correct": true
       },
       {
-        "answer_id": "14-3",
+        "answer_id": "113-3",
         "answer_text": "Triển khai login CSRF trên trang web",
         "is_correct": false
       }
     ]
   },
   {
-    "question_id": "q-15",
+    "question_id": "q-114",
     "question_text": "Điều nào sau đây KHÔNG phải là giá trị thuộc tính SameSite?",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "15-0",
+        "answer_id": "114-0",
         "answer_text": "Strict",
         "is_correct": false
       },
       {
-        "answer_id": "15-1",
+        "answer_id": "114-1",
         "answer_text": "None",
         "is_correct": false
       },
       {
-        "answer_id": "15-2",
+        "answer_id": "114-2",
         "answer_text": "Secure",
         "is_correct": true
       },
       {
-        "answer_id": "15-3",
+        "answer_id": "114-3",
         "answer_text": "Lax",
         "is_correct": false
       }
     ]
   },
   {
-    "question_id": "q-16",
+    "question_id": "q-115",
     "question_text": "Bước ĐẦU TIÊN để xác minh nguồn gốc bằng các tiêu đề chuẩn là gì?",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "16-0",
+        "answer_id": "115-0",
         "answer_text": "Xác định nguồn gốc của yêu cầu (nguồn gốc)",
         "is_correct": true
       },
       {
-        "answer_id": "16-1",
+        "answer_id": "115-1",
         "answer_text": "Xác định đích đến của yêu cầu (đích đến)",
         "is_correct": false
       },
       {
-        "answer_id": "16-2",
+        "answer_id": "115-2",
         "answer_text": "Xác minh rằng cả yêu cầu đích đến và nguồn gốc đều khớp",
         "is_correct": false
       },
       {
-        "answer_id": "16-3",
+        "answer_id": "115-3",
         "answer_text": "Chấp nhận hoặc từ chối yêu cầu",
         "is_correct": false
       }
     ]
   },
   {
-    "question_id": "q-17",
+    "question_id": "q-116",
     "question_text": "Bước thứ hai trong việc xác minh nguồn gốc bằng các tiêu đề chuẩn là gì?",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "17-0",
+        "answer_id": "116-0",
         "answer_text": "Xác định nguồn gốc của yêu cầu (nguồn gốc)",
         "is_correct": false
       },
       {
-        "answer_id": "17-1",
+        "answer_id": "116-1",
         "answer_text": "Xác định đích đến của yêu cầu (đích đến)",
         "is_correct": true
       },
       {
-        "answer_id": "17-2",
+        "answer_id": "116-2",
         "answer_text": "Xác minh rằng cả yêu cầu đích đến và nguồn gốc đều khớp",
         "is_correct": false
       },
       {
-        "answer_id": "17-3",
+        "answer_id": "116-3",
         "answer_text": "Chấp nhận hoặc từ chối yêu cầu",
         "is_correct": false
       }
     ]
   },
   {
-    "question_id": "q-18",
+    "question_id": "q-117",
     "question_text": "Bước THỨ BA trong việc xác minh nguồn gốc bằng các tiêu đề chuẩn là gì?",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "18-0",
+        "answer_id": "117-0",
         "answer_text": "Xác định nguồn gốc của yêu cầu (nguồn gốc)",
         "is_correct": false
       },
       {
-        "answer_id": "18-1",
+        "answer_id": "117-1",
         "answer_text": "Xác định đích đến của yêu cầu (đích đến)",
         "is_correct": false
       },
       {
-        "answer_id": "18-2",
+        "answer_id": "117-2",
         "answer_text": "Xác minh rằng cả yêu cầu đích đến và nguồn gốc đều khớp",
         "is_correct": true
       },
       {
-        "answer_id": "18-3",
+        "answer_id": "117-3",
         "answer_text": "Chấp nhận hoặc từ chối yêu cầu",
         "is_correct": false
       }
     ]
   },
   {
-    "question_id": "q-19",
+    "question_id": "q-118",
     "question_text": "Bước THỨ TƯ (cuối cùng) trong việc xác minh nguồn gốc bằng các tiêu đề chuẩn là gì?",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "19-0",
+        "answer_id": "118-0",
         "answer_text": "Xác định nguồn gốc của yêu cầu (nguồn gốc)",
         "is_correct": false
       },
       {
-        "answer_id": "19-1",
+        "answer_id": "118-1",
         "answer_text": "Xác định đích đến của yêu cầu (đích đến)",
         "is_correct": false
       },
       {
-        "answer_id": "19-2",
+        "answer_id": "118-2",
         "answer_text": "Xác minh rằng cả yêu cầu đích đến và nguồn gốc đều khớp",
         "is_correct": false
       },
       {
-        "answer_id": "19-3",
+        "answer_id": "118-3",
         "answer_text": "Chấp nhận hoặc từ chối yêu cầu",
         "is_correct": true
       }
     ]
   },
   {
-    "question_id": "q-20",
+    "question_id": "q-119",
     "question_text": "Điều nào sau đây KHÔNG phải là mục đích của cookie?",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "20-0",
+        "answer_id": "119-0",
         "answer_text": "Quản lý hiệu suất",
         "is_correct": true
       },
       {
-        "answer_id": "20-1",
+        "answer_id": "119-1",
         "answer_text": "Quản lý phiên",
         "is_correct": false
       },
       {
-        "answer_id": "20-2",
+        "answer_id": "119-2",
         "answer_text": "Cá nhân hóa",
         "is_correct": false
       },
       {
-        "answer_id": "20-3",
+        "answer_id": "119-3",
         "answer_text": "Theo dõi",
         "is_correct": false
       }
     ]
   },
   {
-    "question_id": "q-21",
+    "question_id": "q-120",
     "question_text": "Loại cookie nào sau đây chịu trách nhiệm ghi nhớ các mặt hàng của bạn trong giỏ hàng?",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "21-0",
+        "answer_id": "120-0",
         "answer_text": "Third-party cookies",
         "is_correct": false
       },
       {
-        "answer_id": "21-1",
+        "answer_id": "120-1",
         "answer_text": "Session cookies",
         "is_correct": true
       },
       {
-        "answer_id": "21-2",
+        "answer_id": "120-2",
         "answer_text": "Persistent cookies",
         "is_correct": false
       },
       {
-        "answer_id": "21-3",
+        "answer_id": "120-3",
         "answer_text": "First-party cookies",
         "is_correct": false
       }
     ]
   },
   {
-    "question_id": "q-22",
+    "question_id": "q-121",
     "question_text": "Cookie có thể lưu trữ loại dữ liệu nào sau đây?",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "22-0",
+        "answer_id": "121-0",
         "answer_text": "Mật khẩu người dùng",
         "is_correct": false
       },
       {
-        "answer_id": "22-1",
+        "answer_id": "121-1",
         "answer_text": "Dữ liệu thẻ tín dụng",
         "is_correct": false
       },
       {
-        "answer_id": "22-2",
+        "answer_id": "121-2",
         "answer_text": "Access tokens",
         "is_correct": true
       },
       {
-        "answer_id": "22-3",
+        "answer_id": "121-3",
         "answer_text": "Dữ liệu nhận dạng cá nhân",
         "is_correct": false
       }
     ]
   },
   {
-    "question_id": "q-23",
+    "question_id": "q-122",
     "question_text": "ĐÚNG hay SAI: Secure cookies được mã hóa và chỉ có thể được truyền qua HTTPS.",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "23-0",
+        "answer_id": "122-0",
         "answer_text": "SAI",
         "is_correct": false
       },
       {
-        "answer_id": "23-1",
+        "answer_id": "122-1",
         "answer_text": "ĐÚNG",
         "is_correct": true
       }
     ]
   },
   {
-    "question_id": "q-24",
+    "question_id": "q-123",
     "question_text": "ĐÚNG hay SAI: HttpOnly cookies có thể được truy cập bởi mã JavaScript phía máy khách.",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "24-0",
+        "answer_id": "123-0",
         "answer_text": "ĐÚNG",
         "is_correct": false
       },
       {
-        "answer_id": "24-1",
+        "answer_id": "123-1",
         "answer_text": "SAI",
         "is_correct": true
       }
     ]
   },
   {
-    "question_id": "q-25",
+    "question_id": "q-124",
     "question_text": "ĐÚNG hay SAI: Thuộc tính SameSite trong cookie được dùng để ngăn chặn các cuộc tấn công giả mạo yêu cầu xuyên trang (CSRF).",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "25-0",
+        "answer_id": "124-0",
         "answer_text": "SAI",
         "is_correct": false
       },
       {
-        "answer_id": "25-1",
+        "answer_id": "124-1",
         "answer_text": "ĐÚNG",
         "is_correct": true
       }
     ]
   },
   {
-    "question_id": "q-26",
+    "question_id": "q-125",
     "question_text": "ĐÚNG hay SAI: Một cookie được đặt với miền example.com sẽ có thể truy cập được từ một tên miền phụ như test.example.com.",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "26-0",
+        "answer_id": "125-0",
         "answer_text": "ĐÚNG",
         "is_correct": true
       },
       {
-        "answer_id": "26-1",
+        "answer_id": "125-1",
         "answer_text": "SAI",
         "is_correct": false
       }
     ]
   },
   {
-    "question_id": "q-27",
+    "question_id": "q-126",
     "question_text": "ĐÚNG hay SAI: Persistent cookies tự động bị xóa khi người dùng đóng trình duyệt web của họ.",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "27-0",
+        "answer_id": "126-0",
         "answer_text": "ĐÚNG",
         "is_correct": false
       },
       {
-        "answer_id": "27-1",
+        "answer_id": "126-1",
         "answer_text": "SAI",
         "is_correct": true
       }
     ]
   },
   {
-    "question_id": "q-28",
+    "question_id": "q-127",
     "question_text": "Tất cả những điều sau đây là các loại XSS (Cross-Site Scripting) NGOẠI TRỪ:",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "28-0",
+        "answer_id": "127-0",
         "answer_text": "DOM XSS",
         "is_correct": false
       },
       {
-        "answer_id": "28-1",
+        "answer_id": "127-1",
         "answer_text": "Distributed XSS",
         "is_correct": true
       },
       {
-        "answer_id": "28-2",
+        "answer_id": "127-2",
         "answer_text": "Reflected XSS",
         "is_correct": false
       },
       {
-        "answer_id": "28-3",
+        "answer_id": "127-3",
         "answer_text": "Stored XSS",
         "is_correct": false
       }
     ]
   },
   {
-    "question_id": "q-29",
+    "question_id": "q-128",
     "question_text": "Điều nào sau đây là một kỹ thuật giảm thiểu để ngăn chặn XSS (Cross-Site Scripting)?",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "29-0",
+        "answer_id": "128-0",
         "answer_text": "Cho phép thực thi mã từ xa trên máy chủ.",
         "is_correct": false
       },
       {
-        "answer_id": "29-1",
+        "answer_id": "128-1",
         "answer_text": "Sử dụng mật khẩu yếu cho tài khoản người dùng.",
         "is_correct": false
       },
       {
-        "answer_id": "29-2",
+        "answer_id": "128-2",
         "answer_text": "Sử dụng Output Encoding.",
         "is_correct": true
       },
       {
-        "answer_id": "29-3",
+        "answer_id": "128-3",
         "answer_text": "Cho phép người dùng tải lên các tệp tùy ý lên máy chủ.",
         "is_correct": false
       }
     ]
   },
   {
-    "question_id": "q-30",
+    "question_id": "q-129",
     "question_text": "Cross-Site Request Forgery (CSRF) là gì?",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "30-0",
+        "answer_id": "129-0",
         "answer_text": "Một loại tấn công lừa nạn nhân thực hiện một hành động không mong muốn trên một trang web.",
         "is_correct": true
       },
       {
-        "answer_id": "30-1",
+        "answer_id": "129-1",
         "answer_text": "Một loại tấn công cho phép kẻ tấn công thực thi các tập lệnh độc hại trong trình duyệt của nạn nhân.",
         "is_correct": false
       },
       {
-        "answer_id": "30-2",
+        "answer_id": "129-2",
         "answer_text": "Một loại tấn công cho phép kẻ tấn công đánh cắp thông tin đăng nhập của nạn nhân.",
         "is_correct": false
       },
       {
-        "answer_id": "30-3",
+        "answer_id": "129-3",
         "answer_text": "Một loại tấn công cho phép kẻ tấn công chặn lưu lượng mạng giữa nạn nhân và máy chủ.",
         "is_correct": false
       }
     ]
   },
   {
-    "question_id": "q-31",
+    "question_id": "q-130",
     "question_text": "Tất cả những điều sau đây là các loại cookie hợp lệ NGOẠI TRỪ:",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "31-0",
+        "answer_id": "130-0",
         "answer_text": "First-party cookies",
         "is_correct": false
       },
       {
-        "answer_id": "31-1",
+        "answer_id": "130-1",
         "answer_text": "Session Cookies",
         "is_correct": false
       },
       {
-        "answer_id": "31-2",
+        "answer_id": "130-2",
         "answer_text": "Second-party cookies",
         "is_correct": true
       },
       {
-        "answer_id": "31-3",
+        "answer_id": "130-3",
         "answer_text": "Persistent Cookies",
         "is_correct": false
       }

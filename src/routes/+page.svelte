@@ -13,6 +13,7 @@
 	let current = $state<number>(0);
 	let selectedAnswers = $state<number[]>([]);
 	let questionLocked = $state(false);
+	let isLoading = $state(false);
 
 	async function showFavorites() {
 		const { goto } = await import('$app/navigation');
@@ -86,13 +87,16 @@
 
 	// Quiz loading logic
 	async function loadQuizForModule(moduleId: string, startAt = 0) {
+		isLoading = true;
 		if (!moduleId) {
 			quizData = [];
 			current = 0;
+			isLoading = false;
 			return;
 		}
 		if (moduleQuizCache.has(moduleId)) {
 			quizData = moduleQuizCache.get(moduleId);
+			isLoading = false;
 		} else {
 			let url = `/api/module?id=${moduleId}`;
 			const res = await fetch(url);
@@ -102,6 +106,7 @@
 				: [];
 			moduleQuizCache.set(moduleId, loadedQuizzes);
 			quizData = loadedQuizzes;
+			isLoading = false;
 		}
 
 		current = typeof startAt === 'number' ? Math.max(0, Math.min(startAt, quizData.length - 1)) : 0;
@@ -269,17 +274,6 @@
 	{/if}
 
 	<!-- Hamburger button for mobile sidebar toggle -->
-	{#if !sidebarOpen && typeof window !== 'undefined' && window.innerWidth < 768}
-		<button
-			class="hamburger-btn fixed top-4 left-4 z-20 bg-[#C294FF] rounded-lg p-2"
-			aria-label="Open sidebar"
-			onclick={() => (sidebarOpen = true)}
-		>
-			<span class="block w-6 h-[3px] bg-[#222] my-1"></span>
-			<span class="block w-6 h-[3px] bg-[#222] my-1"></span>
-			<span class="block w-6 h-[3px] bg-[#222] my-1"></span>
-		</button>
-	{/if}
 
 	<!-- Main Content Wrapper -->
 	<div id="main-content-wrapper" class="flex-1 flex flex-col h-screen min-w-0 overflow-hidden">
@@ -303,28 +297,58 @@
 			id="main-content"
 			class="main-scrollbar flex-1 flex flex-col items-center justify-start overflow-y-auto max-h-full"
 		>
-			<!-- Question Card -->
-			<QuizCard
-				{currentQuestion}
-				{current}
-				{quizData}
-				{selectedAnswers}
-				{questionLocked}
-				{checkAnswers}
-				{handleAnswerClick}
-				{favorites}
-				toggleFavorite={() => {
-					if (!currentQuestion) return;
-					if (favorites.has(currentQuestion.question_id)) {
-						favorites.delete(currentQuestion.question_id);
-						favorites = new Set(favorites);
-					} else {
-						favorites.add(currentQuestion.question_id);
-						favorites = new Set(favorites);
-					}
-				}}
-				{answers}
-			/>
+			<!-- Question Card or Loading Spinner -->
+			{#if isLoading}
+				<div class="flex flex-col items-center justify-center w-full h-[350px]">
+					<svg
+						class="animate-spin h-16 w-16 text-[#C294FF]"
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+					>
+						<circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"
+						></circle>
+						<path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+						></path>
+					</svg>
+				</div>
+			{:else}
+				<QuizCard
+					{currentQuestion}
+					{current}
+					{quizData}
+					{selectedAnswers}
+					{questionLocked}
+					{checkAnswers}
+					{handleAnswerClick}
+					{favorites}
+					toggleFavorite={() => {
+						if (!currentQuestion) return;
+						if (favorites.has(currentQuestion.question_id)) {
+							favorites.delete(currentQuestion.question_id);
+							favorites = new Set(favorites);
+						} else {
+							favorites.add(currentQuestion.question_id);
+							favorites = new Set(favorites);
+						}
+					}}
+					{answers}
+					on:swipeLeft={() => {
+						if (current < quizData.length - 1) {
+							current++;
+							selectedAnswers = [];
+							questionLocked = false;
+						}
+					}}
+					on:swipeRight={() => {
+						if (current > 0) {
+							current--;
+							selectedAnswers = [];
+							questionLocked = false;
+						}
+					}}
+				/>
+			{/if}
 			<!-- Navigation Tips -->
 			<div class="desktop-tip text-[#8582B0] mt-6 text-base hidden md:block">
 				Press &#8592; or &#8594; to navigate

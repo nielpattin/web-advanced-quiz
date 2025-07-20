@@ -1,539 +1,539 @@
 [
   {
-    "question_id": "q-32",
+    "question_id": "q-131",
     "question_text": "SQL Injection có thể dẫn đến việc sửa đổi gì trên trang web?",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "32-0",
+        "answer_id": "131-0",
         "answer_text": "Địa chỉ URL",
         "is_correct": false
       },
       {
-        "answer_id": "32-1",
+        "answer_id": "131-1",
         "answer_text": "tệp hình ảnh",
         "is_correct": false
       },
       {
-        "answer_id": "32-2",
+        "answer_id": "131-2",
         "answer_text": "dữ liệu",
         "is_correct": true
       },
       {
-        "answer_id": "32-3",
+        "answer_id": "131-3",
         "answer_text": "bố cục",
         "is_correct": false
       }
     ]
   },
   {
-    "question_id": "q-33",
+    "question_id": "q-132",
     "question_text": "Ví dụ nào sau đây là một trường hợp của SQL injection?",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "33-0",
+        "answer_id": "132-0",
         "answer_text": "Nhập truy vấn tìm kiếm vào thanh tìm kiếm",
         "is_correct": false
       },
       {
-        "answer_id": "33-1",
+        "answer_id": "132-1",
         "answer_text": "Nhập mã SQL độc hại vào trường nhập liệu",
         "is_correct": true
       },
       {
-        "answer_id": "33-2",
+        "answer_id": "132-2",
         "answer_text": "Nhập mật khẩu trên trang đăng nhập",
         "is_correct": false
       },
       {
-        "answer_id": "33-3",
+        "answer_id": "132-3",
         "answer_text": "Nhập tên người dùng trên trang đăng nhập",
         "is_correct": false
       }
     ]
   },
   {
-    "question_id": "q-34",
+    "question_id": "q-133",
     "question_text": "Tất cả những điều sau đây có thể góp phần vào SQL injection NGOẠI TRỪ:",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "34-0",
+        "answer_id": "133-0",
         "answer_text": "Truyền một comment SQL vào trường nhập liệu",
         "is_correct": false
       },
       {
-        "answer_id": "34-1",
+        "answer_id": "133-1",
         "answer_text": "Nhấp vào một tùy chọn từ menu thả xuống trên trang web",
         "is_correct": true
       },
       {
-        "answer_id": "34-2",
+        "answer_id": "133-2",
         "answer_text": "Đặt một ký tự meta vào trường nhập dữ liệu",
         "is_correct": false
       },
       {
-        "answer_id": "34-3",
+        "answer_id": "133-3",
         "answer_text": "SQL không phân biệt rõ ràng giữa các mặt phẳng điều khiển và dữ liệu",
         "is_correct": false
       }
     ]
   },
   {
-    "question_id": "q-35",
+    "question_id": "q-134",
     "question_text": "Điều nào sau đây KHÔNG phải là một gợi ý phòng chống SQL injection được khuyến nghị?",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "35-0",
+        "answer_id": "134-0",
         "answer_text": "Sử dụng các câu lệnh được chuẩn bị (prepared statements)",
         "is_correct": false
       },
       {
-        "answer_id": "35-1",
+        "answer_id": "134-1",
         "answer_text": "Sử dụng nối chuỗi để xây dựng truy vấn",
         "is_correct": true
       },
       {
-        "answer_id": "35-2",
+        "answer_id": "134-2",
         "answer_text": "Sử dụng các thủ tục lưu trữ (stored procedures)",
         "is_correct": false
       },
       {
-        "answer_id": "35-3",
+        "answer_id": "134-3",
         "answer_text": "Thoát tất cả các đầu vào do người dùng cung cấp",
         "is_correct": false
       }
     ]
   },
   {
-    "question_id": "q-36",
+    "question_id": "q-135",
     "question_text": "Phương pháp nào sau đây KHÔNG phải là cách thủ công để phát hiện SQL Injection?",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "36-0",
+        "answer_id": "135-0",
         "answer_text": "Gửi một cookie với cờ Secure.",
         "is_correct": true
       },
       {
-        "answer_id": "36-1",
+        "answer_id": "135-1",
         "answer_text": "Gửi ký tự dấu nháy đơn ' và tìm kiếm lỗi hoặc các bất thường khác.",
         "is_correct": false
       },
       {
-        "answer_id": "36-2",
+        "answer_id": "135-2",
         "answer_text": "Gửi các điều kiện Boolean và tìm kiếm sự khác biệt trong phản hồi của ứng dụng.",
         "is_correct": false
       },
       {
-        "answer_id": "36-3",
+        "answer_id": "135-3",
         "answer_text": "Gửi một số đánh giá cú pháp SQL cụ thể và tìm kiếm sự khác biệt có hệ thống trong phản hồi của ứng dụng.",
         "is_correct": false
       }
     ]
   },
   {
-    "question_id": "q-37",
+    "question_id": "q-136",
     "question_text": "Điều nào sau đây mô tả đúng nhất về xác thực ngữ nghĩa (semantic validation)?",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "37-0",
+        "answer_id": "136-0",
         "answer_text": "Thực thi cú pháp chính xác của các trường có cấu trúc",
         "is_correct": false
       },
       {
-        "answer_id": "37-1",
+        "answer_id": "136-1",
         "answer_text": "Xác nhận rằng dữ liệu được cung cấp khớp với định dạng mong đợi",
         "is_correct": false
       },
       {
-        "answer_id": "37-2",
+        "answer_id": "136-2",
         "answer_text": "Đảm bảo rằng các giá trị của dữ liệu phù hợp trong một ngữ cảnh kinh doanh cụ thể",
         "is_correct": true
       },
       {
-        "answer_id": "37-3",
+        "answer_id": "136-3",
         "answer_text": "Kiểm tra xem đầu vào của người dùng có tuân thủ các yêu cầu như giá trị số nguyên cho các trường số nguyên hay không",
         "is_correct": false
       }
     ]
   },
   {
-    "question_id": "q-38",
+    "question_id": "q-137",
     "question_text": "Điều nào sau đây là lý do chính để triển khai xác thực đầu vào trong các ứng dụng phần mềm?",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "38-0",
+        "answer_id": "137-0",
         "answer_text": "Để cải thiện hiệu suất ứng dụng",
         "is_correct": false
       },
       {
-        "answer_id": "38-1",
+        "answer_id": "137-1",
         "answer_text": "Để bảo vệ chống lại các cuộc tấn công độc hại và ngăn chặn các lỗ hổng",
         "is_correct": true
       },
       {
-        "answer_id": "38-2",
+        "answer_id": "137-2",
         "answer_text": "Để đảm bảo dữ liệu được lưu trữ đúng cách trong cơ sở dữ liệu",
         "is_correct": false
       },
       {
-        "answer_id": "38-3",
+        "answer_id": "137-3",
         "answer_text": "Để ngăn người dùng truy cập thông tin nhạy cảm",
         "is_correct": false
       }
     ]
   },
   {
-    "question_id": "q-39",
+    "question_id": "q-138",
     "question_text": "Điều nào sau đây KHÔNG phải là ví dụ về xác thực biểu mẫu đầu vào?",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "39-0",
+        "answer_id": "138-0",
         "answer_text": "Vui lòng nhập số điện thoại của bạn theo định dạng xxx-xxx-xxxx",
         "is_correct": false
       },
       {
-        "answer_id": "39-1",
+        "answer_id": "138-1",
         "answer_text": "Trường này là bắt buộc",
         "is_correct": false
       },
       {
-        "answer_id": "39-2",
+        "answer_id": "138-2",
         "answer_text": "Vui lòng nhập địa chỉ email hợp lệ",
         "is_correct": false
       },
       {
-        "answer_id": "39-3",
+        "answer_id": "138-3",
         "answer_text": "Vui lòng nhập thông tin của bạn vào đây",
         "is_correct": true
       }
     ]
   },
   {
-    "question_id": "q-40",
+    "question_id": "q-139",
     "question_text": "Thuộc tính nào cho phép tác nhân người dùng xác minh rằng một tài nguyên đã được tìm nạp đã được gửi mà không bị thao túng ngoài ý muốn?",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "40-0",
+        "answer_id": "139-0",
         "answer_text": "integrity",
         "is_correct": true
       },
       {
-        "answer_id": "40-1",
+        "answer_id": "139-1",
         "answer_text": "src",
         "is_correct": false
       },
       {
-        "answer_id": "40-2",
+        "answer_id": "139-2",
         "answer_text": "crossorigin",
         "is_correct": false
       },
       {
-        "answer_id": "40-3",
+        "answer_id": "139-3",
         "answer_text": "hash",
         "is_correct": false
       }
     ]
   },
   {
-    "question_id": "q-41",
+    "question_id": "q-140",
     "question_text": "Điều nào sau đây là một vấn đề tiềm ẩn khi chỉ định phiên bản thư viện trong tệp package.json mà không sử dụng tệp lockfile như package-lock.json?",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "41-0",
+        "answer_id": "140-0",
         "answer_text": "Các nhà phát triển khác nhau có thể có các phiên bản phụ thuộc khác nhau",
         "is_correct": false
       },
       {
-        "answer_id": "41-1",
+        "answer_id": "140-1",
         "answer_text": "Chúng tôi chưa kiểm tra các phiên bản mới của thư viện về hiệu suất và khả năng tương thích",
         "is_correct": false
       },
       {
-        "answer_id": "41-2",
+        "answer_id": "140-2",
         "answer_text": "Chúng ta có thể cài đặt một phiên bản phụ thuộc cao hơn mà không theo ý muốn của chúng ta",
         "is_correct": true
       },
       {
-        "answer_id": "41-3",
+        "answer_id": "140-3",
         "answer_text": "Phiên bản mới của thư viện có thể bị xâm phạm hoặc có lỗ hổng",
         "is_correct": false
       }
     ]
   },
   {
-    "question_id": "q-42",
+    "question_id": "q-141",
     "question_text": "Thực hành nào sau đây KHÔNG được khuyến nghị để duy trì bảo mật trong ứng dụng của bạn thông qua quản lý gói của bên thứ ba?",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "42-0",
+        "answer_id": "141-0",
         "answer_text": "Thường xuyên quét các lỗ hổng và đăng ký nhận bản tin bảo mật liên quan đến các thành phần bạn sử dụng.",
         "is_correct": false
       },
       {
-        "answer_id": "42-1",
+        "answer_id": "141-1",
         "answer_text": "Bỏ bê việc cập nhật hoặc nâng cấp nền tảng, framework và các phụ thuộc cơ bản một cách kịp thời và dựa trên rủi ro.",
         "is_correct": true
       },
       {
-        "answer_id": "42-2",
+        "answer_id": "141-2",
         "answer_text": "Chỉ lấy các thành phần từ các nguồn chính thức qua các liên kết an toàn và ưu tiên các gói đã ký để giảm khả năng bao gồm một thành phần độc hại đã bị sửa đổi.",
         "is_correct": false
       },
       {
-        "answer_id": "42-3",
+        "answer_id": "141-3",
         "answer_text": "Ghim các script vào các phiên bản cụ thể và sử dụng kiểm tra tính toàn vẹn.",
         "is_correct": false
       }
     ]
   },
   {
-    "question_id": "q-43",
+    "question_id": "q-142",
     "question_text": "Hãy xem xét tình huống sau: Bạn đang sử dụng npm phiên bản 6 và bạn chạy npm audit trên dự án của mình. Báo cáo audit hiển thị một lỗ hổng bảo mật cho gói highlight.js với mức độ nghiêm trọng 'moderate' và cho biết 'No fix is available'. Bước tiếp theo thích hợp sẽ là gì?",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "43-0",
+        "answer_id": "142-0",
         "answer_text": "Bỏ qua lỗ hổng vì mức độ nghiêm trọng của nó chỉ là moderate.",
         "is_correct": false
       },
       {
-        "answer_id": "43-1",
+        "answer_id": "142-1",
         "answer_text": "Tìm kiếm một gói thay thế thực hiện chức năng tương tự mà không có lỗ hổng này.",
         "is_correct": true
       },
       {
-        "answer_id": "43-2",
+        "answer_id": "142-2",
         "answer_text": "Tự động áp dụng bản cập nhật bằng cách sử dụng npm audit fix.",
         "is_correct": false
       },
       {
-        "answer_id": "43-3",
+        "answer_id": "142-3",
         "answer_text": "Chạy lại npm audit để xem lỗ hổng đã được khắc phục chưa.",
         "is_correct": false
       }
     ]
   },
   {
-    "question_id": "q-44",
+    "question_id": "q-143",
     "question_text": "Tuyên bố nào sau đây MÔ TẢ ĐÚNG NHẤT chức năng của Dependabot như một công cụ bảo mật gói?",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "44-0",
+        "answer_id": "143-0",
         "answer_text": "Dependabot yêu cầu kích hoạt thủ công để kiểm tra các phiên bản mới của các phụ thuộc.",
         "is_correct": false
       },
       {
-        "answer_id": "44-1",
+        "answer_id": "143-1",
         "answer_text": "Dependabot có thể được thiết lập để thường xuyên kiểm tra các bản cập nhật trong các phụ thuộc của bạn và tự động mở các pull request cho bất kỳ phụ thuộc nào đã lỗi thời.",
         "is_correct": true
       },
       {
-        "answer_id": "44-2",
+        "answer_id": "143-2",
         "answer_text": "Dependabot chỉ hỗ trợ NodeJS để tự động hóa các bản cập nhật phụ thuộc.",
         "is_correct": false
       },
       {
-        "answer_id": "44-3",
+        "answer_id": "143-3",
         "answer_text": "Dependabot cảnh báo về các lỗi bảo mật và lỗ hổng nhưng không tự động hóa quá trình cập nhật các phụ thuộc.",
         "is_correct": false
       }
     ]
   },
   {
-    "question_id": "q-45",
+    "question_id": "q-144",
     "question_text": "Rate limiting là gì?",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "45-0",
+        "answer_id": "144-0",
         "answer_text": "Một kỹ thuật được sử dụng để phát hiện và ngăn chặn các cuộc tấn công SQL injection",
         "is_correct": false
       },
       {
-        "answer_id": "45-1",
+        "answer_id": "144-1",
         "answer_text": "Một kỹ thuật được sử dụng để mã hóa dữ liệu trong quá trình truyền giữa máy chủ web và client",
         "is_correct": false
       },
       {
-        "answer_id": "45-2",
+        "answer_id": "144-2",
         "answer_text": "Một kỹ thuật được sử dụng để giới hạn số lượng yêu cầu mà người dùng hoặc địa chỉ IP có thể thực hiện đối với một ứng dụng web",
         "is_correct": true
       },
       {
-        "answer_id": "45-3",
+        "answer_id": "144-3",
         "answer_text": "Một kỹ thuật được sử dụng để bảo vệ chống lại các cuộc tấn công từ chối dịch vụ phân tán (DDoS)",
         "is_correct": false
       }
     ]
   },
   {
-    "question_id": "q-46",
+    "question_id": "q-145",
     "question_text": "Tuyên bố nào sau đây MÔ TẢ ĐÚNG NHẤT sự khác biệt giữa Tấn công lớp hạ tầng (Infrastructure Layer Attacks) và Tấn công lớp ứng dụng (Application Layer Attacks) trong ngữ cảnh các cuộc tấn công DDoS?",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "46-0",
+        "answer_id": "145-0",
         "answer_text": "Tấn công lớp hạ tầng ít phổ biến hơn, phức tạp hơn và nhắm mục tiêu vào các phần cụ thể của ứng dụng.",
         "is_correct": false
       },
       {
-        "answer_id": "46-1",
+        "answer_id": "145-1",
         "answer_text": "Tấn công lớp ứng dụng thường có khối lượng lớn và nhằm mục đích làm quá tải dung lượng của mạng hoặc máy chủ ứng dụng.",
         "is_correct": false
       },
       {
-        "answer_id": "46-2",
+        "answer_id": "145-2",
         "answer_text": "Tấn công lớp hạ tầng thường có khối lượng lớn và nhằm mục đích làm quá tải dung lượng của mạng hoặc máy chủ ứng dụng.",
         "is_correct": true
       },
       {
-        "answer_id": "46-3",
+        "answer_id": "145-3",
         "answer_text": "Tấn công lớp ứng dụng ít phổ biến hơn và thường nhằm mục đích làm quá tải dung lượng của mạng.",
         "is_correct": false
       }
     ]
   },
   {
-    "question_id": "q-47",
+    "question_id": "q-146",
     "question_text": "Phương pháp nào để giới hạn tốc độ các yêu cầu đến một ứng dụng, sử dụng NGINX như một biện pháp phòng ngừa chống lại các cuộc tấn công DDoS lớp ứng dụng?",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "47-0",
+        "answer_id": "146-0",
         "answer_text": "Bằng cách tích hợp dịch vụ bảo mật của bên thứ ba như Cloudflare để xử lý bảo vệ DDoS.",
         "is_correct": false
       },
       {
-        "answer_id": "47-1",
+        "answer_id": "146-1",
         "answer_text": "Bằng cách áp dụng chỉ thị limit_req_zone, một vùng bộ nhớ chia sẻ được cấu hình để lưu trữ trạng thái các yêu cầu cho một khóa được chỉ định, chẳng hạn như địa chỉ IP của client.",
         "is_correct": true
       },
       {
-        "answer_id": "47-2",
+        "answer_id": "146-2",
         "answer_text": "Bằng cách triển khai một công cụ giới hạn tốc độ ở phía máy chủ của ứng dụng.",
         "is_correct": false
       },
       {
-        "answer_id": "47-3",
+        "answer_id": "146-3",
         "answer_text": "Bằng cách áp dụng chỉ thị limit_conn_zone, một vùng bộ nhớ chia sẻ được tạo để lưu trữ các yêu cầu cho một khóa được chỉ định.",
         "is_correct": false
       }
     ]
   },
   {
-    "question_id": "q-48",
+    "question_id": "q-147",
     "question_text": "Điều nào sau đây là hậu quả tiềm ẩn của một cuộc tấn công SQL injection thành công?",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "48-0",
+        "answer_id": "147-0",
         "answer_text": "Kẻ tấn công có quyền truy cập vào dữ liệu nhạy cảm trên máy chủ.",
         "is_correct": true
       },
       {
-        "answer_id": "48-1",
+        "answer_id": "147-1",
         "answer_text": "Máy tính của nạn nhân bị nhiễm phần mềm độc hại.",
         "is_correct": false
       },
       {
-        "answer_id": "48-2",
+        "answer_id": "147-2",
         "answer_text": "Kẻ tấn công có thể bỏ qua xác thực mà không cần thông tin đăng nhập chính xác.",
         "is_correct": false
       },
       {
-        "answer_id": "48-3",
+        "answer_id": "147-3",
         "answer_text": "Kẻ tấn công thực thi mã tùy ý trên máy chủ.",
         "is_correct": false
       }
     ]
   },
   {
-    "question_id": "q-49",
+    "question_id": "q-148",
     "question_text": "Tất cả các nguyên tắc sau đây nên được tuân thủ để đạt được trạng thái triển khai tải lên tệp an toàn NGOẠI TRỪ:",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "49-0",
+        "answer_id": "148-0",
         "answer_text": "Cho phép bất kỳ người dùng nào tải lên tệp",
         "is_correct": true
       },
       {
-        "answer_id": "49-1",
+        "answer_id": "148-1",
         "answer_text": "Liệt kê các phần mở rộng tệp được phép",
         "is_correct": false
       },
       {
-        "answer_id": "49-2",
+        "answer_id": "148-2",
         "answer_text": "Chạy tệp qua phần mềm diệt virus hoặc sandbox",
         "is_correct": false
       },
       {
-        "answer_id": "49-3",
+        "answer_id": "148-3",
         "answer_text": "Đặt giới hạn kích thước tệp",
         "is_correct": false
       }
     ]
   },
   {
-    "question_id": "q-50",
+    "question_id": "q-149",
     "question_text": "Để ngăn chặn các vấn đề do các phiên bản phụ thuộc khác nhau được cài đặt trên các máy khác nhau, các gói cần được cài đặt nghiêm ngặt theo các phiên bản được chỉ định nên được liệt kê trong tệp nào?",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "50-0",
+        "answer_id": "149-0",
         "answer_text": "package-lock.json",
         "is_correct": true
       },
       {
-        "answer_id": "50-1",
+        "answer_id": "149-1",
         "answer_text": "package.json",
         "is_correct": false
       },
       {
-        "answer_id": "50-2",
+        "answer_id": "149-2",
         "answer_text": "package-npm.json",
         "is_correct": false
       },
       {
-        "answer_id": "50-3",
+        "answer_id": "149-3",
         "answer_text": "package-specified.json",
         "is_correct": false
       }
     ]
   },
   {
-    "question_id": "q-51",
+    "question_id": "q-150",
     "question_text": "Nginx và Nginx Plus là các công cụ mạnh mẽ có thể được sử dụng để bảo vệ chống lại các cuộc tấn công lớp ứng dụng khác nhau, bao gồm các cuộc tấn công DDoS. Tất cả những điều sau đây là các kỹ thuật được khuyến nghị để ngăn chặn các cuộc tấn công DDoS NGOẠI TRỪ:",
     "question_type": "single_answer_question",
     "answers": [
       {
-        "answer_id": "51-0",
+        "answer_id": "150-0",
         "answer_text": "Sử dụng haproxy, một bộ cân bằng tải phổ biến",
         "is_correct": false
       },
       {
-        "answer_id": "51-1",
+        "answer_id": "150-1",
         "answer_text": "Tránh mã hóa lưu lượng truy cập để cho phép luồng lưu lượng tốt hơn",
         "is_correct": true
       },
       {
-        "answer_id": "51-2",
+        "answer_id": "150-2",
         "answer_text": "Giới hạn tốc độ yêu cầu đến một giá trị điển hình cho người dùng thực",
         "is_correct": false
       },
       {
-        "answer_id": "51-3",
+        "answer_id": "150-3",
         "answer_text": "Giới hạn số lượng kết nối có thể được mở bởi một địa chỉ IP client duy nhất",
         "is_correct": false
       }
