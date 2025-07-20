@@ -214,14 +214,16 @@
 						}
 						localStorage.setItem('favoriteQuestions', JSON.stringify([...favorites]));
 					}}
-					answers={quizData()[current()]?.answers ?? []}
-					on:swipeLeft={() => {
+					answers={(quizData()[current()]?.answers ?? []).map((a) =>
+						typeof a === 'object' && a !== null ? a : { answer_text: String(a) }
+					)}
+					onSwipeLeft={() => {
 						if (current() < quizData().length - 1) {
 							appState.favoritesCurrent = current() + 1;
 							persistState();
 						}
 					}}
-					on:swipeRight={() => {
+					onSwipeRight={() => {
 						if (current() > 0) {
 							appState.favoritesCurrent = current() - 1;
 							persistState();

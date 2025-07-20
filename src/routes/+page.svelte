@@ -48,7 +48,13 @@
 	}
 
 	let currentQuestion = $derived(quizData[current]);
-	let answers = $derived(currentQuestion ? (currentQuestion.answers ?? []) : []);
+	let answers = $derived(
+		currentQuestion && Array.isArray(currentQuestion.answers)
+			? currentQuestion.answers.map((a) =>
+					typeof a === 'object' && a !== null ? a : { answer_text: String(a) }
+				)
+			: []
+	);
 
 	let moduleQuizCache = new Map();
 	let favorites = $state(new Set<string>());
@@ -305,14 +311,14 @@
 						}
 					}}
 					{answers}
-					on:swipeLeft={() => {
+					onSwipeLeft={() => {
 						if (current < quizData.length - 1) {
 							current++;
 							selectedAnswers = [];
 							questionLocked = false;
 						}
 					}}
-					on:swipeRight={() => {
+					onSwipeRight={() => {
 						if (current > 0) {
 							current--;
 							selectedAnswers = [];
