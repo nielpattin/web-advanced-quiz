@@ -1,5 +1,11 @@
 @import 'tailwindcss';
 
+/* Ensure proper viewport sizing on mobile */
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
 /* Sidebar scrollbar styling */
 .sidebar::-webkit-scrollbar,
 .main-scrollbar::-webkit-scrollbar {
@@ -20,4 +26,15 @@
 .sidebar::-webkit-scrollbar-thumb:hover,
 .main-scrollbar::-webkit-scrollbar-thumb:hover {
   background: #C294FF;
+}
+
+/* Ensure touch scrolling works properly */
+.main-scrollbar {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+}
+
+/* Prevent horizontal overflow */
+* {
+  max-width: 100%;
 }

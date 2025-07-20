@@ -30,35 +30,52 @@
 	const dispatch = createEventDispatcher();
 
 	let startX = 0;
+	let startY = 0;
 	let currentX = 0;
-	let translateX = 0;
-	let animating = false;
-	let animationDirection: 'left' | 'right' | null = null;
+	let currentY = 0;
+	let translateX = $state(0);
+	let animating = $state(false);
+	let animationDirection = $state<'left' | 'right' | null>(null);
+	let isHorizontalSwipe = false;
 
 	function handleTouchStart(e: TouchEvent) {
 		if (animating) return;
 		if (e.touches.length !== 1) return;
 		startX = e.touches[0].clientX;
+		startY = e.touches[0].clientY;
 		currentX = startX;
+		currentY = startY;
+		isHorizontalSwipe = false;
 	}
 
 	function handleTouchMove(e: TouchEvent) {
 		if (animating) return;
 		if (e.touches.length !== 1) return;
 		currentX = e.touches[0].clientX;
-		const delta = currentX - startX;
-		// Only allow swipe on mobile width
-		if (window.innerWidth < 768) {
-			translateX = delta;
+		currentY = e.touches[0].clientY;
+
+		const deltaX = currentX - startX;
+		const deltaY = currentY - startY;
+
+		// Determine swipe direction and prevent interference with vertical scrolling
+		if (!isHorizontalSwipe && Math.abs(deltaX) > Math.abs(deltaY)) {
+			isHorizontalSwipe = true;
+		}
+
+		// Only allow horizontal swipe on mobile width and when it's a horizontal swipe
+		if (window.innerWidth < 768 && isHorizontalSwipe) {
+			e.preventDefault(); // Prevent vertical scrolling during horizontal swipe
+			translateX = deltaX;
 		}
 	}
 
 	function handleTouchEnd() {
 		if (animating) return;
-		const delta = currentX - startX;
+		const deltaX = currentX - startX;
 		const threshold = 60; // px
-		if (window.innerWidth < 768) {
-			if (delta < -threshold) {
+
+		if (window.innerWidth < 768 && isHorizontalSwipe) {
+			if (deltaX < -threshold) {
 				// Swipe left
 				animationDirection = 'left';
 				translateX = -window.innerWidth * 0.7;
@@ -69,7 +86,7 @@
 					animationDirection = null;
 					animating = false;
 				}, 200);
-			} else if (delta > threshold) {
+			} else if (deltaX > threshold) {
 				// Swipe right
 				animationDirection = 'right';
 				translateX = window.innerWidth * 0.7;
@@ -85,12 +102,13 @@
 				translateX = 0;
 			}
 		}
+		isHorizontalSwipe = false;
 	}
 </script>
 
 <!-- Quiz Card -->
 <div
-	class="quiz-card bg-[#29273F] text-[#CECDE0] rounded-2xl shadow-lg w-[90%] max-w-[90vw] px-4 pt-16 relative flex flex-col gap-2 mt-8 touch-pan-x select-none"
+	class="quiz-card bg-[#29273F] text-[#CECDE0] rounded-2xl shadow-lg w-[90%] max-w-[90vw] px-4 pt-16 relative flex flex-col gap-2 mt-8 touch-pan-y select-none"
 	ontouchstart={handleTouchStart}
 	ontouchmove={handleTouchMove}
 	ontouchend={handleTouchEnd}

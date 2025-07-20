@@ -234,7 +234,10 @@
 </script>
 
 <!-- Main Layout -->
-<div class="flex flex-row min-h-screen min-w-screen w-screen bg-[#1D1B2C] text-[#CECDE0] font-sans">
+<div
+	class="flex flex-row min-h-screen min-w-screen w-screen bg-[#1D1B2C] text-[#CECDE0] font-sans"
+	style="height: 100dvh;"
+>
 	<!-- Sidebar -->
 	<div
 		class="fixed top-0 left-0 h-full z-40 bg-[#29273F] transition-transform duration-200 ease-in-out
@@ -276,9 +279,9 @@
 	<!-- Hamburger button for mobile sidebar toggle -->
 
 	<!-- Main Content Wrapper -->
-	<div id="main-content-wrapper" class="flex-1 flex flex-col h-screen min-w-0 overflow-hidden">
+	<div id="main-content-wrapper" class="flex-1 flex flex-col min-h-0 min-w-0 overflow-hidden">
 		<!-- Top Bar -->
-		<div class="w-full relative z-10">
+		<div class="w-full relative z-10 flex-shrink-0">
 			{#if typeof window !== 'undefined'}
 				<TopBar
 					{modules}
@@ -295,7 +298,7 @@
 		<!-- Main Content -->
 		<div
 			id="main-content"
-			class="main-scrollbar flex-1 flex flex-col items-center justify-start overflow-y-auto max-h-full"
+			class="main-scrollbar flex-1 flex flex-col items-center justify-start overflow-y-auto"
 		>
 			<!-- Question Card or Loading Spinner -->
 			{#if isLoading}
