@@ -2,7 +2,7 @@
   {
     "question_id": "q-176",
     "question_text": "Which of the following are NOT valid Blade directives in Laravel? (Chỉ thị nào sau đây KHÔNG hợp lệ trong Laravel?)(có thể chọn nhiều đáp án)",
-    "question_type": "multiple_answers_question",
+    "question_type": "multiple_answer_question",
     "answers": [
       {
         "answer_id": "176-0",
@@ -137,7 +137,7 @@
   {
     "question_id": "q-181",
     "question_text": "Which Blade directives are used for template inheritance in Laravel? (Chi thị\n\nBlade nào được sử dụng để kế thừa mẫu trong Laravel?) (chọn 2)",
-    "question_type": "multiple_answers_question",
+    "question_type": "multiple_answer_question",
     "answers": [
       {
         "answer_id": "181-0",
@@ -493,7 +493,7 @@
   {
     "question_id": "q-194",
     "question_text": "Which of the following tasks can be performed using Eloquent ORM in Laravel? (Cái gì là nhiệm vụ cần được thực hiện khi sử dụng Eloquent ORM trong Laravel?) (Chọn 2)",
-    "question_type": "multiple_answers_question",
+    "question_type": "multiple_answer_question",
     "answers": [
       {
         "answer_id": "194-0",
@@ -687,7 +687,7 @@
   {
     "question_id": "q-201",
     "question_text": "chiến lược chung nào sau đây ngăn cản tấn công csrf trong laravel?(chọn 3)",
-    "question_type": "multiple_answers_question",
+    "question_type": "multiple_answer_question",
     "answers": [
       {
         "answer_id": "201-0",
@@ -746,7 +746,7 @@
   {
     "question_id": "q-203",
     "question_text": "tính năng chính của bộ xây dựng truy vấn của laravel?(chọn 2)",
-    "question_type": "multiple_answers_question",
+    "question_type": "multiple_answer_question",
     "answers": [
       {
         "answer_id": "203-0",
@@ -832,7 +832,7 @@
   {
     "question_id": "q-206",
     "question_text": "What are some key responsibilities of an API controller in a Laravel application? (Chức năng chính của bộ điều khiển API trong ứng dụng Laravel?) (chọn 2)",
-    "question_type": "multiple_answers_question",
+    "question_type": "multiple_answer_question",
     "answers": [
       {
         "answer_id": "206-0",
@@ -918,7 +918,7 @@
   {
     "question_id": "q-209",
     "question_text": "Which of the following are SQL Injection attack vectors? (Các cơ chế tiêm nhiễm trong SQL Injection gồm có?)",
-    "question_type": "multiple_answers_question",
+    "question_type": "multiple_answer_question",
     "answers": [
       {
         "answer_id": "209-0",

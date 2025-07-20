@@ -2,7 +2,7 @@
   {
     "question_id": "q-211",
     "question_text": "Which of the following are valid data types in PHP? (Kiểu dữ liệu phù hợp của PHP?)",
-    "question_type": "multiple_answers_question",
+    "question_type": "multiple_answer_question",
     "answers": [
       {
         "answer_id": "211-0",
@@ -83,7 +83,7 @@
   {
     "question_id": "q-214",
     "question_text": "Cái gì dưới đây là quan trọng an toàn phiên trong laravel(chọn 3)",
-    "question_type": "multiple_answers_question",
+    "question_type": "multiple_answer_question",
     "answers": [
       {
         "answer_id": "214-0",
@@ -142,7 +142,7 @@
   {
     "question_id": "q-216",
     "question_text": "Thư viện PHP nào được tích hợp trong ứng dụng laravel sử dụng Composer(chọn 4)",
-    "question_type": "multiple_answers_question",
+    "question_type": "multiple_answer_question",
     "answers": [
       {
         "answer_id": "216-0",
@@ -363,7 +363,7 @@
   {
     "question_id": "q-224",
     "question_text": "What are some considerations when deploying to shared hosts and cloud platforms? (Điều gì cần lưu ý khi triển khai ứng dụng tới đám mây hoặc các máy chủ chia sẻ (dùng chung)?) (Chọn 3)",
-    "question_type": "multiple_answers_question",
+    "question_type": "multiple_answer_question",
     "answers": [
       {
         "answer_id": "224-0",
@@ -417,7 +417,7 @@
   {
     "question_id": "q-226",
     "question_text": "Which of the following are advantages of using the Laravel framework? (Lợi ích sử dụng Laravel?) (chọn 3)",
-    "question_type": "multiple_answers_question",
+    "question_type": "multiple_answer_question",
     "answers": [
       {
         "answer_id": "226-0",
@@ -449,7 +449,7 @@
   {
     "question_id": "q-227",
     "question_text": "What are some best practices for organizing Laravel applications? (Cách sử dụng tốt nhất cho quản lý các ứng dụng của Laravel) (chọn 2)",
-    "question_type": "multiple_answers_question",
+    "question_type": "multiple_answer_question",
     "answers": [
       {
         "answer_id": "227-0",
