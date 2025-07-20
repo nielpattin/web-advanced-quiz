@@ -111,14 +111,14 @@
 	{#if favoritesMode || typeof showFavorites !== 'function' || showFavorites.toString() === '() => {}'}
 		<button
 			id="back-to-all-btn"
-			class="ml-3 rounded-md px-3 py-2 bg-[#8582B0] text-[#CECDE0]"
+			class="ml-3 rounded-md px-3 py-2 bg-[#C294FF] text-[#1D1B2C] font-semibold"
 			onclick={handleBackClick}
 		>
 			Go Back
 		</button>
 		<button
 			id="clear-favorites-btn"
-			class="ml-3 rounded-md px-3 py-2 bg-[#8582B0] text-[#CECDE0]"
+			class="ml-3 rounded-md px-3 py-2 bg-[#C294FF] text-[#1D1B2C] font-semibold mt-2 md:mt-0"
 			onclick={handleClearFavorites}
 		>
 			Clear All Favorites
