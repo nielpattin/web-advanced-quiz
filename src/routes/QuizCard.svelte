@@ -1,6 +1,11 @@
 <script lang="ts">
-	import { createEventDispatcher } from 'svelte';
-
+	interface Answer {
+		answer_text?: string;
+		[key: string]: unknown;
+	}
+	interface AnswerWithIdx extends Answer {
+		__originalIdx: number;
+	}
 	interface Props {
 		currentQuestion: any;
 		current: number;
@@ -11,7 +16,9 @@
 		handleAnswerClick: (idx: number, questionType: string) => void;
 		favorites: Set<string>;
 		toggleFavorite: () => void;
-		answers: any[];
+		answers: Answer[];
+		onSwipeLeft?: () => void;
+		onSwipeRight?: () => void;
 	}
 
 	let {
@@ -24,10 +31,24 @@
 		handleAnswerClick,
 		favorites,
 		toggleFavorite,
-		answers
+		answers,
+		onSwipeLeft,
+		onSwipeRight
 	}: Props = $props();
 
-	const dispatch = createEventDispatcher();
+	// Shuffle answers for each question load
+	import { onMount } from 'svelte';
+	let shuffledAnswers = $state<AnswerWithIdx[]>([]);
+	$effect(() => {
+		if (currentQuestion && answers) {
+			const arr: AnswerWithIdx[] = answers.map((a, i) => ({ ...a, __originalIdx: i }));
+			for (let i = arr.length - 1; i > 0; i--) {
+				const j = Math.floor(Math.random() * (i + 1));
+				[arr[i], arr[j]] = [arr[j], arr[i]];
+			}
+			shuffledAnswers = arr;
+		}
+	});
 
 	let startX = 0;
 	let startY = 0;
@@ -81,7 +102,7 @@
 				translateX = -window.innerWidth * 0.7;
 				animating = true;
 				setTimeout(() => {
-					dispatch('swipeLeft');
+					onSwipeLeft?.();
 					translateX = 0;
 					animationDirection = null;
 					animating = false;
@@ -92,7 +113,7 @@
 				translateX = window.innerWidth * 0.7;
 				animating = true;
 				setTimeout(() => {
-					dispatch('swipeRight');
+					onSwipeRight?.();
 					translateX = 0;
 					animationDirection = null;
 					animating = false;
@@ -175,23 +196,25 @@
 	<!-- Answers List -->
 	<div class="answers-row flex flex-col gap-4 mb-4">
 		{#if currentQuestion}
-			{#each answers as ans, idx}
+			{#each shuffledAnswers as ans, idx}
 				<button
 					type="button"
 					class="answer px-5 py-3 rounded-lg border-2 border-[#33314E] bg-[#302E4A] text-lg text-[#CECDE0] cursor-pointer transition-colors text-left
-					       {selectedAnswers.includes(idx) ? 'border-[#C294FF]' : ''}
-					       {questionLocked && currentQuestion.answers[idx]?.is_correct
+					       {selectedAnswers.includes(ans.__originalIdx) ? 'border-[#C294FF]' : ''}
+					       {questionLocked && currentQuestion.answers[ans.__originalIdx]?.is_correct
 						? 'border-green-400 text-green-300'
 						: ''}
-					       {questionLocked && selectedAnswers.includes(idx) && !currentQuestion.answers[idx]?.is_correct
+					       {questionLocked &&
+					selectedAnswers.includes(ans.__originalIdx) &&
+					!currentQuestion.answers[ans.__originalIdx]?.is_correct
 						? 'border-[#FF4747] text-[#FF4747]'
 						: ''}"
-					onclick={() => handleAnswerClick(idx, currentQuestion.question_type)}
-					aria-pressed={selectedAnswers.includes(idx)}
+					onclick={() => handleAnswerClick(ans.__originalIdx, currentQuestion.question_type)}
+					aria-pressed={selectedAnswers.includes(ans.__originalIdx)}
 					aria-label={'Answer ' + (idx + 1)}
 					onkeydown={(e) => {
 						if (e.key === 'Enter' || e.key === ' ')
-							handleAnswerClick(idx, currentQuestion.question_type);
+							handleAnswerClick(ans.__originalIdx, currentQuestion.question_type);
 					}}
 				>
 					{ans.answer_text || ans}
@@ -200,10 +223,10 @@
 		{/if}
 	</div>
 	<!-- Check Button -->
-	<div class="flex justify-end">
+	<div class="flex justify-center w-full">
 		<button
 			id="check-btn"
-			class="mt-2 px-6 py-3 rounded-lg bg-[#C294FF] text-[#1D1B2C] font-semibold text-lg"
+			class="mt-2 mb-6 px-6 py-3 rounded-lg bg-[#C294FF] text-[#1D1B2C] font-semibold text-lg"
 			onclick={checkAnswers}
 			style="display: {selectedAnswers.length > 0 && !questionLocked ? 'block' : 'none'}"
 		>
