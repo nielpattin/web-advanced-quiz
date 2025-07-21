@@ -26,6 +26,16 @@
 
 	let sidebarOpen = $state(false);
 
+	let selectedAnswersMap = $state<Record<string, number[]>>({});
+	let questionLockedMap = $state<Record<string, boolean>>({});
+
+	function resetQuestionState(qid: string) {
+		if (qid) {
+			selectedAnswersMap = { ...selectedAnswersMap, [qid]: [] };
+			questionLockedMap = { ...questionLockedMap, [qid]: false };
+		}
+	}
+
 	function persistState() {
 		if (typeof window !== 'undefined') {
 			localStorage.setItem('appState', JSON.stringify(appState));
@@ -91,7 +101,34 @@
 			};
 
 			window.addEventListener('storage', storageListener);
-			return () => window.removeEventListener('storage', storageListener);
+
+			const handleKeyNavigation = (e: KeyboardEvent) => {
+				if (
+					document.activeElement &&
+					['INPUT', 'SELECT', 'TEXTAREA'].includes((document.activeElement as HTMLElement).tagName)
+				)
+					return;
+				if (e.key === 'ArrowRight' || e.key === 'd' || e.key === 'D') {
+					if (current() < quizData().length - 1) {
+						const nextQid = quizData()[current() + 1]?.question_id;
+						appState.favoritesCurrent = current() + 1;
+						resetQuestionState(nextQid);
+						persistState();
+					}
+				} else if (e.key === 'ArrowLeft' || e.key === 'a' || e.key === 'A') {
+					if (current() > 0) {
+						const prevQid = quizData()[current() - 1]?.question_id;
+						appState.favoritesCurrent = current() - 1;
+						resetQuestionState(prevQid);
+						persistState();
+					}
+				}
+			};
+			window.addEventListener('keydown', handleKeyNavigation);
+			return () => {
+				window.removeEventListener('storage', storageListener);
+				window.removeEventListener('keydown', handleKeyNavigation);
+			};
 		}
 	});
 
@@ -144,7 +181,12 @@
 				quizData={quizData()}
 				current={current()}
 				{favorites}
-				{setCurrent}
+				setCurrent={(idx: number) => {
+					appState.favoritesCurrent = idx;
+					const qid = quizData()[idx]?.question_id;
+					resetQuestionState(qid);
+					persistState();
+				}}
 				{sidebarOpen}
 				{setSidebarOpen}
 				addFavorite={(id: string) => {
@@ -199,10 +241,31 @@
 					currentQuestion={quizData()[current()]}
 					current={current()}
 					quizData={quizData()}
-					selectedAnswers={[]}
-					questionLocked={false}
-					checkAnswers={() => {}}
-					handleAnswerClick={() => {}}
+					selectedAnswers={selectedAnswersMap[quizData()[current()]?.question_id] ?? []}
+					questionLocked={questionLockedMap[quizData()[current()]?.question_id] ?? false}
+					checkAnswers={() => {
+						const qid = quizData()[current()]?.question_id;
+						if (!qid) return;
+						questionLockedMap = { ...questionLockedMap, [qid]: true };
+					}}
+					handleAnswerClick={(idx: number, questionType: string) => {
+						const qid = quizData()[current()]?.question_id;
+						if (!qid || questionLockedMap[qid]) return;
+						const currentSelected = selectedAnswersMap[qid] ?? [];
+						if (questionType === 'multiple_answer_question') {
+							if (currentSelected.includes(idx)) {
+								selectedAnswersMap = {
+									...selectedAnswersMap,
+									[qid]: currentSelected.filter((i) => i !== idx)
+								};
+							} else {
+								selectedAnswersMap = { ...selectedAnswersMap, [qid]: [...currentSelected, idx] };
+							}
+						} else {
+							selectedAnswersMap = { ...selectedAnswersMap, [qid]: [idx] };
+							questionLockedMap = { ...questionLockedMap, [qid]: true };
+						}
+					}}
 					{favorites}
 					toggleFavorite={() => {
 						const id = quizData()[current()]?.question_id;
@@ -219,13 +282,17 @@
 					)}
 					onSwipeLeft={() => {
 						if (current() < quizData().length - 1) {
+							const nextQid = quizData()[current() + 1]?.question_id;
 							appState.favoritesCurrent = current() + 1;
+							resetQuestionState(nextQid);
 							persistState();
 						}
 					}}
 					onSwipeRight={() => {
 						if (current() > 0) {
+							const prevQid = quizData()[current() - 1]?.question_id;
 							appState.favoritesCurrent = current() - 1;
+							resetQuestionState(prevQid);
 							persistState();
 						}
 					}}
@@ -233,6 +300,13 @@
 			{:else}
 				<div class="text-center text-lg mt-10 text-[#8582B0]">No favorite questions found.</div>
 			{/if}
+			<!-- Navigation Tips -->
+			<div class="desktop-tip text-[#8582B0] mt-6 text-base hidden md:block">
+				Press &#8592; or &#8594; to navigate
+			</div>
+			<div class="mobile-tip text-[#8582B0] mt-6 text-base block md:hidden">
+				Swipe left or right to navigate
+			</div>
 		</div>
 	</div>
 </div>
